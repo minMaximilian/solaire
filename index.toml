@@ -82,6 +82,11 @@ hash = "f7d89fc165dea517c959a03f8477a9ce81a37508f062f450b4e29bdcef73204f"
 metafile = true
 
 [[files]]
+file = "mods/emi.pw.toml"
+hash = "4f0afa4e70e830f08266c181c2a0deb207780712db6e7f8961ffb62061afada0"
+metafile = true
+
+[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "c2e938d1bdd1136e04b8be8c1378e2e33956ac23aa91d3a76003db6f2f75cbd1"
 metafile = true
@@ -114,6 +119,11 @@ metafile = true
 [[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "b13412892679c921be987cb2f248d231c6d2df85a62688ca1a343f9b3de1847f"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "3851cfa6f95cac87314de473dd4179271c8dab6c639652dc83ac688169c00124"
 metafile = true
 
 [[files]]
