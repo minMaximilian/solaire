@@ -17,6 +17,10 @@ file = ".github/PULL_REQUEST_TEMPLATE.md"
 hash = "f63a32552717b5f25fad50c8bb2c5802f297c352c661640f2cef31f46eff0fcc"
 
 [[files]]
+file = "config/tips.json"
+hash = "fc484eee7e0610bf93331b612d31229de0dc80533d42b1ebcd99366a782b3799"
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "0f106ef1d77c5e213339b6ab09a2efc997026eea21f49f80a66260cf5b89aed0"
 metafile = true
