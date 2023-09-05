@@ -1,0 +1,13 @@
+name = "Simple Discord Rich Presence (Forge /  Fabric)"
+filename = "SimpleDiscordRichPresence-fabric-4.0.1-build.35+mc1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "943dc3ec1ac958d5a62aec140ab085e1890085fa"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4680964
+project-id = 334853
