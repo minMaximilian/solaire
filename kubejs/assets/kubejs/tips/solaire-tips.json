@@ -1,0 +1,10 @@
+{
+    "title": {
+      "text": "Solaire",
+      "bold": true,
+      "color": "yellow"
+    },
+    "tip": {
+      "text": "This should be the only tip you can see."
+    }
+  }
