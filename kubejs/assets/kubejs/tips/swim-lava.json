@@ -1,0 +1,10 @@
+{
+    "title": {
+      "text": "Solaire",
+      "bold": true,
+      "color": "gold"
+    },
+    "tip": {
+      "translate": "tips.tip.swim-lava"
+    }
+  }
