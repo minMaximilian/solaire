@@ -5,9 +5,6 @@
       "color": "gold"
     },
     "tip": {
-      "text": "Don't try to swim in lava."
-    },
-    "tip": {
-      "text": "Don't try to code in java."
+      "translate": "tips.tip.code-java"
     }
   }

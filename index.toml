@@ -25,6 +25,14 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "7836aab0e68e81da81aa61e16ccbca12d7d613b84f56f4f9b5d8a993060218e4"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/es_mx.json"
+hash = "9726bae234cf17f2d2f846ce21b90008c80e8bea9a6f2c6ce606223acbe968ca"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
@@ -33,8 +41,12 @@ file = "kubejs/assets/kubejs/textures/item/example_item.png"
 hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
-file = "kubejs/assets/kubejs/tips/solaire-tips.json"
-hash = "84167283ce5c4b19b1985232aea64300442a868d051ae0b2df870d1468d9d008"
+file = "kubejs/assets/kubejs/tips/code-java.json"
+hash = "723a01bd1b0e17f0fdecc4651d07a0ed1ccca62046f38a4c082bade3987b803d"
+
+[[files]]
+file = "kubejs/assets/kubejs/tips/swim-lava.json"
+hash = "e984da7682300c0c8083660026d4636d9d9fa806e6ce03300f4e0d6723ce6bd4"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
@@ -46,11 +58,11 @@ hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
 
 [[files]]
 file = "kubejs/config/client.properties"
-hash = "7105182a2061f3e44b6256648de1be1e402bc220a32ac5c87f397e7cfa443467"
+hash = "74f04d2bfe11190a9c66496040918ac9e5d997e71888a447650e355d909b308c"
 
 [[files]]
 file = "kubejs/config/common.properties"
-hash = "3f746adb1ef78d17e98eb44bd00d4caa22c025a4100ea84eddef29553785b208"
+hash = "c91078b0b37c15153d2dc021b66b9837541af145e1a9daa6e8c4575464093673"
 
 [[files]]
 file = "kubejs/server_scripts/example.js"
