@@ -14,7 +14,7 @@ hash = "d52c20f41dc0de373d648f1710aeee8ca49b01104a7dfaede57045e072d6dc23"
 
 [[files]]
 file = ".github/PULL_REQUEST_TEMPLATE.md"
-hash = "f63a32552717b5f25fad50c8bb2c5802f297c352c661640f2cef31f46eff0fcc"
+hash = "c9fa4315bcf0ca56145586ab851030c8dc9f74866751035df02b43fd6a0ee5f3"
 
 [[files]]
 file = "config/tips.json"
@@ -139,7 +139,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "4f0afa4e70e830f08266c181c2a0deb207780712db6e7f8961ffb62061afada0"
+hash = "834de341f296c891f65586dae768b5dcd24a76e7b994e72a59ded94d1b4bd72e"
 metafile = true
 
 [[files]]
@@ -178,8 +178,13 @@ hash = "b13412892679c921be987cb2f248d231c6d2df85a62688ca1a343f9b3de1847f"
 metafile = true
 
 [[files]]
+file = "mods/hephaestus.pw.toml"
+hash = "dd6d0c4565358f9aa55c9003c2b687c1e759dadb65be16d89a5293f62b51bfe8"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
-hash = "3851cfa6f95cac87314de473dd4179271c8dab6c639652dc83ac688169c00124"
+hash = "f88a05405d8e094c84a5e006f75a8dc58e36b0d49147d0c6c9e1b90091a17331"
 metafile = true
 
 [[files]]
