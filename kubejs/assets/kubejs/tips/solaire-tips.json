@@ -2,9 +2,12 @@
     "title": {
       "text": "Solaire",
       "bold": true,
-      "color": "yellow"
+      "color": "gold"
     },
     "tip": {
-      "text": "This should be the only tip you can see."
+      "text": "Don't try to swim in lava."
+    },
+    "tip": {
+      "text": "Don't try to code in java."
     }
   }
