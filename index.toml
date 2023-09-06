@@ -21,6 +21,46 @@ file = "config/tips.json"
 hash = "fc484eee7e0610bf93331b612d31229de0dc80533d42b1ebcd99366a782b3799"
 
 [[files]]
+file = "kubejs/README.txt"
+hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/example_block.png"
+hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/example_item.png"
+hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+
+[[files]]
+file = "kubejs/assets/kubejs/tips/solaire-tips.json"
+hash = "84167283ce5c4b19b1985232aea64300442a868d051ae0b2df870d1468d9d008"
+
+[[files]]
+file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+
+[[files]]
+file = "kubejs/client_scripts/example.js"
+hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
+
+[[files]]
+file = "kubejs/config/client.properties"
+hash = "7105182a2061f3e44b6256648de1be1e402bc220a32ac5c87f397e7cfa443467"
+
+[[files]]
+file = "kubejs/config/common.properties"
+hash = "3f746adb1ef78d17e98eb44bd00d4caa22c025a4100ea84eddef29553785b208"
+
+[[files]]
+file = "kubejs/server_scripts/example.js"
+hash = "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2"
+
+[[files]]
+file = "kubejs/startup_scripts/example.js"
+hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "0f106ef1d77c5e213339b6ab09a2efc997026eea21f49f80a66260cf5b89aed0"
 metafile = true
@@ -173,11 +213,6 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "db8c298509c6b9cf92b8c32d8d97ca1bbd58b5039c416c377f69c06dea8b3c31"
-metafile = true
-
-[[files]]
-file = "mods/roughly-enough-items.pw.toml"
-hash = "d95ff4ec846840345afd1f37429c4ee4bac23ce8d4f13f64b7982eba2862615e"
 metafile = true
 
 [[files]]
