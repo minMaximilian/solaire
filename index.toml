@@ -17,8 +17,12 @@ file = ".github/PULL_REQUEST_TEMPLATE.md"
 hash = "c9fa4315bcf0ca56145586ab851030c8dc9f74866751035df02b43fd6a0ee5f3"
 
 [[files]]
-file = "config/tips.json"
-hash = "fc484eee7e0610bf93331b612d31229de0dc80533d42b1ebcd99366a782b3799"
+file = "config/tconstruct-client.toml"
+hash = "ba72b17799e2b891fc65329bd15881b8901ab770cc2c05890aaf92dfb0df29d8"
+
+[[files]]
+file = "config/tconstruct-common.toml"
+hash = "660018241736db748f1452cb118a8db9a95720d21650aa58a005e117e5b0e11d"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -57,10 +61,6 @@ file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
 hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
-file = "kubejs/client_scripts/example.js"
-hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
-
-[[files]]
 file = "kubejs/config/client.properties"
 hash = "74f04d2bfe11190a9c66496040918ac9e5d997e71888a447650e355d909b308c"
 
@@ -69,12 +69,16 @@ file = "kubejs/config/common.properties"
 hash = "c91078b0b37c15153d2dc021b66b9837541af145e1a9daa6e8c4575464093673"
 
 [[files]]
-file = "kubejs/server_scripts/example.js"
-hash = "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2"
+file = "kubejs/server_scripts/blocks.js"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
-file = "kubejs/startup_scripts/example.js"
-hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
+file = "kubejs/server_scripts/helpers.js"
+hash = "75a5f460b14fd0d91dd770925ffd36a5474691db5d4d8d6022d0993812645201"
+
+[[files]]
+file = "kubejs/server_scripts/remove.js"
+hash = "b97c86fab5c5d811a13c7a804c4fe1dff8f3e7613413a33fdf05d085826a1649"
 
 [[files]]
 file = "mods/appleskin.pw.toml"
@@ -124,21 +128,6 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "ce24b26ca0512bffabcac00daceb52d615017ddab71e7562a0d0a591ebd81410"
-metafile = true
-
-[[files]]
-file = "mods/create-fabric.pw.toml"
-hash = "f3094b99335cf26c368294878ae60312122a30ead29fea67b86095b75b15b4e8"
-metafile = true
-
-[[files]]
-file = "mods/create-steam-n-rails.pw.toml"
-hash = "4a60914b6235f8b9e6b4b025cd035db4ca73b460d40cf0f5d05eabf1f9bb483d"
-metafile = true
-
-[[files]]
-file = "mods/createaddition.pw.toml"
-hash = "f7d89fc165dea517c959a03f8477a9ce81a37508f062f450b4e29bdcef73204f"
 metafile = true
 
 [[files]]
@@ -197,11 +186,6 @@ hash = "02a9516ad501885aee44201b54259bee43de27bd9855def64120a521b4663abb"
 metafile = true
 
 [[files]]
-file = "mods/kubejs-create.pw.toml"
-hash = "e5a9d25f55c97dbe39ec56353942df312a0bec47b4829d1b5b772640bb9f57a1"
-metafile = true
-
-[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "a5c14eb71fa8be21c2bd2c8b5e69e3b4af52f82ac1d3a499b8f8de017dd29b6e"
 metafile = true
@@ -214,11 +198,6 @@ metafile = true
 [[files]]
 file = "mods/no-chat-reports.pw.toml"
 hash = "5553f08402ff3f277f68bf132463f187d14e2b12275ae319f934e4672f4b9288"
-metafile = true
-
-[[files]]
-file = "mods/ponder.pw.toml"
-hash = "3a85938936a98d3c951a8419115b1ebb6ae8b5d3a77d891008e2e0c620f0f3ac"
 metafile = true
 
 [[files]]
