@@ -166,6 +166,11 @@ hash = "8fcc4df777e647163f5530cc16a2dcc8a625108b3164919b4c5839862277ba31"
 metafile = true
 
 [[files]]
+file = "mods/geophilic.pw.toml"
+hash = "50cc94fc6be060961dc3f1f4b2104927e2dcf3fcd4728caf0b507aee21d9226f"
+metafile = true
+
+[[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "b13412892679c921be987cb2f248d231c6d2df85a62688ca1a343f9b3de1847f"
 metafile = true
