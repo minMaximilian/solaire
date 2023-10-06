@@ -1,0 +1,13 @@
+name = "Wilder Wild"
+filename = "WilderWild-2.1.6-Fabric+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AtHRJSUW/versions/PTnvDo8G/WilderWild-2.1.6-Fabric%2B1.20.1.jar"
+hash-format = "sha1"
+hash = "d17d1aec8a44007fc45d0d953ffaf9395b35084d"
+
+[update]
+[update.modrinth]
+mod-id = "AtHRJSUW"
+version = "PTnvDo8G"
