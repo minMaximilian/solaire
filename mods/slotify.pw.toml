@@ -1,0 +1,13 @@
+name = "Slotify"
+filename = "slotify-1.20-1.20-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "75ef9457abc856a2e655681a9c6bc8e0fe1b67de"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4762128
+project-id = 907547
