@@ -25,8 +25,24 @@ file = "config/tconstruct-common.toml"
 hash = "660018241736db748f1452cb118a8db9a95720d21650aa58a005e117e5b0e11d"
 
 [[files]]
-file = "kubejs/README.txt"
-hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+file = "config/techreborn/generators.json"
+hash = "734be3731d1972aef664fd75644dfbb8e4a376a8888420fc2560b65abb2700d7"
+
+[[files]]
+file = "config/techreborn/items.json"
+hash = "33e4d92dbc2e3181bc47d34a3d5c9438219e6d76a1517b40de82ecb468c993f3"
+
+[[files]]
+file = "config/techreborn/machines.json"
+hash = "11a8f48a32c664c8c5a8137df7d89d7afbd4ef4934de3f37e8dd5f1c5e23b83a"
+
+[[files]]
+file = "config/techreborn/misc.json"
+hash = "3a3bf43cad738606cc857a596f710ffe05053495ddf807ecc5e41331a73c03e0"
+
+[[files]]
+file = "config/techreborn/world.json"
+hash = "8a1780d4bcd1b0175a181981bee203826568489a1c4710012a631ebb58d337eb"
 
 [[files]]
 file = "kubejs/assets/create/textures/block/brass_block.png"
@@ -61,28 +77,112 @@ file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
 hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
+file = "kubejs/client_scripts/remove.js"
+hash = "05b29f6beb969639a11f86103ee622882c7ef8074d1b6652b68dfe7c98524e4f"
+
+[[files]]
 file = "kubejs/config/client.properties"
-hash = "74f04d2bfe11190a9c66496040918ac9e5d997e71888a447650e355d909b308c"
+hash = "45929ae8360ed6e6dcba7bb52f49cec693e42e200c28eadf7e1695b76b91a7a4"
 
 [[files]]
 file = "kubejs/config/common.properties"
-hash = "c91078b0b37c15153d2dc021b66b9837541af145e1a9daa6e8c4575464093673"
+hash = "fc0ba8f68ac62914a1f802fd152f1db4cf1be27fed5df149b436c453f5b0e008"
+
+[[files]]
+file = "kubejs/config/probejs.json"
+hash = "487128db93fe40f02ce10e18600fed05b353b3544fdfa223f80d21e81545477f"
+
+[[files]]
+file = "kubejs/jsconfig.json"
+hash = "70f26cbe24e0349047f8824b478a1aa94167048bd4dc85af86e84d85e649c535"
+
+[[files]]
+file = "kubejs/probe/cache/cachedForgeEvents.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+
+[[files]]
+file = "kubejs/probe/cache/cachedJava.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "kubejs/probe/cache/docs/dynamicjs.json"
+hash = "71f12ab6d05a72e8c58748b232ed57ab955f5f337070cff27002ad26a3f58b3a"
+
+[[files]]
+file = "kubejs/probe/cache/docs/events.json"
+hash = "578aee5d392e6da1a4b12d91bd075d1b824d9fba6ee98f07b49e28f00d8c0dfd"
+
+[[files]]
+file = "kubejs/probe/cache/docs/kubejs.json"
+hash = "3db4ef01ff3999f14b21c7ff42346884f5de71a2569001c52ef4773b2ea593ab"
+
+[[files]]
+file = "kubejs/probe/cache/docs/kubejs_recipes.json"
+hash = "0ab68fcd509638e3735063b6490c32261c40289eed123cc8a6e977f951e38151"
+
+[[files]]
+file = "kubejs/probe/cache/docs/morejs.json"
+hash = "3b6076d8ff5ab4dcc2086e27691d7e3b8abfccdf7be23f890cdb28b23d50e779"
+
+[[files]]
+file = "kubejs/probe/cache/docs/probe.json"
+hash = "eabf3964c5cf77d0f31b58cd091776631bf5800ffcca1be6c4c4cd8d14cfbf83"
+
+[[files]]
+file = "kubejs/probe/cache/docs/registry.json"
+hash = "c76e8fdae5ab850f764c8d069258a5b2a0611f4b691ac563829dd1af7157f2d8"
+
+[[files]]
+file = "kubejs/probe/cache/docs/types.json"
+hash = "a22e5e391f8639530fa4649271b6a468b0dbd7d0619961b59066e9d8887e1b44"
+
+[[files]]
+file = "kubejs/probe/cache/modHash.txt"
+hash = "2bf7fce5ee2096b50fb3966b87b0cd5e33e929770cec500959195d2f79feaf6e"
+
+[[files]]
+file = "kubejs/probe/generated/constants.d.ts"
+hash = "3f0688de159c8f78d0018b1cba6a4de322cd26b28d74f6dad50ea0f3ab865c2f"
+
+[[files]]
+file = "kubejs/probe/generated/events.d.ts"
+hash = "2acdf378c0d73fb2de515001fe8107ae98d1b8da604fc6b7a96f5b3a603cf4c2"
+
+[[files]]
+file = "kubejs/probe/generated/globals.d.ts"
+hash = "c9afb27a618ccf74c68cedf4d8c3b3fdce1db173ec60d0dffadecf2d3f25c8e6"
+
+[[files]]
+file = "kubejs/probe/generated/names.d.ts"
+hash = "d1fe0c1e3467db9c16cb4f0788d8f307cae2499664c53206bac2a42fc875bdaa"
+
+[[files]]
+file = "kubejs/probe/generated/raw.d.ts"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "kubejs/probe/generated/registries.d.ts"
+hash = "f167ee7ea66dbb17e47ab5c8f4860d737b1ade7b24fe3ae97b0450121a43b59e"
+
+[[files]]
+file = "kubejs/probe/generated/tag_events.d.ts"
+hash = "18379b39bde980795e4673b0d484ebcc08a76689939f6172f8e128582207bf38"
 
 [[files]]
 file = "kubejs/server_scripts/food.js"
-hash = "9e758e246aa97867787f9cb6bcaef782418565ddf24236eb49a571170768196e"
+hash = "77346412f69308459bd11ed66a6edbc093e856efd84e755b7b1e9cfa40be7115"
 
 [[files]]
 file = "kubejs/server_scripts/helpers.js"
-hash = "0d4125b2361ac7bbf34e40d291292bf6ada183322d3a98c81ea252da2e0a9944"
+hash = "3999547ecc850d9f92f8af9f9f496bffd11436bfe5b3e036d5a355bf4db13eb5"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "93d0b18f56d73210fcaf68052295605d9bc1763d54e3fc6ebdb33dfb2efa9a2e"
+hash = "7e36f3b6d42ee5f39bdfa73298de9710d52dee9bd9126034a1062382ddd47458"
 
 [[files]]
-file = "kubejs/startup_scripts/helpers.js"
-hash = "04e3e3d9f0e62475cc8d1e310840f5943b1303bfed385f647bc4bdc4c07f953e"
+file = "kubejs/startup_scripts/constants.js"
+hash = "b05ef0343f860ee0f62a1d849f1902804a6e5f330d13a5be229997d3a6053088"
 
 [[files]]
 file = "kubejs/startup_scripts/materials.js"
@@ -97,8 +197,8 @@ file = "kubejs/startup_scripts/modify_script.js"
 hash = "547c38785096452845078355111171fee00960be5d3571b623f5c84ba239b591"
 
 [[files]]
-file = "kubejs/startup_scripts/modname.js"
-hash = "8de1fa5bf4e22ea286add588991538400180f6782fb90cb353f2f30b28c675d0"
+file = "kubejs/startup_scripts/remove.js"
+hash = "763335a615276c72bbc3b85943fcd01d5228d59d01a1a78597ceabe0e7d1ece1"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -141,13 +241,18 @@ hash = "573765992d61492d05465a1a29c937cdff0ebc6d551dec669c94a0d273650bdc"
 metafile = true
 
 [[files]]
+file = "mods/autotag.pw.toml"
+hash = "ea6fc6fba3ad1e9868e7807b17c04ebbad43a073b9be6d9374290b94eaa82e79"
+metafile = true
+
+[[files]]
 file = "mods/auudio.pw.toml"
 hash = "e8504c09fc7466033c4aa815bfc4a7002915c132c4e45d68e7d861263a13be72"
 metafile = true
 
 [[files]]
 file = "mods/badpackets.pw.toml"
-hash = "a1bea09f928280dd62cea871438231389ecbed00f4053bb5d1d4a3ad91545fc3"
+hash = "e5a68e0e0d90aac1d965ab7cab5858c474e875be9012a7c8a3adf96420faa726"
 metafile = true
 
 [[files]]
@@ -247,12 +352,12 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "82285f2aa33891d7b7ad1f9d6b8cdacb46aa2bde7d091cc65d279b0ef0caeb3a"
+hash = "16e271347136c50d3ce6b3350dcc558ab2f5b75b60d88c1781c03e619b21858d"
 metafile = true
 
 [[files]]
 file = "mods/cupboard.pw.toml"
-hash = "adee56de36b08b1c6209ee506707dea3bebf06a74b057b7ea2a27be8d9a0f164"
+hash = "ca9a0b70fb11328d6868ab909d4d92ec1160e530f19a31387f26e0abec42f5af"
 metafile = true
 
 [[files]]
@@ -287,7 +392,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "e1281e7858663cb1ef53f91e56005ea165f7d95473e12891db40f3266cf755e1"
+hash = "1534cc48fe10f96a488339c716e8e8b2b639cf9355b8949e09fa264991f16432"
 metafile = true
 
 [[files]]
@@ -298,6 +403,11 @@ metafile = true
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
 hash = "16c35cba683a08826b0fcf0da850460c0bad60b2eae5d6e3c437fec705aca77d"
+metafile = true
+
+[[files]]
+file = "mods/environmentz.pw.toml"
+hash = "c11aa68c26493704c24e5991b4fb04a6d3fc124b468d9b5e43f9d02e0f5f8be9"
 metafile = true
 
 [[files]]
@@ -312,7 +422,7 @@ metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "417d8c6a5c32d7bcbd36a5f8c04e7f6722ffb8020ce31ef29537fc54debbe786"
+hash = "cc00eb97b899a6d6ab31fe0e1deb17226fc34062d6d83cbb10daad9827bba959"
 metafile = true
 
 [[files]]
@@ -337,7 +447,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "92f1ac92edc3ec5eb522c2d97d47f976b758b2722a575c6185addbf72714e11a"
+hash = "210a7ceddcaadd495e9c80a7bd30d2af6c1e8aefca0b0babb4023adef541008d"
 metafile = true
 
 [[files]]
@@ -347,7 +457,7 @@ metafile = true
 
 [[files]]
 file = "mods/fallingleaves.pw.toml"
-hash = "41b6ced96a53594eff35395e452dd2e67107e8b529a3f3724e80556ca31e71f0"
+hash = "0c4c20d601b15dbc85c275732d9efe9369597503c7d6caa9a7fee217f67073e7"
 metafile = true
 
 [[files]]
@@ -381,13 +491,18 @@ hash = "129bb8b135edc60038f021b693f5b88a0067b722f326e0d6067112243774289b"
 metafile = true
 
 [[files]]
+file = "mods/friends-and-foes.pw.toml"
+hash = "14c68b75250d6a767d594c51c43f861ff770590afba8fd6ca01bcaeeb9ad8d9c"
+metafile = true
+
+[[files]]
 file = "mods/funky-flora.pw.toml"
 hash = "4663fc5e25f00deed4a116d936d179d4cc7e9b842ac8b2030452c7416eadb9c2"
 metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "c41001273c481e5231035846e7c4be33ec428078e973ae6211ae72207cd0de0a"
+hash = "ce46f117a69cf45250fe90a6a9d964c3fbae3a80abc3a21ab94f68d453dbb3bf"
 metafile = true
 
 [[files]]
@@ -457,7 +572,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "e160cd9f6d5beb781af38f9b75b88002a5bd65daa566fb3fc3a1e1e036a4c229"
+hash = "87ea5bf588ed195eaee3bcbd2432b5671692a203b25b688ffcbfeea6d2cea775"
 metafile = true
 
 [[files]]
@@ -467,7 +582,7 @@ metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
-hash = "559a46acee6bd5368fac543cb90902a7eb692426329d1041af790d8a22167154"
+hash = "51709a536d48a3aa27af5c0316647dc0dc74be79000ecb5262795bb383c9a204"
 metafile = true
 
 [[files]]
@@ -557,7 +672,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "072f6f8811b34e73106a9c81976ab746cebd9267dfe56c8b66d16c7bfd2a7a88"
+hash = "dfa389fc38ba0706e66328cfedad7bf029f4a2a986127489c42b64c6d9958e28"
 metafile = true
 
 [[files]]
@@ -567,7 +682,7 @@ metafile = true
 
 [[files]]
 file = "mods/natures-spirit.pw.toml"
-hash = "aa9f4db6d197a30f4ab5fbb249d2492748ebc23dd9472b7a14fc60684da97748"
+hash = "5bfd35e20e4994d6f1c2063827003593d080090c11624f38df04ca2d8af41316"
 metafile = true
 
 [[files]]
@@ -617,12 +732,12 @@ metafile = true
 
 [[files]]
 file = "mods/polaroidcamera.pw.toml"
-hash = "3ff352a18028337803c95c68bd6c4d01eadf22f74412f22348bec0a09d378e1d"
+hash = "a7570caa2eee8b389a4d8ed48bcaaf2d40a2235724241fc656f13aad253ffc9d"
 metafile = true
 
 [[files]]
 file = "mods/potion-cauldron.pw.toml"
-hash = "8818e19c6e8f5468aca8bf1f6e50231aae71708ea7de696cc06e5c2e438de1fd"
+hash = "638aab2eecf9b0b76c82afbd524145cbc097309d0b118818d564e4a36f43fd3f"
 metafile = true
 
 [[files]]
@@ -667,7 +782,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "3c1e6fa861687d1fc7d5522917ff6547bba8607a3ee0a06c10ebc2985e5fb70d"
+hash = "69848f3e7b528c60d85af077b93af304838a38dde6439603aa56334bc52a9999"
 metafile = true
 
 [[files]]
@@ -682,7 +797,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "613429169795748072fe2669af661f4e8b031725172c4e9d26c6a1b16e296c65"
+hash = "f5fd008ccf0b53cd4f32887902503e768e57da4dcc6065160e991c78d5fc017b"
 metafile = true
 
 [[files]]
@@ -732,7 +847,7 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
-hash = "af2656a24bba11ee0f41d86b95bf74a918f3829dce005f87df0cdb981d78a190"
+hash = "415a2acc42fa2a4b648c4f5de33d679c18a7c478ffae6236ab881b1e49566818"
 metafile = true
 
 [[files]]
@@ -742,7 +857,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "250ce47cc7d7fa7d46ad2ce61b3c589cfbea49434bd6a74fc4fcd8fed13360ee"
+hash = "9714741fffea0cc85dbe3dc469b98a943569e94e7fc62d2d5c867ca3fa61bfc2"
 metafile = true
 
 [[files]]
@@ -812,12 +927,12 @@ metafile = true
 
 [[files]]
 file = "mods/wilder-wild.pw.toml"
-hash = "28e4ee1535034d205586c33567f458e57b4af6aa855610183c9fc323dce2e7d1"
+hash = "d339e675d1d55189216fb8ad0e2de9e3391715e87217f3ab3513de71dc8ebbcd"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "a743b452f08d80eefc3587070d2c09fe575a8dad634454ce9420c52f54dd72f7"
+hash = "2ddd7b5c52b37cff4fe402f84d65d3cb2ca30a5d489d57c750d73bb38e0422dd"
 metafile = true
 
 [[files]]
