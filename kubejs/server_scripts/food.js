@@ -1,6 +1,6 @@
 // console.info('Drink Recipes')
 
-// ServerEvents.recipes(e => {
+ServerEvents.recipes(e => {
 //   let FillingAndEmptying = (drink, fluid, bottle) => {
 //     e.recipes.create.filling(drink, [Fluid.of(fluid, 250), bottle])
 
@@ -164,4 +164,4 @@
 //     Item.of('sugar', 2),
 //     GO`ice_cube`
 //   ])
-// })
+})
