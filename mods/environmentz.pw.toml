@@ -1,0 +1,13 @@
+name = "EnvironmentZ"
+filename = "environmentz-2.0.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TggYmc6t/versions/Kqpftb4A/environmentz-2.0.5.jar"
+hash-format = "sha1"
+hash = "b14fd609bc5d05cdff84f16fde3fa542e4f13d40"
+
+[update]
+[update.modrinth]
+mod-id = "TggYmc6t"
+version = "Kqpftb4A"
