@@ -266,6 +266,11 @@ hash = "47e796fa0168407d6bf12e3aac6cf29881960df43ed21f844ab34ac891ee0730"
 metafile = true
 
 [[files]]
+file = "mods/create-fabric-dme-edition.pw.toml"
+hash = "6bc771ad7dff3b5fec47bfddab8c92d7a4e95a3c1168f8c8e8dd0a53279bd0cc"
+metafile = true
+
+[[files]]
 file = "mods/creativecore.pw.toml"
 hash = "16e271347136c50d3ce6b3350dcc558ab2f5b75b60d88c1781c03e619b21858d"
 metafile = true
@@ -357,7 +362,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "7b54a8d6357de04ed386b629cecaa07470abe45403283f87d06a2f41bde88f31"
+hash = "4091b4282d862e53d617b33475ded505384e6475bd4c5c4ea1f15ccfcf978427"
 metafile = true
 
 [[files]]
@@ -832,7 +837,7 @@ metafile = true
 
 [[files]]
 file = "mods/wilder-wild.pw.toml"
-hash = "d339e675d1d55189216fb8ad0e2de9e3391715e87217f3ab3513de71dc8ebbcd"
+hash = "888a0ddab7ec4791ca2b948126e64d1f60f4658a551f907d063aa562734898e5"
 metafile = true
 
 [[files]]

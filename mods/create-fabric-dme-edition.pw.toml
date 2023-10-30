@@ -1,0 +1,13 @@
+name = "Create Fabric DM-Earth Edition"
+filename = "create-fabric-0.5.1-d-build.9+mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FSq5Fls0/versions/HGrTCyP6/create-fabric-0.5.1-d-build.9%2Bmc1.20.1.jar"
+hash-format = "sha1"
+hash = "1181f71e8108a0db13d42b0666e7d2fdd918fb9f"
+
+[update]
+[update.modrinth]
+mod-id = "FSq5Fls0"
+version = "HGrTCyP6"
