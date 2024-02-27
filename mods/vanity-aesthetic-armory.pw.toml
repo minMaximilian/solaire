@@ -1,0 +1,13 @@
+name = "Vanity: Aesthetic Armory"
+filename = "vanity_aesthetic_armory-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vEDzaSHn/versions/prGKkaam/vanity_aesthetic_armory-1.0.0.jar"
+hash-format = "sha1"
+hash = "5d1ae3bdb0f7671f3e8d8357ec9529de120cf6cf"
+
+[update]
+[update.modrinth]
+mod-id = "vEDzaSHn"
+version = "prGKkaam"
