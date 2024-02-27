@@ -1,0 +1,13 @@
+name = "BrushUp!++"
+filename = "Brush-Up!++ v1.0.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/fVuP93JH/versions/VnStBS93/Brush-Up%21%2B%2B%20v1.0.1.zip"
+hash-format = "sha1"
+hash = "068dad3b14e1bd8370f91044c6358339a10ed236"
+
+[update]
+[update.modrinth]
+mod-id = "fVuP93JH"
+version = "VnStBS93"

@@ -23,3 +23,5 @@ usercache.json
 usernamecache.json
 *.zip
 *.exe
+kubejs/jsconfig.json
+kubejs/probe/**
