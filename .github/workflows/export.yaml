@@ -25,13 +25,19 @@ jobs:
 
     - name: Packwiz Refresh
       run: packwiz refresh
+
+    - name: Set outputs
+      id: vars
+      run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
       
     - name: Export .mrpack file
-      run: packwiz modrinth export
+      run: |
+        packwiz modrinth export -o solaire-${{ steps.vars.outputs.sha_short }}.mrpack
+        
         
     - name: Upload .mrpack file to Discord
       uses: sinshutu/upload-to-discord@master
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
-        args: export.mrpack
+        args: solaire-${{ steps.vars.outputs.sha_short }}.mrpack
