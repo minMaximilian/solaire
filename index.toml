@@ -58,7 +58,7 @@ hash = "05f8e64c0db521d5bd23b8cc25e0f6dbfdfcfbb78362a862d3f246b2796ae8a6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "3222b9a6db7d5d96c4fd9cf0334a3b111b69c233a12263fa668678bf09e9b17b"
+hash = "3b2d2887c64ce01c4ec6a6f473919f7aa3882adaa3d4127f2448abb14f711565"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
@@ -66,7 +66,7 @@ hash = "327fab142c86612a63acdb3bf9b5cc237b9d84c8d0e6c3db1915e46dbbb26ae4"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "b366ddcbe00f0fc2ba84cae4dfba07aead83c6c12813f828776d33dba5b8ff0a"
+hash = "4eefd588f809fb16f4a187676d72ef3283b7bc9229c578c7d3484224264ab18c"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"

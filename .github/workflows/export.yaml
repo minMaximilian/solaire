@@ -22,15 +22,16 @@ jobs:
       run: |
         go install github.com/packwiz/packwiz@latest
         export PATH=${PATH}:`go env GOPATH`/bin
+
+    - name: Packwiz Refresh
+      run: packwiz refresh
       
     - name: Export .mrpack file
       run: packwiz modrinth export
-      env:
-        MRPACK_FILE: export.mrpack
         
     - name: Upload .mrpack file to Discord
       uses: sinshutu/upload-to-discord@master
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
-        args: ${{ env.MRPACK_FILE }}
+        args: export.mrpack
