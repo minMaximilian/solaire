@@ -1,6 +1,70 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fancymenu/assets/minecraft_title.png"
+hash = "5308784a860cdd20548405d2f891a875b9d70518353aa706e1cd122f51d20214"
+
+[[files]]
+file = "config/fancymenu/assets/solaire.gif"
+hash = "b3b0a6b2ac2ce9c957d4e263825b1a3b275afdceebcd8200f3799aedfa9aa2dc"
+
+[[files]]
+file = "config/fancymenu/assets/solaire.icns"
+hash = "62d30acd2099a7ef282c985b903c76f577488544b6eb6385432b8f08b810dd77"
+
+[[files]]
+file = "config/fancymenu/assets/solaire.png"
+hash = "f0296ae66a1e8559752a3422a9cd9f8d963d5c179d5dcb7d6dbb075684776869"
+
+[[files]]
+file = "config/fancymenu/assets/solaire_small.png"
+hash = "4bdb0fd9a57f106c4b94196c276c370ceb7f49167b33e3436a177b06699a904f"
+
+[[files]]
+file = "config/fancymenu/custom_gui_screens.txt"
+hash = "ff492043eaf454c46e949d5eef32ece90cc5a19feb50a161dd29a43b5732c880"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "3b1cdcdacd19a2db571e46d3573c406308f6a44a4bb574fb3bb8cf49468e019d"
+
+[[files]]
+file = "config/fancymenu/customization/drippy_loading_overlay_layout.txt"
+hash = "596d0d57a309802ee0079397ab255cd31957b3b5a947aee5a8134bf9d94e1e0f"
+
+[[files]]
+file = "config/fancymenu/customization/title_screen_layout.txt"
+hash = "49c5a9e10de6999e465bc739f5c94a9effb37bdf66ef01f3d68dd7ac59137e8c"
+
+[[files]]
+file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
+hash = "051d700ea7ff1bd626063d60f9a9cd65a0af1fed5903706d1e70fce20bcb2495"
+
+[[files]]
+file = "config/fancymenu/legacy_checklist.txt"
+hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
+
+[[files]]
+file = "config/fancymenu/options.txt"
+hash = "88b7c0946895f1a832eb6ff71b1c0c1602bd6c130bc55395bd307a59c8097ab5"
+
+[[files]]
+file = "config/fancymenu/ui_themes/dark.json"
+hash = "43ac9bee88f1a4c9b66fee0d4b6fcec14a52feab46bf803928aabed96f510cc9"
+
+[[files]]
+file = "config/fancymenu/ui_themes/light.json"
+hash = "6954379d658fdf496f162792a3244f0f08635858ed4b0553a718a7ef63b8a620"
+
+[[files]]
+file = "config/fancymenu/user_variables.db"
+hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
+
+[[files]]
+file = "config/modmenu.json"
+hash = "c7aee11a8ed4b91635ea4db88d417727a368d7a454c6c023908c8c237a9b4523"
+
+[[files]]
 file = "config/sleep_tight-common.json"
 hash = "30557b7cdfc2f49611ab3888439bde111a6de7ebeb7cc6fe81164c1f9e070cc7"
 
@@ -301,6 +365,11 @@ hash = "820a6bf2e0555af7e835f94c6e94c5cd8da1bdf2ea6824904030612b9f568919"
 metafile = true
 
 [[files]]
+file = "mods/drippy-loading-screen.pw.toml"
+hash = "dcea9652980fa97909dc9231878fa853f4b1da3d1a3967615f04b7f4d695e6e6"
+metafile = true
+
+[[files]]
 file = "mods/dripsounds-fabric.pw.toml"
 hash = "6992619452254eac894dbaaaff722c4dfa3d3576405f1b3c4d9782fe98aaf7e1"
 metafile = true
@@ -393,6 +462,11 @@ metafile = true
 [[files]]
 file = "mods/fallingleaves.pw.toml"
 hash = "0c4c20d601b15dbc85c275732d9efe9369597503c7d6caa9a7fee217f67073e7"
+metafile = true
+
+[[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "eba79a76fb725a167d32a31387378b66d1d517a3ecd23de18e267c30bc3bced0"
 metafile = true
 
 [[files]]
@@ -526,6 +600,11 @@ hash = "2895ab3b454293884e288a125bba2fbf4135475573c345ef919d56f2ad91419c"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "b0487d5437a636e61b353c70699994de1fd1aca903853d9366860cbbcfca5fd2"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "957b9c853fba5f5c4feb8d51227371132b740d2ce58b3b7e0ba7350590617145"
 metafile = true
@@ -593,6 +672,11 @@ metafile = true
 [[files]]
 file = "mods/make_bubbles_pop.pw.toml"
 hash = "ac2ca5caef9ddb4fd53c035bfaf07026f12bcdb162d19c2fa473bdec8fbec630"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "57dc365bf7be6358709c450e95e12cd4f48b84d7ea146e8bb7cf5ced1d0abafb"
 metafile = true
 
 [[files]]
