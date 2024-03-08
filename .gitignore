@@ -22,6 +22,7 @@ servers.dat_old
 usercache.json
 usernamecache.json
 *.zip
+*.mrpack
 *.exe
 kubejs/jsconfig.json
 kubejs/probe/**
