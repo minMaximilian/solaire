@@ -12,8 +12,9 @@ ServerEvents.recipes(recipes => {
 	remove(ETC('raw_bismuth'))
 	remove(ETC('nether_bismuth_ore'))
 	remove(ETC('turtle_raft'))
-	remove(NTP('plant_fiber'))[
-		('flint', 'iron', 'gold', 'diamond', 'netherite')
+	remove(NTP('plant_fiber'))
+	[
+		'flint', 'iron', 'gold', 'diamond', 'netherite'
 	].map(material => remove(NTP(`${material}_knife`)))
 	remove(BP('metal_backpack'))
 	remove(BP('upgraded_backpack'))
