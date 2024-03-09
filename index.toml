@@ -180,7 +180,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "81d402b19fda3e8ec0617dca059d93822ec11b59665dad91f31ae800acb8274b"
+hash = "abedecb0f0cb3592660e510347c7c171b7091bc394a04496b456711669281dc7"
 metafile = true
 
 [[files]]
@@ -334,8 +334,8 @@ hash = "47e796fa0168407d6bf12e3aac6cf29881960df43ed21f844ab34ac891ee0730"
 metafile = true
 
 [[files]]
-file = "mods/create-fabric-dme-edition.pw.toml"
-hash = "bdc414b3106bfa825fcce4fcaedb8889ae7f845f2a81e2e96b47ab31262fd02b"
+file = "mods/create-fabric.pw.toml"
+hash = "cc457369350325e226471c9b070f7ef3e47b6ea8126e8c7c28622b2960ea3f2b"
 metafile = true
 
 [[files]]
@@ -470,7 +470,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "a856296531bab559c7dbe061827078e206b9cf194be3be618c462c62ab4fd841"
+hash = "d74850aaf1ed5a53805d523aa2b624f58c43813446be0b6c066a599c80d704e6"
 metafile = true
 
 [[files]]
@@ -529,6 +529,11 @@ hash = "01e047ce12403a657fc6669ff521a0d43cdc849aaccd217b7a055c58197cea99"
 metafile = true
 
 [[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "2dded9237b5fbf729ca1947780e8de50bfaaad8b95371370e5263620122bad20"
+metafile = true
+
+[[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "6397162c78c64d7e9130223c3a4094ea680df41a4d12f11a2c7fbfb6a73da202"
 metafile = true
@@ -540,7 +545,7 @@ metafile = true
 
 [[files]]
 file = "mods/heracles.pw.toml"
-hash = "5be24164786b21bccdc7356d159bc3e278fa738ce9b5fd35dd3871867285d985"
+hash = "43cc8b1e233d9ef4f957b41efc154a61dc3f689b954f14c06059d5118c63269e"
 metafile = true
 
 [[files]]
@@ -720,7 +725,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "3214d2ab88163068603c56609c2b7ac9f8d87b719f6da8c96ff906164dac8353"
+hash = "50494c04a20e65d378e519e171e5284a082b268a6248f15e7804d4677fa5fa94"
 metafile = true
 
 [[files]]
@@ -845,7 +850,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "8159a046f8ea934f1983bdad275d5cb867ce93cbb503b83f170233687dd1ab29"
+hash = "9e2a65ce55ded4009f8c9db20892415a800cc859a943df5055a75e62edd7d9e3"
 metafile = true
 
 [[files]]
@@ -860,7 +865,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "579bf4dbc7e18632c66b74a220a49ca7714b084d6f0a2b9100bf0530af278288"
+hash = "7e5fa206c5818b4366f14c9fb6f8953ac0242032a0d02b368853e71ded91ac22"
 metafile = true
 
 [[files]]
@@ -1064,7 +1069,7 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/brushup!++.pw.toml"
-hash = "d77e3b76518306adffd60b01b06629e42351964377172a41cd8842e7b0f4677c"
+hash = "fa3600f209e0aeb57cde383ee6b804ea6dd41404a0b96e07a8b9d423ea7a8636"
 metafile = true
 
 [[files]]
