@@ -130,11 +130,11 @@ hash = "3b2d2887c64ce01c4ec6a6f473919f7aa3882adaa3d4127f2448abb14f711565"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "327fab142c86612a63acdb3bf9b5cc237b9d84c8d0e6c3db1915e46dbbb26ae4"
+hash = "3aec768c00b17d0fd21a24e6b8cf60da12a92b0cd93006ddb2ababfa02d410a9"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "4eefd588f809fb16f4a187676d72ef3283b7bc9229c578c7d3484224264ab18c"
+hash = "16e9344094b1b75aedb245989d4ee93d95d22b02fbc32903f5fc259f52be22cd"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"
@@ -180,11 +180,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-<<<<<<< HEAD
-hash = "ae8ee7f6a6fd84de6aa826bc720d304e1c19312a3c5dcb818f65dea1e1ffed1b"
-=======
-hash = "81d402b19fda3e8ec0617dca059d93822ec11b59665dad91f31ae800acb8274b"
->>>>>>> 16658b754d9728c4f14b23c45160d77d6a12374d
+hash = "abedecb0f0cb3592660e510347c7c171b7091bc394a04496b456711669281dc7"
 metafile = true
 
 [[files]]
@@ -229,11 +225,7 @@ metafile = true
 
 [[files]]
 file = "mods/beans-backpacks.pw.toml"
-<<<<<<< HEAD
-hash = "bf6595af24f36ef863de1c6fb86c17354969ef3593e7ee7edbef6d4f78797640"
-=======
 hash = "0c68986fde035469f420282017e7d95471d1d6a45e2e903208a9258bdffdc660"
->>>>>>> 16658b754d9728c4f14b23c45160d77d6a12374d
 metafile = true
 
 [[files]]
@@ -257,11 +249,6 @@ hash = "5f53eb8d272bfec2c6f58d6d744397b8152d7561a370f1d6e7e1e495fc4a1e7a"
 metafile = true
 
 [[files]]
-file = "mods/bobby.pw.toml"
-hash = "628ca822826f31018f97293b673e09defe9bc46616a7636bbd4a3b51ee4c9949"
-metafile = true
-
-[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "d12e1ffd08b9f26a5ad78dabdc9a4a2212ca4058dd9d6347a716bd5e25139dae"
 metafile = true
@@ -269,11 +256,6 @@ metafile = true
 [[files]]
 file = "mods/brewin-and-chewin-fabric.pw.toml"
 hash = "7c198cb527e6c7c0d8f239e2880f167edc414d202a3686142a558415a8cd00a2"
-metafile = true
-
-[[files]]
-file = "mods/c2me-fabric.pw.toml"
-hash = "5afe4e900b83aa83109d0c845df28e9695d8e3639518b0f08169a547f0e3682b"
 metafile = true
 
 [[files]]
@@ -488,7 +470,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "a856296531bab559c7dbe061827078e206b9cf194be3be618c462c62ab4fd841"
+hash = "d74850aaf1ed5a53805d523aa2b624f58c43813446be0b6c066a599c80d704e6"
 metafile = true
 
 [[files]]
@@ -629,14 +611,11 @@ metafile = true
 [[files]]
 file = "mods/konkrete-fabric.pw.toml"
 hash = "2895ab3b454293884e288a125bba2fbf4135475573c345ef919d56f2ad91419c"
-<<<<<<< HEAD
-=======
 metafile = true
 
 [[files]]
 file = "mods/konkrete.pw.toml"
 hash = "b0487d5437a636e61b353c70699994de1fd1aca903853d9366860cbbcfca5fd2"
->>>>>>> 16658b754d9728c4f14b23c45160d77d6a12374d
 metafile = true
 
 [[files]]
@@ -741,11 +720,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-<<<<<<< HEAD
-hash = "40708f8d3d84c9a7e0311c234423cefd8bc0374b5d6363211e0da95f63c3b215"
-=======
-hash = "3214d2ab88163068603c56609c2b7ac9f8d87b719f6da8c96ff906164dac8353"
->>>>>>> 16658b754d9728c4f14b23c45160d77d6a12374d
+hash = "50494c04a20e65d378e519e171e5284a082b268a6248f15e7804d4677fa5fa94"
 metafile = true
 
 [[files]]
@@ -801,11 +776,6 @@ metafile = true
 [[files]]
 file = "mods/numeral-ping.pw.toml"
 hash = "302fd17aa449bfa848e2460ebd01dfb2862c815bd9403548f57155b7dde47f9b"
-metafile = true
-
-[[files]]
-file = "mods/nvidium.pw.toml"
-hash = "07dd8775324c01058896b4572e23a1ca1c355186cc501c61fc68e1151c5e177c"
 metafile = true
 
 [[files]]
@@ -874,15 +844,6 @@ hash = "1fe2b3aa3fb54a4c449935c7cd74c8a3af1a342e6974bf6154916908ad861d1f"
 metafile = true
 
 [[files]]
-file = "mods/selene.pw.toml"
-<<<<<<< HEAD
-hash = "0e6e0562cc3b82901f109d7f7a0e893d5f7c906f2193891fd0f6289cccb0569e"
-=======
-hash = "8159a046f8ea934f1983bdad275d5cb867ce93cbb503b83f170233687dd1ab29"
->>>>>>> 16658b754d9728c4f14b23c45160d77d6a12374d
-metafile = true
-
-[[files]]
 file = "mods/simple-copper-pipes.pw.toml"
 hash = "bb57d8a6c0f2ec81e97915c00affaa644415b1d41f897d23a4972d0e9a2d5732"
 metafile = true
@@ -894,7 +855,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "579bf4dbc7e18632c66b74a220a49ca7714b084d6f0a2b9100bf0530af278288"
+hash = "7e5fa206c5818b4366f14c9fb6f8953ac0242032a0d02b368853e71ded91ac22"
 metafile = true
 
 [[files]]
@@ -1025,11 +986,6 @@ metafile = true
 [[files]]
 file = "mods/vectorientation.pw.toml"
 hash = "572010387dd87535b8af43b073879db82b8d5bea4141ff52536f38d96edea97d"
-metafile = true
-
-[[files]]
-file = "mods/viewboboptions.pw.toml"
-hash = "ee7f198461eabd405b26cc9837eaacf01a27a39ce7ba83ea79eec6a3e34ff2f4"
 metafile = true
 
 [[files]]
