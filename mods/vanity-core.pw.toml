@@ -1,13 +1,13 @@
 name = "Vanity: Core"
-filename = "vanity-fabric-2.0.3.jar"
+filename = "vanity-fabric-2.1.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/kEcg2xYc/versions/1ZjYPj7B/vanity-fabric-2.0.3.jar"
+url = "https://cdn.modrinth.com/data/kEcg2xYc/versions/JaqGYZ32/vanity-fabric-2.1.1.jar"
 hash-format = "sha1"
-hash = "53a7aec52b3d5e264aa1c9b3477e695974e25573"
+hash = "f9e7b6af3e54e2fb21dd10ad9353fce43a94017f"
 
 [update]
 [update.modrinth]
 mod-id = "kEcg2xYc"
-version = "1ZjYPj7B"
+version = "JaqGYZ32"
