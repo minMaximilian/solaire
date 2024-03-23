@@ -121,16 +121,88 @@ file = "kubejs/config/common.properties"
 hash = "dd2ba9072a55847ebd9d18eeff499715728efe51901b0aadf27ee4558d6abb36"
 
 [[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/mossy_conversion/bricks.json"
+hash = "ff85c3a40ad63c2cf4ee331fec1d2e265827c68f8b76309b64b8c98d13abdec0"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/mossy_conversion/cobbled_travertine"
+hash = "09b72eef19f71db5bca9e3c2f9c18a3412992dccacc4feba21792e508b73a1ff"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/mossy_conversion/cobblestone.json"
+hash = "ab9a38d144ddf9dca6e027ec85d01f069c16ea2079bf42f44523cd31209b98e0"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/mossy_conversion/stone_bricks.json"
+hash = "d2ae3fa6d6c5a39023820511206f38f7c8904ce472d9a15f1edb25a6e45dc5d2"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/mossy_conversion/travertine_bricks.json"
+hash = "b67b9bdcfc2523974bb53f73872a70fc0264d3454cec24db5576de2edae10d29"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/packing/amethyst_block.json"
+hash = "ee6edf59bd001dd6c118dd4d4b8c8e3ff78ddaf12d92cbd3cfcca20bd4e80b7f"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/packing/bone_block.json"
+hash = "6c316cf9195829a7bd60a9260ac3f61f3f03590713cbfdca105db1b681252f64"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/packing/copper_block.json"
+hash = "075de18e1ce03d3d68e05a27476d514f4d6d0f7320619f58c4c2e792527af19a"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/packing/dried_kelp_block.json"
+hash = "a6416849c9c061439527dad8d234ab912dbafdf4e28d46d2c99fe54d7cc479c5"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/packing/moss_block.json"
+hash = "4d4132bac99ba994056e6fce75f4901658297e9f9834241343cee1ce4abc0970"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/packing/packed_ice.json"
+hash = "ed8b591f663d80e4add4df418f818dd06cdeabc132563d21c9ed4d3a11efad10"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/pressing/paper.json"
+hash = "e231d8cdbb5fc728bc5ed4ddcf014426d91a5bdc0d0582c36320fb61a8ccf414"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/pressing/path_from_dirt.json"
+hash = "532afb2be17dff289b98eef2d09f7c297652110c38cd3356a73cd0cffa5b5610"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/block_crushing/pressing/path_from_grass.json"
+hash = "2e2f428fc05aeced34c4dc4c5c7e6d45002e987f2906ce020f81e4506009fc34"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/dripstone_dripping/wet_sponge.json"
+hash = "ef6d8864c064e1eb5a97697abbfc1a181868cc737b5c591f605ba99399ace571"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/item_burning/charcoal.json"
+hash = "741d1d9bd9f7ce9f1eae64dcec9ae88ba163d006931c045e992f1f3618c9b68f"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/item_in_block/water_cauldron_pickup.json"
+hash = "bca96d82a42df51bba50447106c2229cbdd9ff43fa789d0f109362e4f889659e"
+
+[[files]]
+file = "kubejs/data/solaire/recipes/item_in_block/water_pickup.json"
+hash = "6c8da7926662a2b55ec0582a9f950c95bc65d12c1e9d18716f8c5f9c3a26188b"
+
+[[files]]
 file = "kubejs/server_scripts/helpers.js"
 hash = "05f8e64c0db521d5bd23b8cc25e0f6dbfdfcfbb78362a862d3f246b2796ae8a6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "3b2d2887c64ce01c4ec6a6f473919f7aa3882adaa3d4127f2448abb14f711565"
+hash = "9ed4cdcb438ab42372a519237dccbb91df7f556c1b39b1a87045ea7e1c90122b"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "3aec768c00b17d0fd21a24e6b8cf60da12a92b0cd93006ddb2ababfa02d410a9"
+hash = "e81892227b8ca6fbf04af7a868685eb5c2f6b5cfe44ee7d937af4dfbcff47e7a"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -391,6 +463,11 @@ metafile = true
 [[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "ec5f0ed9e8d3b79ea61f7c79127b5f113e23ac96e92f5ba409084c8d0ab7da5e"
+metafile = true
+
+[[files]]
+file = "mods/dye-depot.pw.toml"
+hash = "493a9962e81574ac95eb8046b5498e7d1d0668bc1964c6b1b496c4803de47f9c"
 metafile = true
 
 [[files]]

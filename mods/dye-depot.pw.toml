@@ -1,0 +1,13 @@
+name = "Dye Depot"
+filename = "dye_depot-1.0.2-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dl88rsIq/versions/ldJ6vsnR/dye_depot-1.0.2-fabric.jar"
+hash-format = "sha1"
+hash = "710cf2027240d9e06f4fd5656d7d31b7e2e3ced0"
+
+[update]
+[update.modrinth]
+mod-id = "dl88rsIq"
+version = "ldJ6vsnR"
