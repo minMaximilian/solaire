@@ -194,27 +194,27 @@ hash = "6c8da7926662a2b55ec0582a9f950c95bc65d12c1e9d18716f8c5f9c3a26188b"
 
 [[files]]
 file = "kubejs/server_scripts/helpers.js"
-hash = "05f8e64c0db521d5bd23b8cc25e0f6dbfdfcfbb78362a862d3f246b2796ae8a6"
+hash = "54c81258bdc8e82d6d513c83b736f6703438e4ab22e2e03b3eba628363d33670"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "9ed4cdcb438ab42372a519237dccbb91df7f556c1b39b1a87045ea7e1c90122b"
+hash = "d713b265593cb9eddf5baef91201dfeb0ec0dd62b91660055ca74145f78c991d"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "e81892227b8ca6fbf04af7a868685eb5c2f6b5cfe44ee7d937af4dfbcff47e7a"
+hash = "3f333859bc3c14d42306ff357c4c4eb02a65a9143ac3c40a881442690fb03436"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "16e9344094b1b75aedb245989d4ee93d95d22b02fbc32903f5fc259f52be22cd"
+hash = "fccb7afb7fac4d6b2c91790513be98a99feb97b787a1da067fd61d6c172d4e11"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"
-hash = "3027e09dec9eb04f939644fd2cdae2180c39569ce998a85be8fe8a65c30547db"
+hash = "ccfef0428daf8ad4065cbf330bb91ceaf41de85145dbfbd2224d18c2bb62aec1"
 
 [[files]]
 file = "kubejs/startup_scripts/modify_script.js"
-hash = "4d35bec0a02c0c3091d8c35baf281a46be1575dc2cae475f7ce2185d59424e84"
+hash = "6a6beb69a9b228fc4e856f7be0b21c2705691a637e4527f374e519943c246cc9"
 
 [[files]]
 file = "kubejs/startup_scripts/modname.js"
@@ -606,6 +606,11 @@ hash = "01e047ce12403a657fc6669ff521a0d43cdc849aaccd217b7a055c58197cea99"
 metafile = true
 
 [[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "2dded9237b5fbf729ca1947780e8de50bfaaad8b95371370e5263620122bad20"
+metafile = true
+
+[[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "6397162c78c64d7e9130223c3a4094ea680df41a4d12f11a2c7fbfb6a73da202"
 metafile = true
@@ -918,6 +923,11 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "1fe2b3aa3fb54a4c449935c7cd74c8a3af1a342e6974bf6154916908ad861d1f"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
+hash = "9e2a65ce55ded4009f8c9db20892415a800cc859a943df5055a75e62edd7d9e3"
 metafile = true
 
 [[files]]
