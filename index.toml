@@ -34,7 +34,7 @@ hash = "596d0d57a309802ee0079397ab255cd31957b3b5a947aee5a8134bf9d94e1e0f"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "49c5a9e10de6999e465bc739f5c94a9effb37bdf66ef01f3d68dd7ac59137e8c"
+hash = "a6aef1bf01bef9697ffded19c617b17e619555cfc57ee7b1c6acaca30e5ceebb"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -118,23 +118,23 @@ hash = "9726bae234cf17f2d2f846ce21b90008c80e8bea9a6f2c6ce606223acbe968ca"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/rubber_block.png"
-hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
+hash = "ce6b65edcadc33c292d24fbf36f94c58d2f73ec889db3cdaa75fb7798b3fe7c2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/andesite_compound.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+hash = "f3549863ee11924f5db82bbda91aa9e2df881d154a4c3a73eca622c2421a96cb"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/incomplete_brass_casing.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+hash = "acb73437a00cbd3ae92c56a6a8dfe957499c668d031d78851bf5abb752671503"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/incomplete_copper_casing.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+hash = "0205e49ed24ad2a02b2ec7a016f0d02a57534aa4b602981bcac3077271601c2c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/rubber.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+hash = "720c3169585dca1c7aaa560e32ae4291a1a56f2c7622a7b8c9506f0ced81b7eb"
 
 [[files]]
 file = "kubejs/assets/kubejs/tips/code-java.json"
