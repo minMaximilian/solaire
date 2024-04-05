@@ -1,0 +1,12 @@
+enable_system_global_packs = true
+
+[resourcepacks]
+required = [
+    "resourcepacks/"
+]
+
+[datapacks]
+required = [
+    "resourcepacks/",
+    "globalpacks/"
+]

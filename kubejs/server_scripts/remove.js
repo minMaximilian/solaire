@@ -1,52 +1,98 @@
-ServerEvents.recipes(recipes => {
-	/**
-	 *
-	 * @param {String} item
-	 */
-	let remove = item => {
-		recipes.remove({ output: item })
-		recipes.replaceInput({ input: item }, item, MC('barrier'))
-	}
+ServerEvents.recipes((event) => {
+  // OUTPUT
+  [
+    ETC('dice'),
+    ETC('raw_bismuth'),
+    ETC('nether_bismuth_ore'),
+    ETC('turtle_raft'),
+    BP('metal_backpack'),
+    BP('upgraded_backpack'),
+    C('hose_pulley'),
+    C('spout'),
+    C('andesite_funnel'),
+    C('brass_funnel'),
+    C('andesite_tunnel'),
+    C('brass_tunnel'),
+    C('brass_hand'),
+    C('elevator_pulley'),
+    C('belt_connector'),
+    H('smeltery_controller'),
+    H('foundry_controller'),
+    H('scorched_brick'),
+    H('scorched_stone'),
+    H('scorched_road'),
+    H('scorched_bricks'),
+    H('chiseled_scorched_bricks'),
+    H('scorched_ladder'),
+    H('scorched_glass'),
+    H('scorched_glass_pane'),
+    H('scorched_drain'),
+    H('scorched_duct'),
+    H('scorched_chute'),
+    H('scorched_fuel_tank'),
+    H('scorched_fuel_gauge'),
+    H('scorched_basin'),
+    H('scorched_table'),
+    H('polished_scorched_stone'),
+    H('fantastic_foundry'),
+    C('sturdy_sheet'),
+  ].forEach((recipe) => {
+    event.remove({ output: recipe });
+  });
 
-	remove(ETC('dice'))
-	remove(ETC('raw_bismuth'))
-	remove(ETC('nether_bismuth_ore'))
-	remove(ETC('turtle_raft'))
-	remove(NTP('plant_fiber'))[
-		('flint', 'iron', 'gold', 'diamond', 'netherite')
-	].map(material => remove(NTP(`${material}_knife`)))
-	remove(BP('metal_backpack'))
-	remove(BP('upgraded_backpack'))
-	// Once steam n' rails is added
-	// remove(R("track_phantom"))
-	// remove(R("track_ender_narrow"))
-	// remove(R("track_ender"))
-	// remove(R("track_ender_wide"))
+  // ID
+  [
+    C('crafting/appliances/slime_ball'),
+    FD('flint_knife'),
+    S('raw_magnetite_from_nuggets'),
+  ].forEach((recipe) => {
+    event.remove({ id: recipe });
+  });
 
-	// Remove recipes for all vanilla tools (stone and wooden tools don't have another recipe)
-	const tools = ['shovel', 'pickaxe', 'axe', 'hoe', 'sword']
-	const materials = [
-		'wooden',
-		'stone',
-		'iron',
-		'golden',
-		'diamond',
-		'netherite'
-	]
+  // CUSTOM
+  [
+    {
+      output: C('brass_casing'),
+      type: C('item_application'),
+    },
+    {
+      output: C('copper_casing'),
+      type: C('item_application'),
+    },
+    {
+      output: C('andesite_alloy'),
+      input: MC('andesite'),
+    },
+    {
+      output: S('raw_iron_nugget'),
+      type: C('splashing'),
+    },
+    {
+      output: S('raw_gold_nugget'),
+      type: C('splashing'),
+    },
+    {
+      output: C('brass_ingot'),
+      type: C('mixing'),
+    },
+  ].forEach((recipe) => {
+    event.remove(recipe);
+  });
 
-	materials.map(material =>
-		tools.map(tool => recipes.remove({ output: MC(`${material}_${tool}`) }))
-	)
+  // Remove recipes for all vanilla tools (stone and wooden tools don't have another recipe)
+  tool_tiers.map((material) =>
+    tools.map((tool) => event.remove({ output: MC(`${material}_${tool}`) }))
+  );
 
-	// Remove recipes for making raw ores from their nuggets
-	const raw_ores = ['iron', 'gold', 'copper', 'zinc', 'magnetite']
+  armour_tiers.map((material) =>
+    armour.map((piece) => event.remove({ output: MC(`${material}_${piece}`) }))
+  );
 
-	raw_ores.map(raw_ore => {
-		recipes.remove({ id: S(`raw_${raw_ore}`) })
-		recipes.remove({ id: S(`raw_${raw_ore}_nugget`) })
-	})
-	recipes.remove({ id: S('raw_magnetite_from_nuggets') }) // cause recipe ids dumb
+  // Remove recipes for making raw ores from their nuggets
+  const raw_ores = ['iron', 'gold', 'copper', 'zinc', 'magnetite'];
 
-	// Remove dough -> slime recipe
-	recipes.remove({ id: C('crafting/appliances/slime_ball') })
-})
+  raw_ores.map((raw_ore) => {
+    event.remove({ id: S(`raw_${raw_ore}`) });
+    event.remove({ id: S(`raw_${raw_ore}_nugget`) });
+  });
+});

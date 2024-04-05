@@ -1,0 +1,21 @@
+{
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "semi": true,
+        "endOfLine": "lf"
+      }
+    }
+  ]
+}

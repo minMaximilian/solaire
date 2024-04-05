@@ -1,13 +1,13 @@
 name = "BrushUp!++"
-filename = "BrushUp!++ v1.0.2.zip"
+filename = "BrushUp!++ v1.0.3.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/fVuP93JH/versions/y3izBXzk/BrushUp%21%2B%2B%20v1.0.2.zip"
+url = "https://cdn.modrinth.com/data/fVuP93JH/versions/NRCiUNwK/BrushUp%21%2B%2B%20v1.0.3.zip"
 hash-format = "sha1"
-hash = "eb64f729985f966df87b717aef48672b681b0626"
+hash = "6a7925c2d878db82989a746d85add487b8cd0b5b"
 
 [update]
 [update.modrinth]
 mod-id = "fVuP93JH"
-version = "y3izBXzk"
+version = "NRCiUNwK"

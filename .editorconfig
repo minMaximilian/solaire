@@ -1,9 +1,0 @@
-[*]
-end_of_line = lf
-indent_style = space
-
-[*.js]
-indent_size = 2
-
-[*.yaml]
-indent_size = 2
