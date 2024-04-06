@@ -201,18 +201,6 @@ ServerEvents.recipes((event) => {
     .transitionalItem(KJ('incomplete_copper_casing'))
     .loops(3);
 
-  event.recipes.createMilling(C('powdered_obsidian'), [MC('obsidian')]);
-
-  event.recipes.createItemApplication(C('railway_casing'), [
-    CON('stripped_logs'),
-    C('sturdy_sheet'),
-  ]);
-
-  event.recipes.createItemApplication(C('railway_casing'), [
-    CON('stripped_wood'),
-    C('sturdy_sheet'),
-  ]);
-
   event.recipes
     .createSequencedAssembly([C('brass_casing')], C('copper_casing'), [
       event.recipes.createDeploying(KJ('incomplete_brass_casing'), [
@@ -240,6 +228,18 @@ ServerEvents.recipes((event) => {
     ])
     .transitionalItem(C('unprocessed_obsidian_sheet'))
     .loops(2);
+
+  event.recipes.createMilling(C('powdered_obsidian'), [MC('obsidian')]);
+
+  event.recipes.createItemApplication(C('railway_casing'), [
+    CON('stripped_logs'),
+    C('sturdy_sheet'),
+  ]);
+
+  event.recipes.createItemApplication(C('railway_casing'), [
+    CON('stripped_wood'),
+    C('sturdy_sheet'),
+  ]);
 
   event.recipes.createMixing(KJ('rubber'), [
     MC('bone_meal'),

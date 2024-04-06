@@ -34,7 +34,7 @@ hash = "596d0d57a309802ee0079397ab255cd31957b3b5a947aee5a8134bf9d94e1e0f"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "a6aef1bf01bef9697ffded19c617b17e619555cfc57ee7b1c6acaca30e5ceebb"
+hash = "f517b45c706bb08d85c8e992ff564a082e68343f4e4db8a5645bfc412a37a2ce"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -153,6 +153,10 @@ file = "kubejs/config/common.properties"
 hash = "dd2ba9072a55847ebd9d18eeff499715728efe51901b0aadf27ee4558d6abb36"
 
 [[files]]
+file = "kubejs/server_scripts/chests.js"
+hash = "05a13eaaca865c2e60b3b8af2c8aded413250c5fff2f9c698e14ec967d6d154e"
+
+[[files]]
 file = "kubejs/server_scripts/create_compat.js"
 hash = "5bf2bcc07bdc382a8e578815a26601f84f90d95f05b569489bface31a8b5dd0a"
 
@@ -166,11 +170,15 @@ hash = "b475113b8e15bfb29fa0a133c362e285b65ecfbcb9b65442dedc470bd77d1ad8"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "2d2d1a16c2e7a64a2bc3b4de386f011586dcc3812595775a79fb13e6097f9292"
+hash = "1cdddfde21da1d56f237b31cdbde673a63efd5de0d1ec150416a314b0a9b233b"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
 hash = "3ca96f380bac0dd961ba28a0a9fa123993bf3d1ac3d6de3b47c0bdb2b15d8a1d"
+
+[[files]]
+file = "kubejs/server_scripts/test.js"
+hash = "ef1dc57c871d50bd6aa4522a17de4ee57ffbab6cbe0930849f1e91ffde94c4b0"
 
 [[files]]
 file = "kubejs/startup_scripts/block.js"
@@ -202,7 +210,7 @@ hash = "c308f9051aaebcd9f9bd16ac2b24247a69cb13ffe912aab19ee29a9e93aa5b1c"
 
 [[files]]
 file = "kubejs/startup_scripts/worldEventsRemove.js"
-hash = "06aa6ade6ea08725ec61c77a8609e33d961565dab7cd404a93d9e0279e6bf413"
+hash = "0a480343ff409fcd79cb40f36de3417356ab0775f751ead02dba0acb7a92f23d"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -292,6 +300,11 @@ metafile = true
 [[files]]
 file = "mods/bluemap.pw.toml"
 hash = "824040611c5e53c01a4b10b25564588f548be4ba522b43f8a56c5deb4d5e845a"
+metafile = true
+
+[[files]]
+file = "mods/bodies-bodies.pw.toml"
+hash = "a2adc95904d84c8d63c964f965827a1a34b413670a8b8deef1029ced76e93818"
 metafile = true
 
 [[files]]
@@ -387,6 +400,11 @@ metafile = true
 [[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "cc457369350325e226471c9b070f7ef3e47b6ea8126e8c7c28622b2960ea3f2b"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails.pw.toml"
+hash = "2250d424633babae3b3f240382111fe0588e30031421fb7d6ac4f3e9d27be18c"
 metafile = true
 
 [[files]]
@@ -490,11 +508,6 @@ hash = "32aac801838ce93ccca60ec99f04293546985c8bc2e2d19fba46953e66a3f53e"
 metafile = true
 
 [[files]]
-file = "mods/etcetera.pw.toml"
-hash = "9ef35eeb12ed77324c70ec72c058578f250aafd41210d92a2f215af3382191c2"
-metafile = true
-
-[[files]]
 file = "mods/every-compat.pw.toml"
 hash = "18792af99e42a6755a00f909538e5bdd092a7b20ab371906e07c67ef39717e58"
 metafile = true
@@ -552,6 +565,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "39a6a39433b1b104bfafafcd60a8171f866daa2ebefffd64df822d0e69288e3a"
+metafile = true
+
+[[files]]
+file = "mods/figura.pw.toml"
+hash = "75ffe202cd8947bbbb748a46bcd9d1cfb55d34a2fc95909b3001ac8433625fb7"
 metafile = true
 
 [[files]]
@@ -905,11 +923,6 @@ hash = "72ce52db32f382db85056fea1dfe67959cd709c2b4806704520c0ff760584fd1"
 metafile = true
 
 [[files]]
-file = "mods/simple-copper-pipes.pw.toml"
-hash = "bb57d8a6c0f2ec81e97915c00affaa644415b1d41f897d23a4972d0e9a2d5732"
-metafile = true
-
-[[files]]
 file = "mods/simple-discord-rich-presence.pw.toml"
 hash = "bcd72df4895f3acc6623bfb44e72845f7e88d004a44ed8c492c42d844e3cd892"
 metafile = true
@@ -1037,16 +1050,6 @@ metafile = true
 [[files]]
 file = "mods/unloaded-activity.pw.toml"
 hash = "f57863fce099ada23eff10706c7a0dbed7487860a3c1f0858961af7541e946cd"
-metafile = true
-
-[[files]]
-file = "mods/vanity-aesthetic-armory.pw.toml"
-hash = "82b40f2e2b46041cf62cc7b3701d1d99b0fbed20671653181d19b45681d6fc95"
-metafile = true
-
-[[files]]
-file = "mods/vanity-core.pw.toml"
-hash = "2f39d471faed1a99717f124871ea06c628efe31d8c6952d7cbf1c24e062cd541"
 metafile = true
 
 [[files]]

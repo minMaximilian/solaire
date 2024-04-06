@@ -132,6 +132,7 @@ BlockEvents.modification((e) => {
     NS('stripped_saxual_wood'),
     NS('stripped_larch_log'),
     NS('stripped_larch_wood'),
+    S('conk_fungus'),
   ];
 
   logs.forEach((log) => {

@@ -1,11 +1,7 @@
 ServerEvents.recipes((event) => {
   // OUTPUT
   [
-    ETC('dice'),
     S('rope_ladder'),
-    ETC('raw_bismuth'),
-    ETC('nether_bismuth_ore'),
-    ETC('turtle_raft'),
     BP('metal_backpack'),
     BP('upgraded_backpack'),
     C('hose_pulley'),
