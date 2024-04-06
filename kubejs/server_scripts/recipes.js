@@ -3,55 +3,188 @@ ServerEvents.recipes((event) => {
 
   event.replaceOutput({ output: SP('rope') }, SP('rope'), FD('rope'));
 
-  event.remove(S('rope_ladder'));
-
-  event.shaped(S('rope_ladder', 4), ['R R', 'SSS', 'R R'], {
-    R: FD('rope'),
-    S: MC('stick'),
-  });
-
-  event.shaped(S('rope_ladder', 4), ['R R', 'SSS', 'R R'], {
-    R: S('tangle_roots'),
-    S: MC('stick'),
-  });
-
-  event.shaped(FD('flint_knife'), ['F', 'S'], {
-    F: KJ('#flint'),
-    S: MC('stick'),
-  });
-
-  event.shaped(MC('stone_axe'), ['FT', ' S'], {
-    F: KJ('#flint'),
-    T: FD('straw'),
-    S: MC('stick'),
-  });
-
-  event.shaped(MC('stone_shovel'), ['F ', 'ST'], {
-    F: KJ('#flint'),
-    T: FD('straw'),
-    S: MC('stick'),
-  });
-
-  event.shaped(MC('stone_pickaxe'), ['F ', 'TS'], {
-    F: KJ('#flint'),
-    T: FD('straw'),
-    S: MC('stick'),
-  });
-
-  event.shaped(MC('iron_helmet'), ['SSS', 'S S'], {
-    S: C('iron_sheet'),
-  });
-
-  event.shaped(MC('iron_chestplate'), ['S S', 'SSS', 'SSS'], {
-    S: C('iron_sheet'),
-  });
-
-  event.shaped(MC('iron_leggings'), ['SSS', 'S S', 'S S'], {
-    S: C('iron_sheet'),
-  });
-
-  event.shaped(MC('iron_boots'), ['S S', 'S S'], {
-    S: C('iron_sheet'),
+  [
+    {
+      output: KJ('andesite_compound'),
+      pattern: ['BBB', 'AAA', 'CCC'],
+      key: {
+        A: C('zinc_nugget'),
+        B: MC('andesite'),
+        C: MC('clay_ball'),
+      },
+    },
+    {
+      output: KJ('andesite_compound'),
+      pattern: ['BBB', 'AAA', 'CCC'],
+      key: {
+        A: MC('iron_nugget'),
+        B: MC('andesite'),
+        C: MC('clay_ball'),
+      },
+    },
+    {
+      output: KJ('rubber_block'),
+      pattern: ['RRR', 'RRR', 'RRR'],
+      key: {
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('hose_pulley'),
+      pattern: ['C', 'R', 'S'],
+      key: {
+        C: C('copper_casing'),
+        R: KJ('rubber_block'),
+        S: C('copper_sheet'),
+      },
+    },
+    {
+      output: C('spout'),
+      pattern: ['C', 'R'],
+      key: {
+        C: C('copper_casing'),
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('andesite_funnel'),
+      pattern: ['A', 'R'],
+      key: {
+        A: C('andesite_alloy'),
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('brass_funnel'),
+      pattern: ['T', 'B', 'R'],
+      key: {
+        T: C('electron_tube'),
+        B: C('brass_ingot'),
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('andesite_tunnel'),
+      pattern: ['AA', 'RR'],
+      key: {
+        A: C('andesite_alloy'),
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('brass_tunnel'),
+      pattern: ['T ', 'BB', 'RR'],
+      key: {
+        T: C('electron_tube'),
+        B: C('brass_ingot'),
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('brass_hand'),
+      pattern: [' A ', 'RRR', ' R '],
+      key: {
+        A: C('andesite_alloy'),
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: C('elevator_pulley'),
+      pattern: ['C', 'R', 'S'],
+      key: {
+        C: C('brass_casing'),
+        R: KJ('rubber_block'),
+        S: C('iron_sheet'),
+      },
+    },
+    {
+      output: C('belt_connector', 2),
+      pattern: ['RRR', 'RRR'],
+      key: {
+        R: KJ('rubber'),
+      },
+    },
+    {
+      output: S('rope_ladder', 4),
+      pattern: ['R R', 'SSS', 'R R'],
+      key: {
+        R: FD('rope'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: S('rope_ladder', 4),
+      pattern: ['R R', 'SSS', 'R R'],
+      key: {
+        R: S('tangle_roots'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: FD('flint_knife'),
+      pattern: ['F', 'S'],
+      key: {
+        F: KJ('#flint'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: MC('stone_axe'),
+      pattern: ['FT', ' S'],
+      key: {
+        F: KJ('#flint'),
+        T: FD('straw'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: MC('stone_shovel'),
+      pattern: ['F ', 'ST'],
+      key: {
+        F: KJ('#flint'),
+        T: FD('straw'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: MC('stone_pickaxe'),
+      pattern: ['F ', 'TS'],
+      key: {
+        F: KJ('#flint'),
+        T: FD('straw'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: MC('iron_helmet'),
+      pattern: ['SSS', 'S S'],
+      key: {
+        S: C('iron_sheet'),
+      },
+    },
+    {
+      output: MC('iron_chestplate'),
+      pattern: ['S S', 'SSS', 'SSS'],
+      key: {
+        S: C('iron_sheet'),
+      },
+    },
+    {
+      output: MC('iron_leggings'),
+      pattern: ['SSS', 'S S', 'S S'],
+      key: {
+        S: C('iron_sheet'),
+      },
+    },
+    {
+      output: MC('iron_boots'),
+      pattern: ['S S', 'S S'],
+      key: {
+        S: C('iron_sheet'),
+      },
+    },
+  ].forEach((recipe) => {
+    event.shaped(recipe.output, recipe.pattern, recipe.key);
   });
 
   event.recipes
@@ -69,6 +202,16 @@ ServerEvents.recipes((event) => {
     .loops(3);
 
   event.recipes.createMilling(C('powdered_obsidian'), [MC('obsidian')]);
+
+  event.recipes.createItemApplication(C('railway_casing'), [
+    CON('stripped_logs'),
+    C('sturdy_sheet'),
+  ]);
+
+  event.recipes.createItemApplication(C('railway_casing'), [
+    CON('stripped_wood'),
+    C('sturdy_sheet'),
+  ]);
 
   event.recipes
     .createSequencedAssembly([C('brass_casing')], C('copper_casing'), [
@@ -108,70 +251,6 @@ ServerEvents.recipes((event) => {
     MC('dried_kelp'),
     MC('dried_kelp'),
   ]);
-
-  event.shaped(KJ('andesite_compound'), ['BBB', 'AAA', 'CCC'], {
-    A: C('zinc_nugget'),
-    B: MC('andesite'),
-    C: MC('clay_ball'),
-  });
-
-  event.shaped(KJ('andesite_compound'), ['BBB', 'AAA', 'CCC'], {
-    A: MC('iron_nugget'),
-    B: MC('andesite'),
-    C: MC('clay_ball'),
-  });
-
-  event.shaped(KJ('rubber_block'), ['RRR', 'RRR', 'RRR'], {
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('hose_pulley'), ['C', 'R', 'S'], {
-    C: C('copper_casing'),
-    R: KJ('rubber_block'),
-    S: C('copper_sheet'),
-  });
-
-  event.shaped(C('spout'), ['C', 'R'], {
-    C: C('copper_casing'),
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('andesite_funnel'), ['A', 'R'], {
-    A: C('andesite_alloy'),
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('brass_funnel'), ['T', 'B', 'R'], {
-    T: C('electron_tube'),
-    B: C('brass_ingot'),
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('andesite_tunnel'), ['AA', 'RR'], {
-    A: C('andesite_alloy'),
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('brass_tunnel'), ['T ', 'BB', 'RR'], {
-    T: C('electron_tube'),
-    B: C('brass_ingot'),
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('brass_hand'), [' A ', 'RRR', ' R '], {
-    A: C('andesite_alloy'),
-    R: KJ('rubber'),
-  });
-
-  event.shaped(C('elevator_pulley'), ['C', 'R', 'S'], {
-    C: C('brass_casing'),
-    R: KJ('rubber_block'),
-    S: C('iron_sheet'),
-  });
-
-  event.shaped(C('belt_connector', 2), ['RRR', 'RRR'], {
-    R: KJ('rubber'),
-  });
 
   event.recipes
     .createMixing(Fluid.of(H('molten_brass'), 18000), [

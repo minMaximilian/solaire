@@ -2,6 +2,7 @@ ServerEvents.recipes((event) => {
   // OUTPUT
   [
     ETC('dice'),
+    S('rope_ladder'),
     ETC('raw_bismuth'),
     ETC('nether_bismuth_ore'),
     ETC('turtle_raft'),
@@ -57,6 +58,10 @@ ServerEvents.recipes((event) => {
     },
     {
       output: C('copper_casing'),
+      type: C('item_application'),
+    },
+    {
+      output: C('railway_casing'),
       type: C('item_application'),
     },
     {

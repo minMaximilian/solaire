@@ -162,11 +162,11 @@ hash = "f633eb06d5e1f7c6c7892d96c639e7e04c7b4c9041694f7ed5b7c4a62437b9dd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "977cc2522e733aadb98d26d0a65b13964236f06466d7d53045848e32cfdddefd"
+hash = "b475113b8e15bfb29fa0a133c362e285b65ecfbcb9b65442dedc470bd77d1ad8"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "82cfe8b2b41da09215bf081e76e6b62db713dfc313f6ed2514d4de0fbea2f19c"
+hash = "2d2d1a16c2e7a64a2bc3b4de386f011586dcc3812595775a79fb13e6097f9292"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -178,11 +178,11 @@ hash = "3ce662c8618badb64e945b382ae2b5021fb624b49da29b8813e377dd2f239ae8"
 
 [[files]]
 file = "kubejs/startup_scripts/blockModifications.js"
-hash = "8d6663ecabe677d706811ae50069031cd1de489dbde02b9d98f59c236a7f02de"
+hash = "f7a6b379806c20fcbd57f261052a8cfe9c954ab12bbbf085f12649bbe14e9c50"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"
-hash = "5764714284983cc8a00ba17dce2a876443a67116077f6e8292206ff4590ba599"
+hash = "5a5b4809848ec3d0b49199a94eb030b0675e1a9c2a845025119536642e5adf53"
 
 [[files]]
 file = "kubejs/startup_scripts/item.js"
@@ -237,11 +237,6 @@ metafile = true
 [[files]]
 file = "mods/amendments.pw.toml"
 hash = "fd0b983347938ccecb95ce80691b76d7016531e02c59733f1c47466821030189"
-metafile = true
-
-[[files]]
-file = "mods/another-furniture.pw.toml"
-hash = "525c8448074c4402b411c2b904eff4dae542834c649d13dc00475bd2546fe286"
 metafile = true
 
 [[files]]
@@ -382,6 +377,11 @@ metafile = true
 [[files]]
 file = "mods/couplings.pw.toml"
 hash = "47e796fa0168407d6bf12e3aac6cf29881960df43ed21f844ab34ac891ee0730"
+metafile = true
+
+[[files]]
+file = "mods/create-deco.pw.toml"
+hash = "95a0eea23fda83e653a91b2d90b4e71fd63f516739da28f27253cc66a7da1548"
 metafile = true
 
 [[files]]
@@ -705,11 +705,6 @@ hash = "c7e8c7d30f80fab35c6f1aee8cf66f7ebd3923fa43b4a52a1f9ae4b6fc34df3d"
 metafile = true
 
 [[files]]
-file = "mods/leaves-us-in-peace.pw.toml"
-hash = "c23753ee282f1be4a19fb7b90af9705f92043f36c6675028cae7a2ce8c24c609"
-metafile = true
-
-[[files]]
 file = "mods/legendary-tooltips.pw.toml"
 hash = "4c418d76137ed1a34686a7f667348c97b5f457b28ae1469152aa35f44c4e9a1f"
 metafile = true
@@ -932,6 +927,11 @@ metafile = true
 [[files]]
 file = "mods/sleep-warp.pw.toml"
 hash = "25c6c26c56658a11b6cdd930ba2403817c52718824033077615890a1d00ece32"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "8bc19b2297c704b501c34367b2c0f73adef7781d9099bd61becd62df5caea303"
 metafile = true
 
 [[files]]

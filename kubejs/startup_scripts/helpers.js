@@ -12,3 +12,4 @@ const H = (id, x) => MOD(`tconstruct`, id, x);
 const S = (id, x) => MOD(`spelunkery`, id, x);
 const ETC = (id, x) => MOD(`etcetera`, id, x);
 const DB = (id, x) => MOD('decorative_blocks', id, x);
+const NS = (id, x) => MOD('natures_spirit', id, x);
