@@ -232,12 +232,12 @@ ServerEvents.recipes((event) => {
   event.recipes.createMilling(C('powdered_obsidian'), [MC('obsidian')]);
 
   event.recipes.createItemApplication(C('railway_casing'), [
-    CON('stripped_logs'),
+    CON('#stripped_logs'),
     C('sturdy_sheet'),
   ]);
 
   event.recipes.createItemApplication(C('railway_casing'), [
-    CON('stripped_wood'),
+    CON('#stripped_wood'),
     C('sturdy_sheet'),
   ]);
 

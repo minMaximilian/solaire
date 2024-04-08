@@ -1,13 +1,16 @@
 name = ""
 author = "minMaximilian"
-version = "0.0.2"
+version = "0.0.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "bc12332c885a4f6ab615afa9c12c09b572d152822b1c3103e9bc6cfb91c397c8"
+hash = "fafa6f01c8a03b2ba3e80931e29bd65ab75a759b4b7b07334ce47658ab76d4f2"
 
 [versions]
 fabric = "0.15.7"
 minecraft = "1.20.1"
+
+[options]
+acceptable-game-versions = []
