@@ -1,0 +1,13 @@
+name = "Llama's Re-Wrench"
+filename = "Llama's Re-Wrench V1.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZZolC5et/versions/1yY9nTBA/Llama%27s%20Re-Wrench%20V1.0.zip"
+hash-format = "sha1"
+hash = "0c225d814ee74f242cddd7127113d136b14614f0"
+
+[update]
+[update.modrinth]
+mod-id = "ZZolC5et"
+version = "1yY9nTBA"

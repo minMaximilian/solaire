@@ -6,6 +6,7 @@ const MOD = (domain, id, x) =>
   id.replace('#', '');
 
 const MC = (id, x) => MOD(`minecraft`, id, x);
+const F = (id, x) => MOD(`fabric`, id, x);
 const CON = (id, x) => MOD(`c`, id, x);
 const C = (id, x) => MOD(`create`, id, x);
 const KJ = (id, x) => MOD(`kubejs`, id, x);
