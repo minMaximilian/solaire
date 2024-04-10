@@ -19,6 +19,8 @@ const FD = (id, x) => MOD(`farmersdelight`, id, x);
 const SP = (id, x) => MOD(`supplementaries`, id, x);
 const BP = (id, x) => MOD(`beansbackpacks`, id, x);
 const T = (id, x) => MOD(`twigs`, id, x);
+const CA = (id, x) => MOD(`createaddition`, id, x);
+const NS = (id, x) => MOD('natures_spirit', id, x);
 
 // Steam n' Rails
 // const R = (id, x) => MOD(`railways`, id, x)

@@ -4,5 +4,5 @@ StartupEvents.registry('fluid', (event) => {
   };
 
   simpleLiquid('rubber', 0x9fa63b);
-  simpleLiquid('andesite_compound', 0x9fa63b);
+  simpleLiquid('molten_andesite_compound', 0x9fa63b);
 });

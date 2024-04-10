@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
 
   event.replaceOutput({ output: SP('rope') }, SP('rope'), FD('rope'));
 
+  // PATTERNS
   [
     {
       output: KJ('andesite_compound'),
@@ -183,10 +184,215 @@ ServerEvents.recipes((event) => {
         S: C('iron_sheet'),
       },
     },
+    {
+      output: MC('furnace'),
+      pattern: ['BBB', 'B B', 'SSS'],
+      key: {
+        B: MC('brick'),
+        S: MC('#stone_tool_materials'),
+      },
+    },
+    {
+      output: MC('blast_furnace'),
+      pattern: ['BBB', 'BFB', 'SSS'],
+      key: {
+        B: CON('#raw_ores'),
+        S: MC('smooth_stone'),
+        F: MC('furnace'),
+      },
+    },
+    {
+      output: MC('blast_furnace'),
+      pattern: ['BBB', 'BFB', 'SSS'],
+      key: {
+        B: CON('#raw_ores'),
+        S: MC('smooth_basalt'),
+        F: MC('furnace'),
+      },
+    },
+    {
+      output: C('schematicannon'),
+      pattern: [' B ', 'LBL', 'CDC'],
+      key: {
+        B: C('brass_block'),
+        L: MC('#logs'),
+        C: C('brass_casing'),
+        D: MC('dispenser'),
+      },
+    },
+    {
+      output: C('track', 2),
+      pattern: ['NNN', 'NNN', 'SSS'],
+      key: {
+        N: C('zinc_nugget'),
+        S: C('#sleepers'),
+      },
+    },
+    {
+      output: C('track', 2),
+      pattern: ['NNN', 'NNN', 'SSS'],
+      key: {
+        N: MC('iron_nugget'),
+        S: C('#sleepers'),
+      },
+    },
   ].forEach((recipe) => {
     event.shaped(recipe.output, recipe.pattern, recipe.key);
   });
 
+  // MIXING
+  [
+    {
+      output: KJ('rubber'),
+      input: [KJ('sap')],
+    },
+    {
+      output: Fluid.of(H('molten_brass'), 18000),
+      input: [
+        Fluid.of(H('molten_zinc'), 9000),
+        Fluid.of(H('molten_copper'), 9000),
+      ],
+      heated: true,
+    },
+    {
+      output: Fluid.of(H('molten_rose_gold'), 18000),
+      input: [
+        Fluid.of(H('molten_gold'), 9000),
+        Fluid.of(H('molten_copper'), 9000),
+      ],
+    },
+    {
+      output: Fluid.of(H('molten_obsidian'), 8100),
+      input: [Fluid.of(MC('lava'), 8100), Fluid.of(MC('water'), 4050)],
+    },
+    {
+      output: Fluid.of(H('molten_obsidian'), 20250),
+      input: [Fluid.of(MC('lava'), 20250), Fluid.of(H('mushroom_stew'), 20250)],
+    },
+    {
+      output: Fluid.of(H('molten_amethyst_bronze'), 9000),
+      input: [
+        Fluid.of(H('molten_amethyst'), 8100),
+        Fluid.of(H('molten_copper'), 9000),
+      ],
+    },
+    {
+      output: Fluid.of(H('molten_pig_iron'), 18000),
+      input: [
+        Fluid.of(CON('honey'), 27000),
+        Fluid.of(H('molten_iron'), 9000),
+        Fluid.of(H('blood'), 40500),
+      ],
+    },
+    {
+      output: Fluid.of(H('molten_slimesteel'), 18000),
+      input: [
+        Fluid.of(H('seared_stone'), 20250),
+        Fluid.of(H('sky_slime'), 20250),
+        Fluid.of(H('molten_iron'), 9000),
+      ],
+    },
+    {
+      output: Fluid.of(H('molten_netherite'), 972),
+      input: [
+        Fluid.of(H('molten_debris'), 1944),
+        Fluid.of(H('molten_gold'), 3969),
+      ],
+      superheated: true,
+    },
+    {
+      output: Fluid.of(H('molten_manyullyn'), 972),
+      input: [
+        Fluid.of(H('molten_debris'), 9000),
+        Fluid.of(H('molten_cobalt'), 27000),
+      ],
+      superheated: true,
+    },
+    {
+      output: Fluid.of(H('molten_hepatizon'), 972),
+      input: [
+        Fluid.of(H('molten_cobalt'), 9000),
+        Fluid.of(H('molten_copper'), 18000),
+        Fluid.of(H('molten_quartz'), 32400),
+      ],
+      superheated: true,
+    },
+    {
+      output: Fluid.of(H('molten_queens_slime'), 18000),
+      input: [
+        Fluid.of(H('magma'), 20250),
+        Fluid.of(H('molten_gold'), 9000),
+        Fluid.of(H('molten_cobalt'), 9000),
+      ],
+      superheated: true,
+    },
+    {
+      output: Fluid.of(KJ('molten_andesite_compound'), 9000),
+      input: [MC('iron_nugget'), MC('andesite'), MC('clay_ball')],
+    },
+    {
+      output: Fluid.of(KJ('molten_andesite_compound'), 9000),
+      input: [C('zinc_nugget'), MC('andesite'), MC('clay_ball')],
+    },
+  ].forEach((recipe) => {
+    if (recipe.superheated) {
+      event.recipes.createMixing(recipe.output, recipe.input).superheated();
+    } else if (recipe.heated) {
+      event.recipes.createMixing(recipe.output, recipe.input).heated();
+    } else {
+      event.recipes.createMixing(recipe.output, recipe.input);
+    }
+  });
+
+  // ITEM APPLICATION
+  [
+    {
+      output: C('railway_casing'),
+      input: [CON('#stripped_logs'), C('sturdy_sheet')],
+    },
+    {
+      output: C('railway_casing'),
+      input: [CON('#stripped_wood'), C('sturdy_sheet')],
+    },
+  ].forEach((recipe) => {
+    event.recipes.createItemApplication(recipe.output, recipe.input);
+  });
+
+  // SMELTING
+  [
+    {
+      output: KJ('rubber'),
+      input: KJ('sap'),
+    },
+    {
+      output: C('andesite_alloy'),
+      input: KJ('andesite_compound'),
+    },
+  ].forEach((recipe) => {
+    event.smelting(recipe.output, recipe.input);
+  });
+
+  // MILLING
+  [
+    {
+      output: C('powdered_obsidian'),
+      input: [MC('obsidian')],
+    },
+  ].forEach((recipe) => {
+    event.recipes.createMilling(recipe.output, recipe.input);
+  });
+
+  // CAMPFIRE
+  [
+    {
+      output: MC('brick'),
+      input: MC('clay_ball'),
+    },
+  ].forEach((recipe) => {
+    event.campfireCooking(recipe.output, recipe.input);
+  });
+
+  // ASSEMBLY
   event.recipes
     .createSequencedAssembly([C('copper_casing')], C('andesite_casing'), [
       event.recipes.createDeploying(KJ('incomplete_copper_casing'), [
@@ -229,37 +435,19 @@ ServerEvents.recipes((event) => {
     .transitionalItem(C('unprocessed_obsidian_sheet'))
     .loops(2);
 
-  event.recipes.createMilling(C('powdered_obsidian'), [MC('obsidian')]);
-
-  event.recipes.createItemApplication(C('railway_casing'), [
-    CON('#stripped_logs'),
-    C('sturdy_sheet'),
-  ]);
-
-  event.recipes.createItemApplication(C('railway_casing'), [
-    CON('#stripped_wood'),
-    C('sturdy_sheet'),
-  ]);
-
-  event.recipes.createMixing(KJ('rubber'), [
-    MC('bone_meal'),
-    MC('bone_meal'),
-    MC('bone_meal'),
-    MC('bone_meal'),
-    MC('dried_kelp'),
-    MC('dried_kelp'),
-    MC('dried_kelp'),
-    MC('dried_kelp'),
-  ]);
-
-  event.recipes
-    .createMixing(Fluid.of(H('molten_brass'), 18000), [
-      Fluid.of(H('molten_zinc'), 9000),
-      Fluid.of(H('molten_copper'), 9000),
-    ])
-    .superheated();
-
-  event.smelting(C('andesite_alloy'), KJ('andesite_compound'));
+  // CUSTOM
+  event
+    .custom({
+      type: CA('rolling'),
+      input: {
+        tag: NS('maple_logs'),
+      },
+      result: {
+        item: KJ('sap'),
+        count: 1,
+      },
+    })
+    .id(CA('rolling/sap'));
 
   event.recipes.create.finalize();
 });

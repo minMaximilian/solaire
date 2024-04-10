@@ -1,12 +1,12 @@
 name = ""
 author = "minMaximilian"
-version = "0.0.3"
+version = "0.0.4"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "f7903613390f5052ea3ae911ac0262bda3c3b294d503fdef7fad499937fe804c"
+hash = "4ee5afdac4f385fa66a413982ee164d2e5e48f04f9bd1903fb03e451ba108930"
 
 [versions]
 fabric = "0.15.7"

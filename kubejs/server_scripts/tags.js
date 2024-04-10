@@ -12,6 +12,7 @@ ServerEvents.tags('item', (event) => {
   event.add(CON('tools/axes'), H('hand_axe'));
   event.add(CON('tools/knives'), H('dagger'));
   event.add(CON('tools/shovels'), H('excavator'));
+  event.add(CON('slimeballs'), KJ('sap'));
   event.add(MC('shovels'), H('excavator'));
   event.add(MC('hoes'), H('scythe'));
   event.add(F('tools/hoes'), H('scythe'));

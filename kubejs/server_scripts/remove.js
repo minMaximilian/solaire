@@ -33,12 +33,22 @@ ServerEvents.recipes((event) => {
     H('polished_scorched_stone'),
     H('fantastic_foundry'),
     C('sturdy_sheet'),
+    C('schematicannon'),
+    MC('furnace'),
+    MC('blast_furnace'),
+    H('plate_boots'),
+    H('plate_leggings'),
+    H('plate_chestplate'),
+    H('plate_helmet'),
   ].forEach((recipe) => {
     event.remove({ output: recipe });
   });
 
   // ID
   [
+    C('splashing/gravel'),
+    C('splashing/soul_sand'),
+    C('splashing/red_sand'),
     C('crafting/appliances/slime_ball'),
     FD('flint_knife'),
     S('raw_magnetite_from_nuggets'),
@@ -48,6 +58,7 @@ ServerEvents.recipes((event) => {
 
   // CUSTOM
   [
+    { type: H('alloy') },
     {
       output: C('brass_casing'),
       type: C('item_application'),
@@ -65,16 +76,54 @@ ServerEvents.recipes((event) => {
       input: MC('andesite'),
     },
     {
-      output: S('raw_iron_nugget'),
-      type: C('splashing'),
-    },
-    {
-      output: S('raw_gold_nugget'),
-      type: C('splashing'),
-    },
-    {
       output: C('brass_ingot'),
       type: C('mixing'),
+    },
+    {
+      output: MC('iron_ingot'),
+      type: MC('smelting'),
+    },
+    {
+      output: MC('copper_ingot'),
+      type: MC('smelting'),
+    },
+    {
+      output: MC('gold_ingot'),
+      type: MC('smelting'),
+    },
+    {
+      output: C('zinc_ingot'),
+      type: MC('smelting'),
+    },
+    {
+      input: S('raw_iron_nugget'),
+      output: MC('iron_nugget'),
+      type: MC('smelting'),
+    },
+    {
+      input: S('raw_iron_nugget'),
+      output: MC('iron_nugget'),
+      type: MC('smelting'),
+    },
+    {
+      input: S('raw_copper_nugget'),
+      output: S('copper_nugget'),
+      type: MC('smelting'),
+    },
+    {
+      input: S('raw_gold_nugget'),
+      output: MC('gold_nugget'),
+      type: MC('smelting'),
+    },
+    {
+      input: S('raw_copper_nugget'),
+      output: C('copper_nugget'),
+      type: MC('smelting'),
+    },
+    {
+      input: S('raw_zinc_nugget'),
+      output: C('zinc_nugget'),
+      type: MC('smelting'),
     },
   ].forEach((recipe) => {
     event.remove(recipe);
