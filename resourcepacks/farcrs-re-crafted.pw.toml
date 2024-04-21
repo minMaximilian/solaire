@@ -1,13 +1,13 @@
 name = "Farcr's Re-Crafted"
-filename = "Farcr's Re-Crafted V2.11.1.zip"
+filename = "Farcr's Re-Crafted V2.12.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/FGpR5ayB/versions/iRKBfLBe/Farcr%27s%20Re-Crafted%20V2.11.1.zip"
+url = "https://cdn.modrinth.com/data/FGpR5ayB/versions/AW5YJRvn/Farcr%27s%20Re-Crafted%20V2.12.zip"
 hash-format = "sha1"
-hash = "6731544be4619801cc55a8826f83bede3f2fe837"
+hash = "57711e634d4bf141c0e3892c7c4b504d7a349952"
 
 [update]
 [update.modrinth]
 mod-id = "FGpR5ayB"
-version = "iRKBfLBe"
+version = "AW5YJRvn"
