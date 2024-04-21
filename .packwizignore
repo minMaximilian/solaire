@@ -10,3 +10,5 @@
 /.editorconfig
 /.prettierrc
 kubejs/probe
+globalpacks/solaire
+kubejs
