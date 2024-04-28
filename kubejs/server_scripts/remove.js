@@ -40,11 +40,38 @@ ServerEvents.recipes((event) => {
     H('plate_leggings'),
     H('plate_chestplate'),
     H('plate_helmet'),
+    CA('seed_oil'),
+    C('cogwheel'),
+    C('large_cogwheel'),
   ].forEach((recipe) => {
     event.remove({ output: recipe });
   });
 
   // ID
+  const blacklist = [SPA('cracked_rotten_planks')];
+
+  const planksToBeRemoved = Ingredient.of(MC('#planks')).itemIds.filter(
+    (plank) => !blacklist.includes(plank)
+  );
+
+  const strippedWood = Ingredient.of(CON('#stripped_wood')).itemIds.map(
+    (wood) => {
+      return {
+        type: C('cutting'),
+        output: wood,
+      };
+    }
+  );
+
+  const strippedLogs = Ingredient.of(CON('#stripped_logs')).itemIds.map(
+    (log) => {
+      return {
+        type: C('cutting'),
+        output: log,
+      };
+    }
+  );
+
   [
     C('splashing/gravel'),
     C('splashing/soul_sand'),
@@ -52,9 +79,13 @@ ServerEvents.recipes((event) => {
     C('crafting/appliances/slime_ball'),
     FD('flint_knife'),
     S('raw_magnetite_from_nuggets'),
-  ].forEach((recipe) => {
-    event.remove({ id: recipe });
-  });
+    NS('joshua_planks_from_joshua_bundle'),
+    NS('joshua_planks_from_stripped_joshua_bundle'),
+  ]
+    .concat(planksToBeRemoved)
+    .forEach((recipe) => {
+      event.remove({ id: recipe });
+    });
 
   // CUSTOM
   [
@@ -125,9 +156,80 @@ ServerEvents.recipes((event) => {
       output: C('zinc_nugget'),
       type: MC('smelting'),
     },
-  ].forEach((recipe) => {
-    event.remove(recipe);
-  });
+    {
+      type: C('cutting'),
+      output: MC('crimson_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('warped_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('oak_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('spruce_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('birch_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('jungle_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('crimson_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('acacia_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('crimson_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('dark_oak_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('crimson_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('mangrove_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('cherry_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: MC('bamboo_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: H('bloodshroom_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: H('skyroot_planks'),
+    },
+    {
+      type: C('cutting'),
+      output: H('greenheart_planks'),
+    },
+  ]
+    .concat(strippedLogs)
+    .concat(strippedWood)
+    .forEach((recipe) => {
+      event.remove(recipe);
+    });
 
   // Remove recipes for all vanilla tools (stone and wooden tools don't have another recipe)
   tool_tiers.map((material) =>

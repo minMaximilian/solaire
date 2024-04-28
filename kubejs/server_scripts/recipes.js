@@ -236,6 +236,22 @@ ServerEvents.recipes((event) => {
         S: C('#sleepers'),
       },
     },
+    {
+      output: C('cogwheel'),
+      pattern: ['AAA', 'ABA', 'AAA'],
+      key: {
+        A: MC('#wooden_buttons'),
+        B: C('shaft'),
+      },
+    },
+    {
+      output: C('large_cogwheel'),
+      pattern: ['AAA', 'ABA', 'AAA'],
+      key: {
+        A: MC('#planks'),
+        B: C('cogwheel'),
+      },
+    },
   ].forEach((recipe) => {
     event.shaped(recipe.output, recipe.pattern, recipe.key);
   });
@@ -435,6 +451,22 @@ ServerEvents.recipes((event) => {
     .transitionalItem(C('unprocessed_obsidian_sheet'))
     .loops(2);
 
+  // CUTTING
+  const addStripped = (str) => str.replace(/:/, ':stripped_');
+
+  const strippedToPlanks = (str) =>
+    str.replace(/stripped_(.+)_(log|wood)|hyphae/, '$1_planks');
+
+  Ingredient.of(KJ('#logs'))
+    .itemIds.concat(Ingredient.of(KJ('#wood')).itemIds)
+    .forEach((log) => {
+      event.recipes.createCutting(addStripped(log), log);
+      event.recipes.createCutting(
+        '6x ' + strippedToPlanks(addStripped(log)),
+        addStripped(log)
+      );
+    });
+
   // CUSTOM
   event
     .custom({
@@ -448,6 +480,41 @@ ServerEvents.recipes((event) => {
       },
     })
     .id(CA('rolling/sap'));
+
+  // PLANKS
+  const blacklist = [
+    SPA('cracked_rotten_planks'),
+    MC('crimson_planks'),
+    MC('warped_planks'),
+  ];
+
+  const getLogTag = (plankId) =>
+    plankId.endsWith('_planks')
+      ? `#${plankId.split(':')[0]}:${plankId
+          .split(':')[1]
+          .replace('_planks', '_logs')}`
+      : null;
+
+  Ingredient.of(MC('#planks')).itemIds.forEach((plank) => {
+    if (!blacklist.includes(plank)) {
+      console.log(plank);
+      event.shapeless('2x ' + plank, [getLogTag(plank)]);
+    }
+  });
+
+  event.custom({
+    type: H('retextured_casting_basin'),
+    cast: {
+      tag: H('smeltery_bricks'),
+    },
+    cast_consumed: true,
+    cooling_time: 100,
+    fluid: {
+      amount: 81000,
+      tag: H('molten_brass'),
+    },
+    result: H('smeltery_controller'),
+  });
 
   event.recipes.create.finalize();
 });
