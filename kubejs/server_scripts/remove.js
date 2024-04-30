@@ -13,36 +13,16 @@ ServerEvents.recipes((event) => {
     C('brass_hand'),
     C('elevator_pulley'),
     C('belt_connector'),
-    H('smeltery_controller'),
-    H('foundry_controller'),
-    H('scorched_brick'),
-    H('scorched_stone'),
-    H('scorched_road'),
-    H('scorched_bricks'),
-    H('chiseled_scorched_bricks'),
-    H('scorched_ladder'),
-    H('scorched_glass'),
-    H('scorched_glass_pane'),
-    H('scorched_drain'),
-    H('scorched_duct'),
-    H('scorched_chute'),
-    H('scorched_fuel_tank'),
-    H('scorched_fuel_gauge'),
-    H('scorched_basin'),
-    H('scorched_table'),
-    H('polished_scorched_stone'),
-    H('fantastic_foundry'),
     C('sturdy_sheet'),
     C('schematicannon'),
     MC('furnace'),
     MC('blast_furnace'),
-    H('plate_boots'),
-    H('plate_leggings'),
-    H('plate_chestplate'),
-    H('plate_helmet'),
+    MC('golden_apple'),
+    MC('enchancted_golden_apple'),
     CA('seed_oil'),
     C('cogwheel'),
     C('large_cogwheel'),
+    MC('crafting_table'),
   ].forEach((recipe) => {
     event.remove({ output: recipe });
   });
@@ -89,7 +69,12 @@ ServerEvents.recipes((event) => {
 
   // CUSTOM
   [
-    { type: H('alloy') },
+    { input: MC('netherite_ingot') },
+    { input: DD('potassic_cobble') },
+    { input: DD('asurine_cobble') },
+    { input: DD('crimsite_cobble') },
+    { input: DD('ochrum_cobble') },
+    { input: DD('veridium_cobble') },
     {
       output: C('brass_casing'),
       type: C('item_application'),
@@ -212,24 +197,18 @@ ServerEvents.recipes((event) => {
       type: C('cutting'),
       output: MC('bamboo_planks'),
     },
-    {
-      type: C('cutting'),
-      output: H('bloodshroom_planks'),
-    },
-    {
-      type: C('cutting'),
-      output: H('skyroot_planks'),
-    },
-    {
-      type: C('cutting'),
-      output: H('greenheart_planks'),
-    },
   ]
     .concat(strippedLogs)
     .concat(strippedWood)
     .forEach((recipe) => {
       event.remove(recipe);
     });
+
+  // BLOAT
+  Ingredient.of(KJ('#bloat')).itemIds.forEach((e) => {
+    event.remove({ input: e });
+    event.remove({ output: e });
+  });
 
   // Remove recipes for all vanilla tools (stone and wooden tools don't have another recipe)
   tool_tiers.map((material) =>

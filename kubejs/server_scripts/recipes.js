@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
       output: KJ('rubber_block'),
       pattern: ['RRR', 'RRR', 'RRR'],
       key: {
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
       pattern: ['C', 'R', 'S'],
       key: {
         C: C('copper_casing'),
-        R: KJ('rubber_block'),
+        R: DD('rubber_block'),
         S: C('copper_sheet'),
       },
     },
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
       pattern: ['C', 'R'],
       key: {
         C: C('copper_casing'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
       pattern: ['A', 'R'],
       key: {
         A: C('andesite_alloy'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
       key: {
         T: C('electron_tube'),
         B: C('brass_ingot'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
       pattern: ['AA', 'RR'],
       key: {
         A: C('andesite_alloy'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
       key: {
         T: C('electron_tube'),
         B: C('brass_ingot'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
       pattern: [' A ', 'RRR', ' R '],
       key: {
         A: C('andesite_alloy'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -189,7 +189,7 @@ ServerEvents.recipes((event) => {
       pattern: ['BBB', 'B B', 'SSS'],
       key: {
         B: MC('brick'),
-        S: MC('#stone_tool_materials'),
+        S: CON('#raw_ores'),
       },
     },
     {
@@ -252,6 +252,14 @@ ServerEvents.recipes((event) => {
         B: C('cogwheel'),
       },
     },
+    {
+      output: MC('crafting_table'),
+      pattern: ['AA', 'BB'],
+      key: {
+        A: MC('leather'),
+        B: MC('#planks'),
+      },
+    },
   ].forEach((recipe) => {
     event.shaped(recipe.output, recipe.pattern, recipe.key);
   });
@@ -261,86 +269,6 @@ ServerEvents.recipes((event) => {
     {
       output: KJ('rubber'),
       input: [KJ('sap')],
-    },
-    {
-      output: Fluid.of(H('molten_brass'), 18000),
-      input: [
-        Fluid.of(H('molten_zinc'), 9000),
-        Fluid.of(H('molten_copper'), 9000),
-      ],
-      heated: true,
-    },
-    {
-      output: Fluid.of(H('molten_rose_gold'), 18000),
-      input: [
-        Fluid.of(H('molten_gold'), 9000),
-        Fluid.of(H('molten_copper'), 9000),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_obsidian'), 8100),
-      input: [Fluid.of(MC('lava'), 8100), Fluid.of(MC('water'), 4050)],
-    },
-    {
-      output: Fluid.of(H('molten_obsidian'), 20250),
-      input: [Fluid.of(MC('lava'), 20250), Fluid.of(H('mushroom_stew'), 20250)],
-    },
-    {
-      output: Fluid.of(H('molten_amethyst_bronze'), 9000),
-      input: [
-        Fluid.of(H('molten_amethyst'), 8100),
-        Fluid.of(H('molten_copper'), 9000),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_pig_iron'), 18000),
-      input: [
-        Fluid.of(CON('honey'), 27000),
-        Fluid.of(H('molten_iron'), 9000),
-        Fluid.of(H('blood'), 40500),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_slimesteel'), 18000),
-      input: [
-        Fluid.of(H('seared_stone'), 20250),
-        Fluid.of(H('sky_slime'), 20250),
-        Fluid.of(H('molten_iron'), 9000),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_netherite'), 972),
-      input: [
-        Fluid.of(H('molten_debris'), 1944),
-        Fluid.of(H('molten_gold'), 3969),
-      ],
-      superheated: true,
-    },
-    {
-      output: Fluid.of(H('molten_manyullyn'), 972),
-      input: [
-        Fluid.of(H('molten_debris'), 9000),
-        Fluid.of(H('molten_cobalt'), 27000),
-      ],
-      superheated: true,
-    },
-    {
-      output: Fluid.of(H('molten_hepatizon'), 972),
-      input: [
-        Fluid.of(H('molten_cobalt'), 9000),
-        Fluid.of(H('molten_copper'), 18000),
-        Fluid.of(H('molten_quartz'), 32400),
-      ],
-      superheated: true,
-    },
-    {
-      output: Fluid.of(H('molten_queens_slime'), 18000),
-      input: [
-        Fluid.of(H('magma'), 20250),
-        Fluid.of(H('molten_gold'), 9000),
-        Fluid.of(H('molten_cobalt'), 9000),
-      ],
-      superheated: true,
     },
     {
       output: Fluid.of(KJ('molten_andesite_compound'), 9000),
@@ -377,10 +305,6 @@ ServerEvents.recipes((event) => {
   // SMELTING
   [
     {
-      output: KJ('rubber'),
-      input: KJ('sap'),
-    },
-    {
       output: C('andesite_alloy'),
       input: KJ('andesite_compound'),
     },
@@ -413,7 +337,7 @@ ServerEvents.recipes((event) => {
     .createSequencedAssembly([C('copper_casing')], C('andesite_casing'), [
       event.recipes.createDeploying(KJ('incomplete_copper_casing'), [
         KJ('incomplete_copper_casing'),
-        KJ('rubber'),
+        DD('rubber'),
       ]),
       event.recipes.createDeploying(KJ('incomplete_copper_casing'), [
         KJ('incomplete_copper_casing'),
@@ -431,7 +355,7 @@ ServerEvents.recipes((event) => {
       ]),
       event.recipes.createFilling(KJ('incomplete_brass_casing'), [
         KJ('incomplete_brass_casing'),
-        Fluid.of(H('molten_brass'), 9000),
+        Fluid.of(MM('molten_brass'), 9000),
       ]),
     ])
     .transitionalItem(KJ('incomplete_brass_casing'))
@@ -472,10 +396,10 @@ ServerEvents.recipes((event) => {
     .custom({
       type: CA('rolling'),
       input: {
-        tag: NS('maple_logs'),
+        tag: KJ('rubber_logs'),
       },
       result: {
-        item: KJ('sap'),
+        item: DD('crystallized_sap'),
         count: 1,
       },
     })
@@ -497,23 +421,8 @@ ServerEvents.recipes((event) => {
 
   Ingredient.of(MC('#planks')).itemIds.forEach((plank) => {
     if (!blacklist.includes(plank)) {
-      console.log(plank);
       event.shapeless('2x ' + plank, [getLogTag(plank)]);
     }
-  });
-
-  event.custom({
-    type: H('retextured_casting_basin'),
-    cast: {
-      tag: H('smeltery_bricks'),
-    },
-    cast_consumed: true,
-    cooling_time: 100,
-    fluid: {
-      amount: 81000,
-      tag: H('molten_brass'),
-    },
-    result: H('smeltery_controller'),
   });
 
   event.recipes.create.finalize();

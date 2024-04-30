@@ -1,8 +1,6 @@
 StartupEvents.registry('item', (event) => {
   event.create('incomplete_copper_casing');
   event.create('incomplete_brass_casing');
-  event.create('rubber');
-  event.create('sap');
   event.create('andesite_compound');
   event.create('brass_helmet', 'helmet').tier('iron').maxDamage(330);
   event.create('brass_chesplate', 'chestplate').tier('iron').maxDamage(480);

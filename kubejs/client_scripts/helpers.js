@@ -22,42 +22,4 @@ const SPA = (id, x) => MOD(`spawn`, id, x);
 const BP = (id, x) => MOD(`beansbackpacks`, id, x);
 const T = (id, x) => MOD(`twigs`, id, x);
 const CA = (id, x) => MOD(`createaddition`, id, x);
-const CC = (id, x) => MOD(`computercraft`, id, x);
 const NS = (id, x) => MOD('natures_spirit', id, x);
-
-// Steam n' Rails
-// const R = (id, x) => MOD(`railways`, id, x)
-
-const dyes = [
-  'white',
-  'light_gray',
-  'gray',
-  'black',
-  'brown',
-  'red',
-  'orange',
-  'yellow',
-  'lime',
-  'green',
-  'cyan',
-  'light_blue',
-  'blue',
-  'purple',
-  'magenta',
-  'pink',
-];
-
-const tool_tiers = [
-  'wooden',
-  'stone',
-  'iron',
-  'golden',
-  'diamond',
-  'netherite',
-];
-
-const armour_tiers = ['iron', 'golden', 'diamond', 'netherite'];
-
-const tools = ['shovel', 'pickaxe', 'axe', 'hoe', 'sword'];
-
-const armour = ['helmet', 'chestplate', 'leggings', 'boots'];

@@ -237,22 +237,6 @@ file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/witch_villa/
 hash = "a420f32d8dacbe2f225acac6620eaa3d67d8d33be034f913b7c5c2936bd1d14f"
 
 [[files]]
-file = "globalpacks/solaire/data/tconstruct/worldgen/structure_set/end_sky_island.json"
-hash = "eaef527db2ec8d9e12fb5b1668ed66b95a9c0668b970cd947e893c62ab5cbdf6"
-
-[[files]]
-file = "globalpacks/solaire/data/tconstruct/worldgen/structure_set/nether_ocean_island.json"
-hash = "b3f16af3895ffa03b3dba02713840fdb982dae1962e29e86a3be108b3ad7ec87"
-
-[[files]]
-file = "globalpacks/solaire/data/tconstruct/worldgen/structure_set/overworld_ocean_island.json"
-hash = "5099ba4f342b924ab81f024f49a12f2ceb33e8ceed5e9efbe1ce0ead140666c9"
-
-[[files]]
-file = "globalpacks/solaire/data/tconstruct/worldgen/structure_set/overworld_sky_island.json"
-hash = "1afb29cfc9102825abb26bbea65d484dc03265a76de962064a146582683bc58b"
-
-[[files]]
 file = "globalpacks/solaire/data/twigs/worldgen/configured_feature/patch_pebble.json"
 hash = "8fe0d4fc7dabd323b811878f13610044cea0327849e4ca7f8612bc011db77924"
 
@@ -266,7 +250,7 @@ hash = "258ef8fadbdef9c917f56cd6181711c6541e1f939065f07d9cf2245bc23c03a7"
 
 [[files]]
 file = "icon.png"
-hash = "1db135ec3021318d249e6f110174d96c4b461b4af9f97e1fa73b9b0c9dafe779"
+hash = "541fb5e954c6cdc33a212743afef568d1c6f487b2c95c58566e15ba0ff66fe98"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -297,20 +281,20 @@ file = "kubejs/assets/kubejs/textures/item/incomplete_copper_casing.png"
 hash = "0205e49ed24ad2a02b2ec7a016f0d02a57534aa4b602981bcac3077271601c2c"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/rubber.png"
-hash = "720c3169585dca1c7aaa560e32ae4291a1a56f2c7622a7b8c9506f0ced81b7eb"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/sap.png"
-hash = "cf4f62eb8a617a148bd0648216244400f30977a6035b5564d202ff9601b6d57d"
-
-[[files]]
 file = "kubejs/assets/kubejs/tips/code-java.json"
 hash = "723a01bd1b0e17f0fdecc4651d07a0ed1ccca62046f38a4c082bade3987b803d"
 
 [[files]]
 file = "kubejs/assets/kubejs/tips/swim-lava.json"
 hash = "e984da7682300c0c8083660026d4636d9d9fa806e6ce03300f4e0d6723ce6bd4"
+
+[[files]]
+file = "kubejs/client_scripts/helpers.js"
+hash = "3b45eb9303442c96ebd4de8821067b4163c38f3b378d04d8bdd1ea5bbc29a275"
+
+[[files]]
+file = "kubejs/client_scripts/rei.js"
+hash = "de770e1a6c829af50fb50d529feb6580b7943fe343c9fcf1ddbfa19afee262db"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -326,23 +310,23 @@ hash = "5bf2bcc07bdc382a8e578815a26601f84f90d95f05b569489bface31a8b5dd0a"
 
 [[files]]
 file = "kubejs/server_scripts/helpers.js"
-hash = "ace76610e546c857e72d64f64b2d47086215feaf3a16948d51b9de682b57cdf3"
+hash = "61a3509273770d6c5ff4ccf179067bd7456615d55443164a2a727a4dc6c7a825"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "eb7a069c14ce7c3894834bf5d0253d77193bc1300f62e6b3bce873525f77fa14"
+hash = "391775c0452e795607da22eb25455455f13730285aa6c4b8de337699a279d9e3"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "e7dd2716767566bf40308fe6cac26a3070c26b91a7eb48aebaca83d28a3ad1dc"
+hash = "8dbc8db3cf98033a61b148bcf944f1ff5c930735bf9710a49fbb7d11f0a61e5a"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "10611da572a0b3976f0f151efc4e74abf1ac65b5c445a8ec5d71cd9eecf7012e"
+hash = "96b9f47d7e5c8b71ccafe74871daeff227ab5c54c886b39cdb24b8555f19ee3a"
 
 [[files]]
 file = "kubejs/server_scripts/villagers.js"
-hash = "c9fb47fed5ef2d0e44bb02a1f8702e125e827e5d42914d992d8a36008b595574"
+hash = "39a463913d97372dd3553db94c578c3666b80d11a8ed3e98741f57dda6b52147"
 
 [[files]]
 file = "kubejs/startup_scripts/block.js"
@@ -350,15 +334,15 @@ hash = "3ce662c8618badb64e945b382ae2b5021fb624b49da29b8813e377dd2f239ae8"
 
 [[files]]
 file = "kubejs/startup_scripts/blockModifications.js"
-hash = "fd43b93280c558a9f1887a3caa2c058bdbfc733245035c38741157317dc26ef3"
+hash = "cc2be4585a87b728d275d4ed7bac1490d53823f1ef2041a582d2009caf902659"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"
-hash = "5a5b4809848ec3d0b49199a94eb030b0675e1a9c2a845025119536642e5adf53"
+hash = "117d2bf1ddf5e8669636f810ce467fd54b7d3d13d971f21cf00ce15cf7f70625"
 
 [[files]]
 file = "kubejs/startup_scripts/item.js"
-hash = "65bf3ac063c82a905dcc221b9f64b1fc2771abc84574d826f6adbf2c0f53a9b0"
+hash = "079ba75f48a1708cdaf6b1c31025e6d948d445ad6ec1a38c928b535db259a58f"
 
 [[files]]
 file = "kubejs/startup_scripts/itemModifications.js"
@@ -366,7 +350,7 @@ hash = "1afc500e28e69009cb7ce8e496d7b1040b6a5de8f7288f5ead8ce4f04bc07320"
 
 [[files]]
 file = "kubejs/startup_scripts/liquid.js"
-hash = "416bf57d4ffb20b5af6c872e5f393d370168e03bd11e13efffd8eeaf6432bfd1"
+hash = "89558af38abfdac3715564f0902044b9075a3b36116a712f99c86b40032b0362"
 
 [[files]]
 file = "kubejs/startup_scripts/modName.js"
@@ -422,7 +406,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "13cb21e09b9d0d6622359f24f0bfed0e4123fcbaf7e65a1eb7e5396c47a56349"
+hash = "0cbcd58c49decc0ecbccd330fcc8326e3b8769e22e1740e229f09541acf3df7f"
 metafile = true
 
 [[files]]
@@ -483,11 +467,6 @@ metafile = true
 [[files]]
 file = "mods/brewin-and-chewin-fabric.pw.toml"
 hash = "b3db6131c25bba500442f1b07da7ba551618f5ff3e15d5cc8966688799f60712"
-metafile = true
-
-[[files]]
-file = "mods/cadmus.pw.toml"
-hash = "241146c0daa95b2fc2f7ab72f5029e38c3315a360dffadcc7b236c9c6757325d"
 metafile = true
 
 [[files]]
@@ -586,8 +565,18 @@ hash = "2b235cb6a41a092158c6cdfa18913bfbd55150e23093dce96580476d140f8d02"
 metafile = true
 
 [[files]]
+file = "mods/create-dreams-and-desires.pw.toml"
+hash = "20b927814945569eaf2828479e02e4706d7012e742a010c75283f2b614b238b1"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "26394151533372bce2229f31c8df7f65e2deb751cc823f317cd30682381acc8f"
+metafile = true
+
+[[files]]
+file = "mods/create-molten-metals.pw.toml"
+hash = "bcc05a14728faa2bf0144c6c11a73317a0f4fc7413e22672f14b6c799a6be0f1"
 metafile = true
 
 [[files]]
@@ -666,11 +655,6 @@ hash = "b8270928d44781b9e59982d376bb3cc0d24089ceebef3c79d3e1e881ba7ece60"
 metafile = true
 
 [[files]]
-file = "mods/emi.pw.toml"
-hash = "515401aa2bd4394d05d410a306d1890a3094c6121e1861c48e6a45f05bd7f01b"
-metafile = true
-
-[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "5762034e469126ca673ee2f67dcc6a2969b73f0623ea44c84af0b7195c93e13f"
 metafile = true
@@ -708,11 +692,6 @@ metafile = true
 [[files]]
 file = "mods/exposure.pw.toml"
 hash = "bbf1f031bb9dcf882fb9fd486cc840960075c1a1ade0046123307e7965a1c6db"
-metafile = true
-
-[[files]]
-file = "mods/extra-mod-integrations.pw.toml"
-hash = "a4f0a82e09bb2ad65e819ce3dc6333b67816aaefa152b4d92cdbe8e03685d177"
 metafile = true
 
 [[files]]
@@ -811,11 +790,6 @@ hash = "dd95cf09d9a642a0914a01790dee89b72963e088a4ceb88e206efea6998b03a4"
 metafile = true
 
 [[files]]
-file = "mods/gravestones.pw.toml"
-hash = "ace9dbdca93d66c486a4474081fc91219640e506b62679bce01318c34af51e13"
-metafile = true
-
-[[files]]
 file = "mods/handcrafted.pw.toml"
 hash = "2dded9237b5fbf729ca1947780e8de50bfaaad8b95371370e5263620122bad20"
 metafile = true
@@ -828,16 +802,6 @@ metafile = true
 [[files]]
 file = "mods/held-item-info.pw.toml"
 hash = "c24e05bc69b5e571da13b6f854c89ea093deab2b74b1bd3e8f17113a2f01c07e"
-metafile = true
-
-[[files]]
-file = "mods/hephaestus.pw.toml"
-hash = "62eeeb1733f37ec138fc076c20d39a12c3d5020b4b67147a523d2fad118da9ff"
-metafile = true
-
-[[files]]
-file = "mods/heracles.pw.toml"
-hash = "e9272674cbc16be7f504e6581eb430a159f49055da42946e83350b4f87c4f78a"
 metafile = true
 
 [[files]]
@@ -893,11 +857,6 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "36239f4c9522551f995919bef9b18bba61940319e44af88bdfa28b2e249dc86c"
-metafile = true
-
-[[files]]
-file = "mods/jei.pw.toml"
-hash = "e9c1efd327adb9305b8ae56daf65cfee0d43b05b933b6c98518c53005b835fbb"
 metafile = true
 
 [[files]]
@@ -1108,6 +1067,11 @@ metafile = true
 [[files]]
 file = "mods/reborncore.pw.toml"
 hash = "adf39f52030ad2042392dcf00752c15042c86bb16ba823a10e15e333565ba1b1"
+metafile = true
+
+[[files]]
+file = "mods/rei.pw.toml"
+hash = "96ac62339353594e03beb2e86eaa3e42c9356f84a5ef5856f330e19e0c4982db"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "Create: Molten Metals"
+filename = "molten_metals-1.20.1-0.1.1-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5ZuwMbpk/versions/z7Q7yWeI/molten_metals-1.20.1-0.1.1-fabric.jar"
+hash-format = "sha1"
+hash = "645a2ac70d7d765b4f4c67b943590b97c2aaba8c"
+
+[update]
+[update.modrinth]
+mod-id = "5ZuwMbpk"
+version = "z7Q7yWeI"
