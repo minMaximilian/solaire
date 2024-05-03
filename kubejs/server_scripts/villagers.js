@@ -1,6 +1,7 @@
 MoreJSEvents.villagerTrades((event) => {
   [1, 2, 3, 4, 5].forEach((i) => {
     event.removeVanillaTrades([MC('weaponsmith')], i);
+    event.removeVanillaTrades([MC('librarian')], i);
   });
   event.removeVanillaTrades([MC('toolsmith')], 3);
   event.removeVanillaTrades([MC('toolsmith')], 4);

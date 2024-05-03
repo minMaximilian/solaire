@@ -34,7 +34,7 @@ hash = "596d0d57a309802ee0079397ab255cd31957b3b5a947aee5a8134bf9d94e1e0f"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "d30499c25df9db73e83b38a11113e39b971160c0f3a3b06c8a14c99e7af8b23e"
+hash = "b72919c020d67b94c28e3e3d0365a7df5566cbcf9a7284400c66b8ec972488c1"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -237,6 +237,34 @@ file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/witch_villa/
 hash = "a420f32d8dacbe2f225acac6620eaa3d67d8d33be034f913b7c5c2936bd1d14f"
 
 [[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/lava/passive.json"
+hash = "bf1b0463911226e8cca8799697cc9e5875439c7b107b10800b670a344fb92af4"
+
+[[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/spring_water/passive.json"
+hash = "c936b70a5e2a9737dfd7def5f6e755845caa84af44511a64863fb16bf8aad630"
+
+[[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/clay.json"
+hash = "088b8edd1c0e7546d8ad84cb75911b2c5a8ac31e2488ed5fac10b24654ee86d4"
+
+[[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/gravel.json"
+hash = "b375019c7fa36819f0e1160ef617ac636bb7170725f9dfd14734cc5ba9653eca"
+
+[[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/red_sand.json"
+hash = "f95f88b600a86bb30368421f8aefd95ec466cbaae2e2d93451132a9434ef68a2"
+
+[[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/sand.json"
+hash = "26ebffbc9a936fd888903417921ec9b74ca4b3d9683f30569704ad3f534c20c8"
+
+[[files]]
+file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/soul_sand.json"
+hash = "cd5c785d0e56cee8ea6e1c569ff7ff298b1b97767dea5d99035d1ee7fb59b039"
+
+[[files]]
 file = "globalpacks/solaire/data/twigs/worldgen/configured_feature/patch_pebble.json"
 hash = "8fe0d4fc7dabd323b811878f13610044cea0327849e4ca7f8612bc011db77924"
 
@@ -305,36 +333,44 @@ file = "kubejs/config/common.properties"
 hash = "dd2ba9072a55847ebd9d18eeff499715728efe51901b0aadf27ee4558d6abb36"
 
 [[files]]
-file = "kubejs/server_scripts/create_compat.js"
+file = "kubejs/server_scripts/blockTags.js"
+hash = "491e77be3aa13807f26b6b76b48a2d4d091e03b7697fc054a05d67122fa4840a"
+
+[[files]]
+file = "kubejs/server_scripts/createCompat.js"
 hash = "5bf2bcc07bdc382a8e578815a26601f84f90d95f05b569489bface31a8b5dd0a"
 
 [[files]]
 file = "kubejs/server_scripts/helpers.js"
-hash = "61a3509273770d6c5ff4ccf179067bd7456615d55443164a2a727a4dc6c7a825"
+hash = "f1e742eff85968683103e951b0aa7bd0618a548f46eef5ba244028c4d9167df6"
+
+[[files]]
+file = "kubejs/server_scripts/itemTags.js"
+hash = "95ec7bc95d3c4eb84a0d579374ce25cd85bd5da578fc7b96ab00b36b027a3532"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "391775c0452e795607da22eb25455455f13730285aa6c4b8de337699a279d9e3"
+hash = "3447c35aadeb3abff636e50e4934ca5dd385fd3f18f5e01f70e00ac01a7966c2"
 
 [[files]]
 file = "kubejs/server_scripts/remove.js"
-hash = "8dbc8db3cf98033a61b148bcf944f1ff5c930735bf9710a49fbb7d11f0a61e5a"
-
-[[files]]
-file = "kubejs/server_scripts/tags.js"
-hash = "96b9f47d7e5c8b71ccafe74871daeff227ab5c54c886b39cdb24b8555f19ee3a"
+hash = "3e9b216817819bff82ae00aea6bf82d90aad8509e5cfe2a78110accf85e75ea5"
 
 [[files]]
 file = "kubejs/server_scripts/villagers.js"
-hash = "39a463913d97372dd3553db94c578c3666b80d11a8ed3e98741f57dda6b52147"
+hash = "b13d3168c5529edcb8e7e8e987ac4ca3e2a5c267f217b710f03f4253f9470ace"
+
+[[files]]
+file = "kubejs/startup_scripts/armorTiers.js"
+hash = "f346b28b9f710d0daed455d40a34adf40945302f3ad0e1675f9574b91a6368fd"
 
 [[files]]
 file = "kubejs/startup_scripts/block.js"
-hash = "3ce662c8618badb64e945b382ae2b5021fb624b49da29b8813e377dd2f239ae8"
+hash = "3eb981654f3d34895caced724c9fd464bbe1df1440bec7eef5d7c2200c1e3cdd"
 
 [[files]]
 file = "kubejs/startup_scripts/blockModifications.js"
-hash = "cc2be4585a87b728d275d4ed7bac1490d53823f1ef2041a582d2009caf902659"
+hash = "aabbb0ba11cbf010cc012ae3ba8a52c21d51d5582e9bd43e789d6a9f6bd0697d"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"
@@ -342,7 +378,7 @@ hash = "117d2bf1ddf5e8669636f810ce467fd54b7d3d13d971f21cf00ce15cf7f70625"
 
 [[files]]
 file = "kubejs/startup_scripts/item.js"
-hash = "079ba75f48a1708cdaf6b1c31025e6d948d445ad6ec1a38c928b535db259a58f"
+hash = "d4a362a385af63158f6339baf14536288c564dd9822e67391bb5f0db6ce726c9"
 
 [[files]]
 file = "kubejs/startup_scripts/itemModifications.js"
@@ -357,12 +393,16 @@ file = "kubejs/startup_scripts/modName.js"
 hash = "c308f9051aaebcd9f9bd16ac2b24247a69cb13ffe912aab19ee29a9e93aa5b1c"
 
 [[files]]
+file = "kubejs/startup_scripts/toolTiers.js"
+hash = "072d779e24515b10e6e2613d011d561d6c2d91c2001eef22b0a0565a9f7a17f3"
+
+[[files]]
 file = "kubejs/startup_scripts/worldEventsRemove.js"
 hash = "e0579dae48a92efc5ab3f43fbc5d85cc806762a4bba38a20b5f085ab8d3a67fc"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
-hash = "c4ac5a501db3bf4ff72430963f95f0228e74e6376c9136b44d2809b57d875d17"
+hash = "bc4677b5d9ff2bca2d8e031faf781a10bc578b95cdb709527b8eb85d79e4daae"
 metafile = true
 
 [[files]]
@@ -436,7 +476,7 @@ metafile = true
 
 [[files]]
 file = "mods/beans-backpacks.pw.toml"
-hash = "7f265ba92d121d67bf1ab145404566eee9a0467b9917a5968bf6ccff9cc30ac5"
+hash = "945f157e5e2b6962f75428d635f672ebb4efd147d56280a63077ec114519ee2f"
 metafile = true
 
 [[files]]
@@ -516,7 +556,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "be77282bdc44f3d4a1112838548a0bdcaf7511587285b0e389cb3a6c77ba560f"
+hash = "068d400e65ec04f110ff30663902b08310039f32ec6ea419459bda968222cec2"
 metafile = true
 
 [[files]]
@@ -576,7 +616,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-molten-metals.pw.toml"
-hash = "bcc05a14728faa2bf0144c6c11a73317a0f4fc7413e22672f14b6c799a6be0f1"
+hash = "af4d5bf171f262c6003a47c1198e03261b15e904cd297b70bf9b280c865b62b3"
 metafile = true
 
 [[files]]
@@ -646,7 +686,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
-hash = "df7d79acf12a498c7d2c06c80417b14974e321aac61afa7e570b30330aedc764"
+hash = "ee965d6f2e0a9cdc31139b0d8a3367eb8db031065a03142534652573626e9787"
 metafile = true
 
 [[files]]
@@ -656,7 +696,7 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "5762034e469126ca673ee2f67dcc6a2969b73f0623ea44c84af0b7195c93e13f"
+hash = "52dba30a707ef0cb51cd30462c47980de681e071d31e376f18bc507933ee2abb"
 metafile = true
 
 [[files]]
@@ -666,7 +706,7 @@ metafile = true
 
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
-hash = "2a36bacc54de817c3e990f60666037d2872e3cf90b4eb7b74645c8716d172186"
+hash = "3251a3699322607d89dccdd4efef359e0aaa2f9a21e011265c36e165423d83c9"
 metafile = true
 
 [[files]]
@@ -711,7 +751,7 @@ metafile = true
 
 [[files]]
 file = "mods/fancymenu.pw.toml"
-hash = "e1d4ec94a9c457965fd58211855a778a025949f98eabfaec7c6a69b8bb87f4a9"
+hash = "231c70ba431abfeea7ee0878e5c943b9844bb9cfe6f22f8130841493d7d9662e"
 metafile = true
 
 [[files]]
@@ -732,11 +772,6 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "39a6a39433b1b104bfafafcd60a8171f866daa2ebefffd64df822d0e69288e3a"
-metafile = true
-
-[[files]]
-file = "mods/figura.pw.toml"
-hash = "75ffe202cd8947bbbb748a46bcd9d1cfb55d34a2fc95909b3001ac8433625fb7"
 metafile = true
 
 [[files]]
@@ -1010,13 +1045,18 @@ hash = "6f544187351671449d090d19f2279c288efba093d470a0bbd4580eb2750105cb"
 metafile = true
 
 [[files]]
+file = "mods/niftycarts.pw.toml"
+hash = "1cfea8c19682e125083416fd5b8ad7ddfde7dc813c7c6569281ca80db7107d19"
+metafile = true
+
+[[files]]
 file = "mods/no-chat-reports.pw.toml"
 hash = "7ca62a9da5c2ec9f0a8bed5394021c959e90077db16b313be44f4c8736f7fbf5"
 metafile = true
 
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
-hash = "acfbe6632469f78f299d341895817ee1b678b7c03d773631399f574d99f87fef"
+hash = "189e1e8dee2aaa0d41b839acd8fce432ae041fa38d3b98fba0aedeb238b094ed"
 metafile = true
 
 [[files]]
@@ -1291,6 +1331,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/brushup!++.pw.toml"
 hash = "bd37f9c884eeb5ea254f628f0614db6a9054aa1f93b2e96c2db2b1f15f2c0705"
+metafile = true
+
+[[files]]
+file = "resourcepacks/create-computercraft.pw.toml"
+hash = "92330acf54623b70104adb84139372a43045cff7066e7068da757a4de212b07d"
 metafile = true
 
 [[files]]

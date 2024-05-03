@@ -23,6 +23,15 @@ ServerEvents.recipes((event) => {
     C('cogwheel'),
     C('large_cogwheel'),
     MC('crafting_table'),
+    MC('bucket'),
+    DD('sap'),
+    C('electron_tube'),
+    CBC('molten_bronze'),
+    CBC('molten_cast_iron'),
+    CBC('molten_cast_steel'),
+    DD('flowing_sap'),
+    DD('rubber_saplings'),
+    S('obsidian_hammer_and_chisel'),
   ].forEach((recipe) => {
     event.remove({ output: recipe });
   });
@@ -61,6 +70,7 @@ ServerEvents.recipes((event) => {
     S('raw_magnetite_from_nuggets'),
     NS('joshua_planks_from_joshua_bundle'),
     NS('joshua_planks_from_stripped_joshua_bundle'),
+    '/' + MM('mixing.*/'),
   ]
     .concat(planksToBeRemoved)
     .forEach((recipe) => {
@@ -75,6 +85,19 @@ ServerEvents.recipes((event) => {
     { input: DD('crimsite_cobble') },
     { input: DD('ochrum_cobble') },
     { input: DD('veridium_cobble') },
+    { type: CBC('melting') },
+    {
+      type: MC('plugins/crafting'),
+      output: MM('ingots_mold'),
+    },
+    {
+      type: C('packing'),
+      output: CA('seed_oil'),
+    },
+    {
+      type: C('mixing'),
+      output: CA('bioethanol'),
+    },
     {
       output: C('brass_casing'),
       type: C('item_application'),
@@ -140,6 +163,10 @@ ServerEvents.recipes((event) => {
       input: S('raw_zinc_nugget'),
       output: C('zinc_nugget'),
       type: MC('smelting'),
+    },
+    {
+      type: FD('cutting_board'),
+      input: MC('saddle'),
     },
     {
       type: C('cutting'),

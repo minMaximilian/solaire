@@ -9,9 +9,13 @@ const MC = (id, x) => MOD(`minecraft`, id, x);
 const F = (id, x) => MOD(`fabric`, id, x);
 const CON = (id, x) => MOD(`c`, id, x);
 const C = (id, x) => MOD(`create`, id, x);
+const CD = (id, x) => MOD(`createdeco`, id, x);
 const KJ = (id, x) => MOD(`kubejs`, id, x);
 const MM = (id, x) => MOD(`molten_metals`, id, x);
 const DD = (id, x) => MOD(`create_dd`, id, x);
+const DEC = (id, x) => MOD(`design_decor`, id, x);
+const BB = (id, x) => MOD('beansbackpacks', id, x);
+const CBC = (id, x) => MOD('createbigcannons', id, x);
 const S = (id, x) => MOD(`spelunkery`, id, x);
 const ST = (id, x) => MOD(`sleep_tight`, id, x);
 const ETC = (id, x) => MOD(`etcetera`, id, x);
@@ -24,6 +28,7 @@ const T = (id, x) => MOD(`twigs`, id, x);
 const CA = (id, x) => MOD(`createaddition`, id, x);
 const CC = (id, x) => MOD(`computercraft`, id, x);
 const NS = (id, x) => MOD('natures_spirit', id, x);
+const DOOR = (id, x) => MOD('dramaticdoors', id, x);
 
 // Steam n' Rails
 // const R = (id, x) => MOD(`railways`, id, x)
@@ -47,16 +52,9 @@ const dyes = [
   'pink',
 ];
 
-const tool_tiers = [
-  'wooden',
-  'stone',
-  'iron',
-  'golden',
-  'diamond',
-  'netherite',
-];
+const tool_tiers = ['stone', 'iron'];
 
-const armour_tiers = ['iron', 'golden', 'diamond', 'netherite'];
+const armour_tiers = ['iron'];
 
 const tools = ['shovel', 'pickaxe', 'axe', 'hoe', 'sword'];
 
