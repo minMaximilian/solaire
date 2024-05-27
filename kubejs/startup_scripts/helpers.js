@@ -15,3 +15,4 @@ const DB = (id, x) => MOD('decorative_blocks', id, x);
 const NS = (id, x) => MOD('natures_spirit', id, x);
 const SPA = (id, x) => MOD('spawn', id, x);
 const DD = (id, x) => MOD(`create_dd`, id, x);
+const EC = (id, x) => MOD(`everycomp`, id, x);

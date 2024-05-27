@@ -79,7 +79,11 @@ BlockEvents.modification((e) => {
   });
 
   // No tags in start_up scripts
-  const misc = [S('conk_fungus'), SPA('cracked_rotten_planks')];
+  const misc = [
+    S('conk_fungus'),
+    SPA('cracked_rotten_planks'),
+    EC('all_woods'),
+  ];
 
   misc.forEach((log) => {
     e.modify(log, (block) => {

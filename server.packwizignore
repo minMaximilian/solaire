@@ -1,0 +1,4 @@
+resourcepacks
+shaderpacks
+config/fancymenu
+config/**/*-client.toml

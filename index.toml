@@ -374,11 +374,11 @@ hash = "3eb981654f3d34895caced724c9fd464bbe1df1440bec7eef5d7c2200c1e3cdd"
 
 [[files]]
 file = "kubejs/startup_scripts/blockModifications.js"
-hash = "aabbb0ba11cbf010cc012ae3ba8a52c21d51d5582e9bd43e789d6a9f6bd0697d"
+hash = "c0f193daa57636cef4fabf7fa98b3f2ad04e13bf452ac739d98a64ec79b443a9"
 
 [[files]]
 file = "kubejs/startup_scripts/helpers.js"
-hash = "117d2bf1ddf5e8669636f810ce467fd54b7d3d13d971f21cf00ce15cf7f70625"
+hash = "0c9a0636e4f27a2498f2039be3c17f06f21e33d9d310ff44223d3086cef033ef"
 
 [[files]]
 file = "kubejs/startup_scripts/item.js"
@@ -394,7 +394,7 @@ hash = "89558af38abfdac3715564f0902044b9075a3b36116a712f99c86b40032b0362"
 
 [[files]]
 file = "kubejs/startup_scripts/modName.js"
-hash = "c308f9051aaebcd9f9bd16ac2b24247a69cb13ffe912aab19ee29a9e93aa5b1c"
+hash = "e9028ff6733417d011be7a714117656b236c54802f02311a013a2800d29ad44f"
 
 [[files]]
 file = "kubejs/startup_scripts/toolTiers.js"
@@ -406,16 +406,16 @@ hash = "e0579dae48a92efc5ab3f43fbc5d85cc806762a4bba38a20b5f085ab8d3a67fc"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
-hash = "bc4677b5d9ff2bca2d8e031faf781a10bc578b95cdb709527b8eb85d79e4daae"
+hash = "aa9713b04a9a616f81f739cafd3b665e3fb835cc281c4478e92b0a8ba8e34c20"
 metafile = true
 
 [[files]]
-file = "mods/DistantHorizons-fabric-2.0.3-a-dev-1.20.1.jar"
-hash = "0b7bb90fbf372c277d6e72fa9f1f001173ed1344d8212e0d01e3c9656f781a42"
+file = "mods/DistantHorizons-2.0.4-a-RC2-1.20.1.jar"
+hash = "5b71e3a07c9eed9a73fd3655eddbf5f6ab30aa6f6dd8b24796c725b439b02b18"
 
 [[files]]
 file = "mods/advancement-frames.pw.toml"
-hash = "9d744fcd410ddac86c75267924392b357f3cd4297695860af7a2ec24932135ac"
+hash = "204782a3b563594e17a64d8335264122fce3bbbad24eb940860483199105b975"
 metafile = true
 
 [[files]]
@@ -480,7 +480,7 @@ metafile = true
 
 [[files]]
 file = "mods/beans-backpacks.pw.toml"
-hash = "4c78355b895d80cc8cae7e1e628dffd3953b5c9ecd6c3d102f0a731796e926f3"
+hash = "dc900d3c0373e7424934b280b09ecdefa661e5bc007be0189c827bcc2e11be76"
 metafile = true
 
 [[files]]
@@ -620,7 +620,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-molten-metals.pw.toml"
-hash = "ee2e576af04e923fbbadf858ca98ac56f659ff497c49d369c6a042f175e558fa"
+hash = "a211e4e8e8955f09568c0c18c2966198b8ee5acd2e4fbe04e90668b282423ba7"
 metafile = true
 
 [[files]]
@@ -651,6 +651,11 @@ metafile = true
 [[files]]
 file = "mods/decorative-blocks.pw.toml"
 hash = "43ea00d836bef5a72eb2e074e5b0ba534e09d31e41a674c8b3d77f307dfbd619"
+metafile = true
+
+[[files]]
+file = "mods/default-server-properties.pw.toml"
+hash = "d3befebcecd648583cb83594df3e0fda6287b73e0d211c243cd83ba4ecab52be"
 metafile = true
 
 [[files]]
@@ -705,7 +710,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "33f865a014f3acf2c1f2c452bfe7ba1a864acad178322a6eab3759c7e63c9654"
+hash = "fddce1cfc06ce7b3c5fc0cfa062fc57eadfd4ef4213ad561dc93d98b92d329d2"
 metafile = true
 
 [[files]]
@@ -960,7 +965,7 @@ metafile = true
 
 [[files]]
 file = "mods/lootr.pw.toml"
-hash = "996bf4e23ceb3ebe203859eda250fddf210babc15b5683fe585159a9398e4d70"
+hash = "9d399c9d4dad20b73d05fa85c8ee9fbb660fd4e78bd4dd21780e19013b499e7c"
 metafile = true
 
 [[files]]
@@ -1005,7 +1010,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "68fa2c90c80e9ae9fbd98b2e62b43422883f0937165324bf11965c400047ca86"
+hash = "7356c4b80f79ea0991f67456b265204c45c4897f4acc5858ce40a3028ade12fd"
 metafile = true
 
 [[files]]
@@ -1020,7 +1025,7 @@ metafile = true
 
 [[files]]
 file = "mods/mru.pw.toml"
-hash = "051b1bee4a7fd8f2a55753fe95eda061e0f2a724c5b8ad38d2ca3619c88f2fae"
+hash = "ca4ba8ed59d7d943cd339d00789059c3ce79f774433804935bb1acc467be47aa"
 metafile = true
 
 [[files]]
@@ -1070,7 +1075,7 @@ metafile = true
 
 [[files]]
 file = "mods/numismatics.pw.toml"
-hash = "908a4dcd0909080901e66f5bed636316e10938d1795ad309697d40dd47fb7f7c"
+hash = "9305abd7bed1a6175113e2fca0fe65174023cda93ce42716c5a94eba5d715bbf"
 metafile = true
 
 [[files]]
@@ -1105,7 +1110,7 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "5017352458c35693d4aa0ea8872a0e6b80a6c128a5866327b02263d2ce87c9c4"
+hash = "e7150de20c3dae1ab19c99881fd8c4bab920f67f97f26311f7ab63fdee0f13d0"
 metafile = true
 
 [[files]]
@@ -1140,7 +1145,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "ba80062b95f5763d97bc355f0776b9c189911d7224b830485b02dc5f8cdcdeb4"
+hash = "d51f11f7b5c69d448ce96d7fe8c522c36521650629181b659f3fb230da6bdd6b"
 metafile = true
 
 [[files]]
@@ -1305,7 +1310,7 @@ metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
-hash = "120a21fa73bcc231ebb23dd30fc32b1da54ced4ab62c5e3f052927e06d422f1c"
+hash = "e5182e08336de4bff4901b4dd34b4e1a044f0e7a5e709b90b0fd80bfe9df7a41"
 metafile = true
 
 [[files]]
@@ -1320,7 +1325,7 @@ metafile = true
 
 [[files]]
 file = "mods/zoomify.pw.toml"
-hash = "0dfc437b6a74265d48e4b563dde1ddecf40c202a73f963d6a94bd27a552ac0dd"
+hash = "a2fcbfa66810d21fc67499ea6fc65b4c465110d52c92408f6c35d7c1e1f96c6d"
 metafile = true
 
 [[files]]

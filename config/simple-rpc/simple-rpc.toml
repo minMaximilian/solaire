@@ -16,7 +16,7 @@
 	#Enable/Disable the Game Loading Event
 	enabled = true
 	#The first line of text under the app name
-	description = "Create the Server: Solaire is loading"
+	description = "Create the Server is loading"
 	#The second line of text under the app name
 	state = "Game Starting..."
 	#The Asset ID/URL of the image to display as the large image

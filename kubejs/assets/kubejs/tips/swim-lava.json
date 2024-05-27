@@ -1,10 +1,10 @@
 {
-    "title": {
-      "text": "Solaire",
-      "bold": true,
-      "color": "gold"
-    },
-    "tip": {
-      "translate": "tips.tip.swim-lava"
-    }
+  "title": {
+    "text": "Create The Server",
+    "bold": true,
+    "color": "gold"
+  },
+  "tip": {
+    "translate": "tips.tip.swim-lava"
   }
+}

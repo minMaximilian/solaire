@@ -1,10 +1,10 @@
 {
-    "title": {
-      "text": "Solaire",
-      "bold": true,
-      "color": "gold"
-    },
-    "tip": {
-      "translate": "tips.tip.code-java"
-    }
+  "title": {
+    "text": "Create The Server",
+    "bold": true,
+    "color": "gold"
+  },
+  "tip": {
+    "translate": "tips.tip.code-java"
   }
+}
