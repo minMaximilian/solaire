@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/create-server.toml"
+hash = "8bfe493da4e9d3184343e7622d6ca833f00c7d605745876b2a6a6c6d010032c7"
+
+[[files]]
 file = "config/fancymenu/assets/minecraft_title.png"
 hash = "5308784a860cdd20548405d2f891a875b9d70518353aa706e1cd122f51d20214"
 
@@ -34,7 +38,7 @@ hash = "596d0d57a309802ee0079397ab255cd31957b3b5a947aee5a8134bf9d94e1e0f"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "b72919c020d67b94c28e3e3d0365a7df5566cbcf9a7284400c66b8ec972488c1"
+hash = "9f671f099852a33275f49bb70582133cbc0f0758d7ae29af84c9cffb9677a41a"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -70,7 +74,7 @@ hash = "b60c13898e531ffeeed6899181e2b25cd25400a46c36c0a6b6d354fa179283db"
 
 [[files]]
 file = "config/simple-rpc/simple-rpc.toml"
-hash = "959b5f7da571855dd2711253d52e4f0e3876bfec62a47e8f6c9c517d725de67a"
+hash = "a0a9c0f7fb948103c93e6eddc977008cb8bac42296a588abda4c577a0eec78a3"
 
 [[files]]
 file = "config/sleep_tight-common.json"
@@ -85,200 +89,208 @@ file = "config/youwereslain.json"
 hash = "d8db73d90910a954fbfce4fd8ac4cb4bd9217f20a376db9082e8a71ab9f14eeb"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json"
+file = "default-server.properties"
+hash = "fb510492564e5ea04f7ef9fe836436b1cff0bbc9838a408f5c26fe05705c887b"
+
+[[files]]
+file = "globalpacks/cts/data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json"
 hash = "1f768da15b652dbbe362e6510560654b5d3b814088ee8cbb37ba4c502eb34641"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json"
 hash = "eb56e745327e171d838c57f9ff1426c7ec44a6d3e8b5d4cc31605dbf72114b81"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/archaeology/trail_ruins_common.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/archaeology/trail_ruins_common.json"
 hash = "4efe23c56e191d54e6a064abed26d29e2100378ce0719c414196c2746acadc68"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
 hash = "7afa9f70a90bb61aeb01913dac92982534af1e90c5083796a70a440d3429b19c"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/ancient_city.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/ancient_city.json"
 hash = "e02161fafa3e65a6575a083ffe6697c3cf91653fed3f1dc489cd86e14bf60f0e"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/bastion_bridge.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/bastion_bridge.json"
 hash = "2ef13b07e858e46b082e3e925cdf1eabf78896b5fcbba56f2d32af0676e5ccec"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/bastion_hoglin_stable.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/bastion_hoglin_stable.json"
 hash = "acdd4f5969278ddb8b304b44118bc23958ceb2673a4b376084a354f013ae0428"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/bastion_other.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/bastion_other.json"
 hash = "8529ae6206016d76edb9c88a4146de92a75d5f789f528d990ed33eb104f150f9"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/bastion_treasure.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/bastion_treasure.json"
 hash = "4abb13116fa520ea91b40a3231227020ab715cfb46c2abafa2cec56c636142d4"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/buried_treasure.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/buried_treasure.json"
 hash = "644899bc37548f9e19b3187dfecbd549fc5f27fc2bd9e5b1eb72fc140d94a145"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/end_city_treasure.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/end_city_treasure.json"
 hash = "687eed28e7d26b3637ecb8d230ca87a7c8529a7569f10e60c0c92af3b67eea79"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/igloo_chest.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/igloo_chest.json"
 hash = "64a71640e6703c338528e17f2fecba8a23d615bac37a3f04fbc34048bdce9757"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/nether_bridge.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/nether_bridge.json"
 hash = "a82727b91b57bc793a180d9ac3f14756bfc44abce9ad4becb1540c8edbb0dd30"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/ruined_portal.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/ruined_portal.json"
 hash = "82f63716b226597a8376e580a8616e0be02a6faa50796224f467532d68d3e9de"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/spawn_bonus_chest.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/spawn_bonus_chest.json"
 hash = "09ac2b540530c1fcb0ccd635493e04ac3ea226311de419b51ce77acbe8d81d90"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/stronghold_corridor.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/stronghold_corridor.json"
 hash = "a3a9721196bd12805c596c460e86001847418bc7f0170389543f36b75efdfd16"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/stronghold_crossing.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/stronghold_crossing.json"
 hash = "0580496660a792af24c6f862c3e869adccc3c5cae25066a4c4778bce6753c96c"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/underwater_ruin_big.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/underwater_ruin_big.json"
 hash = "78275b2ca8269d7eef597d0933e3be67dbcfea64ba2c05a19346118987808a7b"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/underwater_ruin_small.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/underwater_ruin_small.json"
 hash = "1aa9af9f2debab2e65a4fabc676ecd24fb7ad961ca2eda0e9f95ea9c3c7615bb"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/village/village_armorer.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/village/village_armorer.json"
 hash = "45c780f558a7ed95ef1dc24ed10bd41913f305c49dbcedd4d9acdf6300476deb"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/village/village_savanna_house.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/village/village_savanna_house.json"
 hash = "619192ba954a1842ed031565ed2a7ca59bedfb4cccd8ac129aa7806fe0c961ae"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/village/village_toolsmith.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/village/village_toolsmith.json"
 hash = "a236ca560fcad0267d83b9b651ad689a1a39937e7583a33f671d196a7eedd551"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/village/village_weaponsmith.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/village/village_weaponsmith.json"
 hash = "76e48c2a3e67388463a89c1067fbda026d74f53c845682b54a5a0899a81f169f"
 
 [[files]]
-file = "globalpacks/solaire/data/minecraft/loot_tables/chests/woodland_mansion.json"
+file = "globalpacks/cts/data/minecraft/loot_tables/chests/woodland_mansion.json"
 hash = "e7c048a7c75392ef0fd62246b83777bf8e3deb77697b0e8204fe6cc7d615abfd"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/archaelogy/conduit_ruin.json"
+file = "globalpacks/cts/data/minecraft/tags/worldgen/biome/has_structure/stronghold.json"
+hash = "da190105bc91c8d1370b26d87d4f0cb2ec06a05355fdcd05590b56766c908589"
+
+[[files]]
+file = "globalpacks/cts/data/nova_structures/loot_tables/archaelogy/conduit_ruin.json"
 hash = "3826b01c61b73d582f85bcddc055fd8bcdf31bb8b88ac4006262f87d610be0ca"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/archaelogy/desert_ruin_ruins.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/archaelogy/desert_ruin_ruins.json"
 hash = "95b7faab960c4902e7830050dab26f5110cca9e7bacb8793e6d8315890c92438"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/badland_miner_outpost.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/badland_miner_outpost.json"
 hash = "613d87838390d3bb37bd4eea8d887b4102fe64e302516ac2b014d0dea3e7c053"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/badland_miner_outpost_forge.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/badland_miner_outpost_forge.json"
 hash = "8bf0b4cf7bd10c2bc01896c1d449ac371c0f94947d47bd41eec8bf344057c07b"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/creeping_crypt/crypt_grave.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/creeping_crypt/crypt_grave.json"
 hash = "61f1363bfe376c9f5516f3d89ee4b66f27bf4df569b2c2df9a319bd1860711ae"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/creeping_crypt/crypt_hallway.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/creeping_crypt/crypt_hallway.json"
 hash = "3c648cbe8619e0f50d343193bcaa8efe71952a47ad47b02308d593ae4fd2b00d"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/illager_hideout_heart_loot.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/illager_hideout_heart_loot.json"
 hash = "b32774e1cb2d817fc198481b2ad9161a9a3dd38f1030da4aebe49e6969e5d4d5"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/illager_hideout_weaponry.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/illager_hideout_weaponry.json"
 hash = "7829f57bffb12b753afb1f551620490cdef4e2797eb4ef338c4036f8cbb4f975"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/nether_port/nether_port_chest.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/nether_port/nether_port_chest.json"
 hash = "d045049a1806c51fb5aee074857160aff67cde1c8746b18530e415714f51f19f"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/nether_skeleton_tower/skeleton_tower_chest.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/nether_skeleton_tower/skeleton_tower_chest.json"
 hash = "2a6d8018f12fa6e6bd3e81e97d597b1fbf256e78363c28cd7025658a4b3b004b"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/piglin_outstation/outstation_tower.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/piglin_outstation/outstation_tower.json"
 hash = "8af2c835916a66668e552806c6792aa5190af61b15ee4525b708e1de68c63c74"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/pillager_outpost_treasure.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/pillager_outpost_treasure.json"
 hash = "7fda29c25de54e7b78294335f76466a2ec3fd5daf69bc991e6fbb00c519fa223"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/undead_crypts_grave.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/undead_crypts_grave.json"
 hash = "ba393d5ccd88c3ac392fe855398bf27147c9198a37974d46db44e230b4354372"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/witch_villa/gardening.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/witch_villa/gardening.json"
 hash = "798fcd9b7125c9c80a3061d7b3c99f81f5e5ae56def3d9acfd5956dff44506dd"
 
 [[files]]
-file = "globalpacks/solaire/data/nova_structures/loot_tables/chests/witch_villa/general_storage.json"
+file = "globalpacks/cts/data/nova_structures/loot_tables/chests/witch_villa/general_storage.json"
 hash = "a420f32d8dacbe2f225acac6620eaa3d67d8d33be034f913b7c5c2936bd1d14f"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/lava/passive.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/lava/passive.json"
 hash = "bf1b0463911226e8cca8799697cc9e5875439c7b107b10800b670a344fb92af4"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/spring_water/passive.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/spring_water/passive.json"
 hash = "c936b70a5e2a9737dfd7def5f6e755845caa84af44511a64863fb16bf8aad630"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/clay.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/water/clay.json"
 hash = "088b8edd1c0e7546d8ad84cb75911b2c5a8ac31e2488ed5fac10b24654ee86d4"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/gravel.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/water/gravel.json"
 hash = "b375019c7fa36819f0e1160ef617ac636bb7170725f9dfd14734cc5ba9653eca"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/red_sand.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/water/red_sand.json"
 hash = "f95f88b600a86bb30368421f8aefd95ec466cbaae2e2d93451132a9434ef68a2"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/sand.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/water/sand.json"
 hash = "26ebffbc9a936fd888903417921ec9b74ca4b3d9683f30569704ad3f534c20c8"
 
 [[files]]
-file = "globalpacks/solaire/data/spelunkery/loot_tables/gameplay/sluice/water/soul_sand.json"
+file = "globalpacks/cts/data/spelunkery/loot_tables/gameplay/sluice/water/soul_sand.json"
 hash = "cd5c785d0e56cee8ea6e1c569ff7ff298b1b97767dea5d99035d1ee7fb59b039"
 
 [[files]]
-file = "globalpacks/solaire/data/twigs/worldgen/configured_feature/patch_pebble.json"
+file = "globalpacks/cts/data/twigs/worldgen/configured_feature/patch_pebble.json"
 hash = "8fe0d4fc7dabd323b811878f13610044cea0327849e4ca7f8612bc011db77924"
 
 [[files]]
-file = "globalpacks/solaire/data/twigs/worldgen/placed_feature/patch_pebble.json"
+file = "globalpacks/cts/data/twigs/worldgen/placed_feature/patch_pebble.json"
 hash = "2b3c062cc220bdaa1721cc8440ac62278ea136e912ffc9ebd2cee4e8915871e8"
 
 [[files]]
-file = "globalpacks/solaire/pack.mcmeta"
-hash = "258ef8fadbdef9c917f56cd6181711c6541e1f939065f07d9cf2245bc23c03a7"
+file = "globalpacks/cts/pack.mcmeta"
+hash = "c44bc4dfbc89f071bd4f4b515c59e45a1b009ce6faa17fe0d8dc3dfc4abf52ba"
 
 [[files]]
 file = "icon.png"
@@ -297,12 +309,212 @@ file = "kubejs/assets/kubejs/lang/es_mx.json"
 hash = "9726bae234cf17f2d2f846ce21b90008c80e8bea9a6f2c6ce606223acbe968ca"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/axe_mold.png"
+hash = "53412877663b1a5a18cc689756fbd7054e407047c10f890ce09e0568545a07b6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/ceramic_axe_mold.png"
+hash = "daa921f7ffdb1a879f89b71dc0a67dbf3a4ea2b111828e7932c0255e715a39af"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/ceramic_hoe_mold.png"
+hash = "6cd8fc4f1090113ea12f13b11b06fd6a14c79be05315a157f3bd511d7c24a552"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/ceramic_pickaxe_mold.png"
+hash = "ab4953e490483c726e6ffd51f1a7df050dddb6d1ab1a1ea30c93d48f8dcdd220"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/ceramic_shovel_mold.png"
+hash = "435ac41462a656fcda458048f5bee09d8cc5d11b4593ab855703f49dddbaafad"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/ceramic_sword_mold.png"
+hash = "4a63da3dd73239857d4e8890a958ddea0e8ac6e36f123f0442439d45646469d1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/hoe_mold.png"
+hash = "1a2178c2d3475888583d189f4c68db985e5492f60b7bf7b9b28ca4e2836c813e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_axe_mold.png"
+hash = "0338491a3b611c522d016c7e48071406fc5759175e308baae7ed92aadd4ccfaa"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_ceramic_axe_mold.png"
+hash = "caed66189abc0dbc103104b86df150acdbbdfd4e76516e593162977020200d9a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_ceramic_hoe_mold.png"
+hash = "ab33a5a84dd733cb5492d8231a73e89f1d6b0b11edd2da582f183e7219481daa"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_ceramic_pickaxe_mold.png"
+hash = "195577573a4dfa7547d10509c519f69b49250c2c31610bdba92aa4eac3b60d58"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_ceramic_shovel_mold.png"
+hash = "3eb45f961aba0684eec2a6eaf3e7bb0a4a5e259e84a5f99c85b4a10714d8b4f3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_ceramic_sword_mold.png"
+hash = "23950bf74c5240b8c879406a51bc9bd435ac4c69798dd67825f7eb990b3bf4f2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_hoe_mold.png"
+hash = "ff3157dd42a06830982d4fb8fb777475b14458e79ee14bc5980bf32cf50e91a9"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_pickaxe_mold.png"
+hash = "80544648bb0f6036c3b20173f40218e65ec29b85401a79c77b8a022c5d94345f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_shovel_mold.png"
+hash = "6bd31e881e4b90eb1f4f5521cddf644614fbd9a58e2abce66d78342eaa349c41"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_bronze_sword_mold.png"
+hash = "21eaf52c7d3e49a2f4a36054bd802e995eab360b9bf71edc79957ce4711d26d7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_axe_mold.png"
+hash = "8c58d36ec811fb214ab8da7297f222bb4b419af0654d42c37f360478bf853bb1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_ceramic_axe_mold.png"
+hash = "0daecd31ad5627b52faefd19a7d12b76fe101ee660f5a3a27a77c7fa1c6a4641"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_ceramic_hoe_mold.png"
+hash = "8a8212388dc84853e7f95191d8afcf8661bc16e4b294664a55caf88a846eb3be"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_ceramic_pickaxe_mold.png"
+hash = "0b7bc71ca5e0b91cad1f1fcb04481895052de51529be04944eee01cf30c63a54"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_ceramic_shovel_mold.png"
+hash = "e91a03b0c1802a0a38b952d0014391b3831b13b4a57cd3c667245cccf70465e0"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_ceramic_sword_mold.png"
+hash = "1f4887842d08dd8227df4b71413d0a7b42bcd0534b93c894d3778e4a24871658"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_hoe_mold.png"
+hash = "0df524cbb1ab1cf38c6759673342854988720e91a38a34355a6a0031592ddc05"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_pickaxe_mold.png"
+hash = "77bfa80109bd287a41ea9b01710a5480af0a512863300710f6a72ad87b509025"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_shovel_mold.png"
+hash = "09b36c7ccc65fb4039ba20f2aba86acf1ee51d200fb9aa3da09afdc86d7e1b27"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/molten_steel_sword_mold.png"
+hash = "6fd07dea132b525919c1a04f37234e8245194ff76e76b10679a956d5956c2433"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/pickaxe_mold.png"
+hash = "0a23cc46da9ade6924c09fd68c39361b0599af3e5d763da11f84b6e311ac9ba3"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/rubber_block.png"
 hash = "ce6b65edcadc33c292d24fbf36f94c58d2f73ec889db3cdaa75fb7798b3fe7c2"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/shovel_mold.png"
+hash = "2c7c6190a90e0ba153c355e5391d2123b46273054a82a4f9bfb8f71695dd4b9d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/sword_mold.png"
+hash = "f42f032f6428d1e606a10ce1055e1bd1ba68e14e6f211334e0c65634e94f3dda"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/unfired_ceramic_axe_mold.png"
+hash = "a19b98b616c659785aa98c0a12f693360bedf54b792e13e9c408872b18b6bce7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/unfired_ceramic_hoe_mold.png"
+hash = "039d629a12a1e36723305dd2c3963470d3688582772efa01dba9cc80dbafcacf"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/unfired_ceramic_pickaxe_mold.png"
+hash = "04cc2e5d4f4fe932c6e8c4f9a36f9f877c6d5720ba61820f75bef8d0f2314c4d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/unfired_ceramic_shovel_mold.png"
+hash = "264b3e755325cde15aac952638d7400208dc175fe26113722ce6081e7789a5b0"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/unfired_ceramic_sword_mold.png"
+hash = "1414d48188f98de7efb03b9ce7fbfb637adc3e500c986542c49cf00df74fe6b1"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/andesite_compound.png"
 hash = "f3549863ee11924f5db82bbda91aa9e2df881d154a4c3a73eca622c2421a96cb"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_axe.png"
+hash = "55e3bd07344de1d98c78303594451e55b6334327ba876189ce271f9113885913"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_axe_head.png"
+hash = "db0424792eff8dd6d6f727239b5ef4c00e548df6ebadd8c734a5950f417e025c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_hoe.png"
+hash = "750001ffe15a359577d4ae7bed5b4e9daedc57944672d8561601d74df79b5b70"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_hoe_head.png"
+hash = "1ec0b7eb10e71d5bbf41da6da8b2c7acc8406d16051870f8bbf3a0004698b4a9"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_pickaxe.png"
+hash = "dfd9d3eea40424a34b373457435251046990040fa451b1d38ef06ca37b3bb3c6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_pickaxe_head.png"
+hash = "5423d8f7b6bee557092c593058f847a5ca10e3672c862a6a490724091464c24c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_shovel.png"
+hash = "e03e877ddb39c9cff63695b0b8dd05a18e8b84505290d3f6847ae96b5af15f1f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_shovel_head.png"
+hash = "447a73f24561b94f9ca051c057f92ee955eff3d6aecc73e0001da3bdf4b17c71"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_sword.png"
+hash = "04bcb6ca53e387dab5906904f211587c405ff605e6e77386ee0b7e5a31b36967"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bronze_sword_head.png"
+hash = "5abbe7de37f94fef33bdd55eb6f376dd8f34eb26dc29c3b6335fdfc8c13ee149"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/copper_axe.png"
+hash = "c17822aa1b46e606f7e088f09b8a00a3083fcc007ae1303000626c8af607c957"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/copper_hoe.png"
+hash = "50f61e57597d7413ce996ba9afc40729cf976073cc75ea84b08c62ea534459e4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/copper_pickaxe.png"
+hash = "9a6e11501243c1f085c1b3e77967be19af623b3ea6ff2525c07b4f7bee662a27"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/copper_shovel.png"
+hash = "9c60137691b1589cca5f35364a2c58c44eff15a72236d7e468e23b40c3dc977a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/copper_sword.png"
+hash = "91f7f17ca996fd6ac57edb375902cf8a80aaf50b5867eb217f2056158fb8d5e9"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/incomplete_brass_casing.png"
@@ -313,12 +525,52 @@ file = "kubejs/assets/kubejs/textures/item/incomplete_copper_casing.png"
 hash = "0205e49ed24ad2a02b2ec7a016f0d02a57534aa4b602981bcac3077271601c2c"
 
 [[files]]
-file = "kubejs/assets/kubejs/tips/code-java.json"
-hash = "723a01bd1b0e17f0fdecc4651d07a0ed1ccca62046f38a4c082bade3987b803d"
+file = "kubejs/assets/kubejs/textures/item/steel_axe.png"
+hash = "58fc83230f33945964d73e89b15866f375d6dd9ae41e2f6a10df73106efc7cea"
 
 [[files]]
-file = "kubejs/assets/kubejs/tips/swim-lava.json"
-hash = "e984da7682300c0c8083660026d4636d9d9fa806e6ce03300f4e0d6723ce6bd4"
+file = "kubejs/assets/kubejs/textures/item/steel_axe_head.png"
+hash = "ae99f973ca2145f1f4771eb84754e44e0fd9e09c92937e8baccc261d0baad1de"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_hoe.png"
+hash = "82020ea6913ad1767d495a80ea81a1822a146a58a6ee34616bf1754450cee610"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_hoe_head.png"
+hash = "e027f84ab75455f2fe86ec71ab76e514359343a955883f8ca3448a9ac84fc6f7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_pickaxe.png"
+hash = "4ffbd30bf0d4ced4ae1cd2a85f91f50c7b8ca789bdada0d38f5cc679f945942a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_pickaxe_head.png"
+hash = "21ade7bfaeca46eef0fbb4e32f7effa2971222fde1c8cb6b411e049205cf86d4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_shovel.png"
+hash = "07df551776e42d702541a226f947d3b59b9d7257a6829273b06649357ca4cefa"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_shovel_head.png"
+hash = "32ba47c30f5d5d3fc48ef6d37035d5791af92e7b1e49e81de9940826cbc74169"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_sword.png"
+hash = "c80e71aa49fcf5ce03510c971dc97265661aa0974ee0663ac8c857c43805e80b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_sword_head.png"
+hash = "276c20c51d363135cf676a5a2a4d92439b94dc60fa80d64074f478dbf59d08fd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/tips/code-java.json"
+hash = "dbe9af70779dbea3096539cb339481661b0534e80b97e50f3beb2207276cfe60"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/tips/swim-lava.json"
+hash = "2759e3ef9c155a59f38f3f1ac6e80e704b36a46dc99e58b093c78ab8d75df52a"
 
 [[files]]
 file = "kubejs/client_scripts/helpers.js"
@@ -330,7 +582,7 @@ hash = "de770e1a6c829af50fb50d529feb6580b7943fe343c9fcf1ddbfa19afee262db"
 
 [[files]]
 file = "kubejs/config/client.properties"
-hash = "7c4192e45ee225dacb920dc472a8c023e9473b3efdf18081c3c3063343086782"
+hash = "053aee9466d287fdc38b5491bef8e2dbe6c463afd0f41ca0fb0db4dadd6baf6c"
 
 [[files]]
 file = "kubejs/config/common.properties"
@@ -410,10 +662,6 @@ hash = "aa9713b04a9a616f81f739cafd3b665e3fb835cc281c4478e92b0a8ba8e34c20"
 metafile = true
 
 [[files]]
-file = "mods/DistantHorizons-2.0.4-a-RC2-1.20.1.jar"
-hash = "5b71e3a07c9eed9a73fd3655eddbf5f6ab30aa6f6dd8b24796c725b439b02b18"
-
-[[files]]
 file = "mods/advancement-frames.pw.toml"
 hash = "204782a3b563594e17a64d8335264122fce3bbbad24eb940860483199105b975"
 metafile = true
@@ -440,7 +688,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "c966e775f739b52e5077b10d26ab5ecdb517e11885d005ba2b060d79025046a0"
+hash = "9904054cea8e60995905643e308168f61cff1529cf88523b92f7375e6343cd51"
 metafile = true
 
 [[files]]
@@ -475,7 +723,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "ab6a6dc2a3fa157464f0294d8b5d3e6b8b882c9b520c7f7e0ca8329094ed1dfa"
+hash = "f4fce67c57b4c42e12e705c25ec3feedb85cef927c2578983e59a59582c81ace"
 metafile = true
 
 [[files]]
@@ -500,12 +748,12 @@ metafile = true
 
 [[files]]
 file = "mods/bookshelf-lib.pw.toml"
-hash = "9022ec899edf2af44a13d5d715b10661f394672306e3cff5b29bdd7452c783f7"
+hash = "61b56b6a266d274f17a1adc98cd674e5d0210dfbeb5bd1d5241696317d89f689"
 metafile = true
 
 [[files]]
 file = "mods/bookshelf.pw.toml"
-hash = "396d37ad75490eff495442503d6bd0bd6a26162a61ca860988f9d9ce064b4fea"
+hash = "ecf4ece5e52a168ed3e3ae0e662730aa6122c9a3f3dfb441f0d2eab8461504b2"
 metafile = true
 
 [[files]]
@@ -520,12 +768,12 @@ metafile = true
 
 [[files]]
 file = "mods/cave-dust.pw.toml"
-hash = "31274861cb2f560e5f4a7bb3c1d51b727d885686ce6cc03cca4c861fdc48caf8"
+hash = "93bc1b8f65cc5004083d13b2e4ef890b551d16b2e00a1790473cf866e751141a"
 metafile = true
 
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
-hash = "a513a1a5d73374f5c0efbfb6f41caea77b34af0198810f40bfde1687263b2199"
+hash = "b79cc58d8f59edf82a64eac716b84f11911b2bc63c40529575dbaf67f4896efb"
 metafile = true
 
 [[files]]
@@ -560,7 +808,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "12bfd075e78e307a331253f247201bf261cbe41cdfa57be73e00f8867e2f46f9"
+hash = "a704bc3997d75ffc2cac8311ef97f6336fcae75f6c82242d8a36fc15a2641c56"
 metafile = true
 
 [[files]]
@@ -635,7 +883,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "673f2c588b23a3588979050dfe1a004b77bbb3891839de4660403a542441616d"
+hash = "bbbc1c9f1f40a89cbc3b017eba4694471b8eef5cdcb046dfc6676e5d60881bd0"
 metafile = true
 
 [[files]]
@@ -669,13 +917,18 @@ hash = "eb74ec42ed67d4661bda3b0ef50c813edfe123263ca78d03dafa5ed8421ef366"
 metafile = true
 
 [[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "19fa105045a5a918e7ab4bc74ab58b6056f764856dd6f46ce95006e16cb41fd4"
+metafile = true
+
+[[files]]
 file = "mods/draggable-lists.pw.toml"
 hash = "820a6bf2e0555af7e835f94c6e94c5cd8da1bdf2ea6824904030612b9f568919"
 metafile = true
 
 [[files]]
 file = "mods/dramatic-doors.pw.toml"
-hash = "ccdd24b949ad8647f0963333614c46544cb7fa8d76deb3d6ab9887b680d03506"
+hash = "78430031701af22052f458b5efc1c7ab5ff66b5773e7775968e3fb1d96de8bcc"
 metafile = true
 
 [[files]]
@@ -725,7 +978,7 @@ metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "098c9c1a245ca39825d7185483414d639910699e891933f1be931d72bf175644"
+hash = "b223679361e41b1f86c0d146e8ebc15ab5cfb385a71c8ca898f2a9d91099266b"
 metafile = true
 
 [[files]]
@@ -745,7 +998,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "f957e7280d9bae7569829edcaff25b0ba05ddb029d24f4ea53bdfb0a79615fad"
+hash = "86698b1faa9bf449eab492509239372302311092104be467108d7e05127e91f1"
 metafile = true
 
 [[files]]
@@ -805,7 +1058,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-quests-fabric.pw.toml"
-hash = "6426a7f01aefbc2772a8509aa8f63d873894ad6676b92defba7cdf1e1213231d"
+hash = "d82b5bfa2b5ed60409bf3eb711886702955968a92ba02d04ad847367215fa60c"
 metafile = true
 
 [[files]]
@@ -820,7 +1073,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "19cbba78c4982b15d10e44736a5fb7e992e477f6101799258d0ef7e03b288033"
+hash = "2e401a91e431cb169896a5012f798046712d3c19807ad597dea5ec33b28884db"
 metafile = true
 
 [[files]]
@@ -865,7 +1118,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "2be3635a0b6d46cbe9dead49d8b9a31a7e0ff3426b18623455e4a49bc7720cf3"
+hash = "547b1ccde38256b8090e6900147f2737513e423e1fc0bbfb412f8a1a8209b52c"
 metafile = true
 
 [[files]]
@@ -875,7 +1128,7 @@ metafile = true
 
 [[files]]
 file = "mods/infinitybuttons.pw.toml"
-hash = "7ae1b6110bdf02081a3e06fcb6a8c968ab79b13c597af7ddd814d7cf108700aa"
+hash = "71c56eedc7679904e08bd59de937de116c448913f83e13fca0e77ef3aac2643e"
 metafile = true
 
 [[files]]
@@ -950,7 +1203,7 @@ metafile = true
 
 [[files]]
 file = "mods/limited-chunkloading.pw.toml"
-hash = "50fe41b38cd16033db4519ae132a81b797c541f4d2ad5e85e6d2423ae9b06e6c"
+hash = "95a8ae0fc8b2120901b091b91ec8024bd6cde5dfb0d3f3049ca6b0fe4188d973"
 metafile = true
 
 [[files]]
@@ -960,7 +1213,7 @@ metafile = true
 
 [[files]]
 file = "mods/lmd.pw.toml"
-hash = "df3bf405458a14ae114177c33956530f4fe98b2962b9446e9b7955c5e09dee17"
+hash = "faa593cd9009ce4b192333b03ca42dd911f085d5f03fae06f88a45ed0b539023"
 metafile = true
 
 [[files]]
@@ -1010,7 +1263,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "7356c4b80f79ea0991f67456b265204c45c4897f4acc5858ce40a3028ade12fd"
+hash = "b42192432d72cc624869b6b2d3e5fdcf5769c24812275931b48c75fc807fadda"
 metafile = true
 
 [[files]]
@@ -1035,7 +1288,7 @@ metafile = true
 
 [[files]]
 file = "mods/natures-spirit.pw.toml"
-hash = "d669ce7ad009a9c07c568dc3db42ca206a3dc2194b00f66eb25c29fe21ee779b"
+hash = "4017a2cb3805bc152c576fb2f851a4a086f3081682102025508b45b40636ecf2"
 metafile = true
 
 [[files]]
@@ -1145,7 +1398,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "d51f11f7b5c69d448ce96d7fe8c522c36521650629181b659f3fb230da6bdd6b"
+hash = "21e9fa11ab612128ea73bcffd9e9c2e001d935923a2dea009953a5538e0f1b6e"
 metafile = true
 
 [[files]]
@@ -1181,6 +1434,11 @@ metafile = true
 [[files]]
 file = "mods/smooth-chunk-save.pw.toml"
 hash = "6c622ba7f91c31843cc394e056948a018db6a0e08b20b8dd9fc4182854d27715"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "5379b1da9fa50def37ede26e66dd963de3ce6f8576cd60a6b117998e09a5597c"
 metafile = true
 
 [[files]]
@@ -1240,7 +1498,7 @@ metafile = true
 
 [[files]]
 file = "mods/tectonic.pw.toml"
-hash = "52ae7d824d0e2856df296db16f108d4843a7e1fea3b1769e4678f2e5b6dd991e"
+hash = "1624e47e8890c8e7a09a7f808f2fd3f01b6d07ce350e9b9c7ccc86aea9eda1fa"
 metafile = true
 
 [[files]]
@@ -1250,7 +1508,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrablender.pw.toml"
-hash = "83d94a056463020f5bab89ba5def37f0090aa9abf7f6045a7e859ea7250be18b"
+hash = "99ae3a898041d9e7b6d2de55909287baacd6f71846e44f61f6a9420587fd7a09"
 metafile = true
 
 [[files]]
@@ -1275,7 +1533,7 @@ metafile = true
 
 [[files]]
 file = "mods/unloaded-activity.pw.toml"
-hash = "b53fa8e7b6c5d255eef71617d39ff4832bbc5c749a2ea7b35e3e175fe8a839af"
+hash = "22c5201217ad18817d721bf762efcfaac0731a6fab5827065f662d74cc43a8ad"
 metafile = true
 
 [[files]]
@@ -1300,7 +1558,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "d71dabaf362ddbae6f8fd3a8bb648b20b57bde93a1a59232c98da9e5403203d6"
+hash = "a66f114b66d41c0de64f6d7cb00d253b858ecb8dfef497aed5feac1a690111a2"
 metafile = true
 
 [[files]]
@@ -1386,3 +1644,7 @@ metafile = true
 file = "resourcepacks/llamas-re-wrench.pw.toml"
 hash = "3c6b9845e9445513c4a52e15eab6d735ef5fdc72cb29d1a96ead1ec85d644bf7"
 metafile = true
+
+[[files]]
+file = "server.packwizignore"
+hash = "3097486d7878a13a476faf1483e951b905283de9f592443a26555e3fdeebff77"
