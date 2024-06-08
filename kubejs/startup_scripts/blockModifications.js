@@ -1,141 +1,91 @@
 console.info('Block Modification');
 
 BlockEvents.modification((e) => {
+  let planks = BlockStatePredicate.of(/.*_planks/).blockIds;
+  const woodTypes = planks
+    .filter((e) => e != SPA('cracked_rotten_planks'))
+    .map((id) => {
+      const plankMaterial = new String(id.toString()).replace('_planks', '');
+      const [modId, woodType] = plankMaterial.split(':');
+      return {
+        tag: modId,
+        wood: woodType,
+      };
+    });
+
+  woodTypes.forEach((woodType) => {
+    const woodsToRemove = [
+      `${woodType.tag}:${woodType.wood}_${
+        woodType.wood === 'warped' || woodType.wood === 'crimson'
+          ? 'stem'
+          : 'log'
+      }`,
+      `${woodType.tag}:${woodType.wood}_${
+        woodType.wood === 'warped' || woodType.wood === 'crimson'
+          ? 'hyphae'
+          : 'wood'
+      }`,
+      `${woodType.tag}:stripped_${woodType.wood}_${
+        woodType.wood === 'warped' || woodType.wood === 'crimson'
+          ? 'stem'
+          : 'log'
+      }`,
+      `${woodType.tag}:stripped_${woodType.wood}_${
+        woodType.wood === 'warped' || woodType.wood === 'crimson'
+          ? 'hyphae'
+          : 'wood'
+      }`,
+    ];
+
+    const blockPredicates = [
+      `${woodType.wood}_beam`,
+      `${woodType.wood}_plank_secret_button`,
+      `${woodType.wood}_large_button`,
+      `sign_post_${woodType.wood}`,
+      `tall_${woodType.wood}_door`,
+      `short_${woodType.wood}_door`,
+      `${woodType.wood}_cabinet`,
+      `${woodType.wood}_table`,
+      `${woodType.wood}_palisade`,
+      `${woodType.wood}_seat`,
+      `${woodType.wood}_support`,
+      `item_shelf_${woodType.wood}`,
+    ];
+
+    const blockIds = [
+      `${woodType.tag}:${woodType.wood}_slab`,
+      `${woodType.tag}:${woodType.wood}_button`,
+      `${woodType.tag}:${woodType.wood}_fence`,
+      `${woodType.tag}:${woodType.wood}_pressure_plate`,
+      `${woodType.tag}:${woodType.wood}_fence_gate`,
+      `${woodType.tag}:${woodType.wood}_stairs`,
+      `${woodType.tag}:${woodType.wood}_door`,
+      `${woodType.tag}:${woodType.wood}_trapdoor`,
+      `${woodType.tag}:${woodType.wood}_planks`,
+    ];
+
+    const finalModificationList = woodsToRemove
+      .concat(blockIds)
+      .concat(
+        blockPredicates.map((predicate) => BlockStatePredicate.of(predicate))
+      );
+
+    finalModificationList.forEach((id) => {
+      console.log(id);
+      e.modify(id, (block) => {
+        block.setRequiresTool(true);
+      });
+    });
+  });
+
   // No tags in start_up scripts
-  const logs = [
-    MC('oak_log'),
-    MC('oak_wood'),
-    MC('stripped_oak_log'),
-    MC('stripped_oak_wood'),
-    DB('oak_beam'),
-    MC('spruce_log'),
-    MC('spruce_wood'),
-    MC('stripped_spruce_log'),
-    MC('stripped_spruce_wood'),
-    DB('spruce_beam'),
-    MC('birch_log'),
-    MC('birch_wood'),
-    MC('stripped_birch_log'),
-    MC('stripped_birch_wood'),
-    DB('birch_beam'),
-    MC('jungle_log'),
-    MC('jungle_wood'),
-    MC('stripped_jungle_log'),
-    MC('stripped_jungle_wood'),
-    DB('jungle_beam'),
-    MC('dark_oak_log'),
-    MC('dark_oak_wood'),
-    MC('stripped_dark_oak_log'),
-    MC('stripped_dark_oak_wood'),
-    DB('dark_oak_beam'),
-    MC('acacia_log'),
-    MC('acacia_wood'),
-    MC('stripped_acacia_log'),
-    MC('stripped_acacia_wood'),
-    DB('acacia_beam'),
-    MC('crimson_stem'),
-    MC('stripped_crimson_stem'),
-    MC('crimson_hyphae'),
-    MC('stripped_crimson_hyphae'),
-    DB('crimson_beam'),
-    MC('warped_stem'),
-    MC('stripped_warped_stem'),
-    MC('warped_hyphae'),
-    MC('stripped_warped_hyphae'),
-    DB('warped_beam'),
-    H('greenheart_log'),
-    H('stripped_greenheart_log'),
-    H('greenheart_wood'),
-    H('stripped_greenheart_wood'),
-    H('skyroot_log'),
-    H('stripped_skyroot_log'),
-    H('skyroot_wood'),
-    H('stripped_skyroot_wood'),
-    H('bloodshroom_log'),
-    H('stripped_bloodshroom_log'),
-    H('bloodshroom_wood'),
-    H('stripped_bloodshroom_wood'),
-    MC('mangrove_log'),
-    MC('mangrove_wood'),
-    MC('stripped_mangrove_log'),
-    MC('stripped_mangrove_wood'),
-    MC('cherry_log'),
-    MC('cherry_wood'),
-    MC('stripped_cherry_log'),
-    MC('stripped_cherry_wood'),
-    DB('cherry_beam'),
-    NS('sugi_log'),
-    NS('sugi_wood'),
-    NS('redwood_log'),
-    NS('redwood_wood'),
-    NS('fir_log'),
-    NS('fir_wood'),
-    NS('wisteria_log'),
-    NS('wisteria_wood'),
-    NS('willow_log'),
-    NS('willow_wood'),
-    NS('aspen_log'),
-    NS('aspen_wood'),
-    NS('cypress_log'),
-    NS('cypress_wood'),
-    NS('olive_log'),
-    NS('olive_wood'),
-    NS('maple_log'),
-    NS('maple_wood'),
-    NS('joshua_log'),
-    NS('joshua_wood'),
-    NS('ghaf_log'),
-    NS('ghaf_wood'),
-    NS('palo_verde_log'),
-    NS('palo_verde_wood'),
-    NS('coconut_log'),
-    NS('coconut_wood'),
-    NS('cedar_log'),
-    NS('cedar_wood'),
-    NS('mahogany_log'),
-    NS('mahogany_wood'),
-    NS('saxual_log'),
-    NS('saxual_wood'),
-    NS('larch_log'),
-    NS('larch_wood'),
-    NS('stripped_sugi_log'),
-    NS('stripped_sugi_wood'),
-    NS('stripped_redwood_log'),
-    NS('stripped_redwood_wood'),
-    NS('stripped_fir_log'),
-    NS('stripped_fir_wood'),
-    NS('stripped_wisteria_log'),
-    NS('stripped_wisteria_wood'),
-    NS('stripped_willow_log'),
-    NS('stripped_willow_wood'),
-    NS('stripped_aspen_log'),
-    NS('stripped_aspen_wood'),
-    NS('stripped_cypress_log'),
-    NS('stripped_cypress_wood'),
-    NS('stripped_olive_log'),
-    NS('stripped_olive_wood'),
-    NS('stripped_maple_log'),
-    NS('stripped_maple_wood'),
-    NS('stripped_joshua_log'),
-    NS('stripped_joshua_wood'),
-    NS('stripped_ghaf_log'),
-    NS('stripped_ghaf_wood'),
-    NS('stripped_palo_verde_log'),
-    NS('stripped_palo_verde_wood'),
-    NS('stripped_coconut_log'),
-    NS('stripped_coconut_wood'),
-    NS('stripped_cedar_log'),
-    NS('stripped_cedar_wood'),
-    NS('stripped_mahogany_log'),
-    NS('stripped_mahogany_wood'),
-    NS('stripped_saxual_log'),
-    NS('stripped_saxual_wood'),
-    NS('stripped_larch_log'),
-    NS('stripped_larch_wood'),
+  const misc = [
     S('conk_fungus'),
+    SPA('cracked_rotten_planks'),
+    EC('all_woods'),
   ];
 
-  logs.forEach((log) => {
+  misc.forEach((log) => {
     e.modify(log, (block) => {
       block.setRequiresTool(true);
     });

@@ -1,1 +1,1 @@
-Platform.mods.kubejs.name = 'Solaire';
+Platform.mods.kubejs.name = 'Create The Server';

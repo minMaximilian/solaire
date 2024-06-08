@@ -1,13 +1,13 @@
 name = "Farcr's Re-Create"
-filename = "Farcr's Re-Create 1.5.zip"
+filename = "Farcr's Re-Create V1.5.1.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/7VDyaMyP/versions/w1VS7Edu/Farcr%27s%20Re-Create%201.5.zip"
+url = "https://cdn.modrinth.com/data/7VDyaMyP/versions/UTcGVZXg/Farcr%27s%20Re-Create%20V1.5.1.zip"
 hash-format = "sha1"
-hash = "5c5725374c76e93c62ac71a489aaebf3da3e6120"
+hash = "b2e67b5384cb6323bf18d5ca68377f0e800599cf"
 
 [update]
 [update.modrinth]
 mod-id = "7VDyaMyP"
-version = "w1VS7Edu"
+version = "UTcGVZXg"

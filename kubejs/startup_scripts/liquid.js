@@ -3,6 +3,5 @@ StartupEvents.registry('fluid', (event) => {
     event.create(name).thickTexture(hex).noBucket().noBlock();
   };
 
-  simpleLiquid('rubber', 0x9fa63b);
   simpleLiquid('molten_andesite_compound', 0x9fa63b);
 });

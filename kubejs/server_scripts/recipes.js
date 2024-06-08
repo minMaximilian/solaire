@@ -3,8 +3,18 @@ ServerEvents.recipes((event) => {
 
   event.replaceOutput({ output: SP('rope') }, SP('rope'), FD('rope'));
 
+  console.log(Ingredient.of('/deepslate/'));
+
   // PATTERNS
   [
+    {
+      output: S('obsidian_hammer_and_chisel'),
+      pattern: [' O ', 'SO ', ' SO'],
+      key: {
+        S: MC('stick'),
+        O: DD('steel_ingot'),
+      },
+    },
     {
       output: KJ('andesite_compound'),
       pattern: ['BBB', 'AAA', 'CCC'],
@@ -12,6 +22,14 @@ ServerEvents.recipes((event) => {
         A: C('zinc_nugget'),
         B: MC('andesite'),
         C: MC('clay_ball'),
+      },
+    },
+    {
+      output: MM('ingot_mold'),
+      pattern: ['I I', 'SSS'],
+      key: {
+        I: DD('steel_ingot'),
+        S: DD('steel_sheet'),
       },
     },
     {
@@ -27,7 +45,7 @@ ServerEvents.recipes((event) => {
       output: KJ('rubber_block'),
       pattern: ['RRR', 'RRR', 'RRR'],
       key: {
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -35,7 +53,7 @@ ServerEvents.recipes((event) => {
       pattern: ['C', 'R', 'S'],
       key: {
         C: C('copper_casing'),
-        R: KJ('rubber_block'),
+        R: DD('rubber_block'),
         S: C('copper_sheet'),
       },
     },
@@ -44,7 +62,7 @@ ServerEvents.recipes((event) => {
       pattern: ['C', 'R'],
       key: {
         C: C('copper_casing'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -52,7 +70,14 @@ ServerEvents.recipes((event) => {
       pattern: ['A', 'R'],
       key: {
         A: C('andesite_alloy'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
+      },
+    },
+    {
+      output: MC('bucket'),
+      pattern: ['S S', ' S '],
+      key: {
+        S: C('iron_sheet'),
       },
     },
     {
@@ -61,7 +86,7 @@ ServerEvents.recipes((event) => {
       key: {
         T: C('electron_tube'),
         B: C('brass_ingot'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -69,7 +94,7 @@ ServerEvents.recipes((event) => {
       pattern: ['AA', 'RR'],
       key: {
         A: C('andesite_alloy'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -78,7 +103,7 @@ ServerEvents.recipes((event) => {
       key: {
         T: C('electron_tube'),
         B: C('brass_ingot'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -86,7 +111,7 @@ ServerEvents.recipes((event) => {
       pattern: [' A ', 'RRR', ' R '],
       key: {
         A: C('andesite_alloy'),
-        R: KJ('rubber'),
+        R: DD('rubber'),
       },
     },
     {
@@ -157,39 +182,11 @@ ServerEvents.recipes((event) => {
       },
     },
     {
-      output: MC('iron_helmet'),
-      pattern: ['SSS', 'S S'],
-      key: {
-        S: C('iron_sheet'),
-      },
-    },
-    {
-      output: MC('iron_chestplate'),
-      pattern: ['S S', 'SSS', 'SSS'],
-      key: {
-        S: C('iron_sheet'),
-      },
-    },
-    {
-      output: MC('iron_leggings'),
-      pattern: ['SSS', 'S S', 'S S'],
-      key: {
-        S: C('iron_sheet'),
-      },
-    },
-    {
-      output: MC('iron_boots'),
-      pattern: ['S S', 'S S'],
-      key: {
-        S: C('iron_sheet'),
-      },
-    },
-    {
       output: MC('furnace'),
       pattern: ['BBB', 'B B', 'SSS'],
       key: {
         B: MC('brick'),
-        S: MC('#stone_tool_materials'),
+        S: CON('#raw_ores'),
       },
     },
     {
@@ -236,6 +233,70 @@ ServerEvents.recipes((event) => {
         S: C('#sleepers'),
       },
     },
+    {
+      output: C('cogwheel'),
+      pattern: ['AAA', 'ABA', 'AAA'],
+      key: {
+        A: MC('#wooden_buttons'),
+        B: C('shaft'),
+      },
+    },
+    {
+      output: C('large_cogwheel'),
+      pattern: ['AAA', 'ABA', 'AAA'],
+      key: {
+        A: MC('#planks'),
+        B: C('cogwheel'),
+      },
+    },
+    {
+      output: MC('crafting_table'),
+      pattern: ['AA', 'BB'],
+      key: {
+        A: MC('leather'),
+        B: MC('#planks'),
+      },
+    },
+    {
+      output: KJ('copper_pickaxe'),
+      pattern: ['CCC', ' S ', ' S '],
+      key: {
+        C: MC('copper_ingot'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: KJ('copper_axe'),
+      pattern: ['CC', 'CS', ' S'],
+      key: {
+        C: MC('copper_ingot'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: KJ('copper_sword'),
+      pattern: ['C', 'C', 'S'],
+      key: {
+        C: MC('copper_ingot'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: KJ('copper_hoe'),
+      pattern: ['CC', ' S', ' S'],
+      key: {
+        C: MC('copper_ingot'),
+        S: MC('stick'),
+      },
+    },
+    {
+      output: KJ('copper_shovel'),
+      pattern: ['C', 'S', 'S'],
+      key: {
+        C: MC('copper_ingot'),
+        S: MC('stick'),
+      },
+    },
   ].forEach((recipe) => {
     event.shaped(recipe.output, recipe.pattern, recipe.key);
   });
@@ -245,86 +306,6 @@ ServerEvents.recipes((event) => {
     {
       output: KJ('rubber'),
       input: [KJ('sap')],
-    },
-    {
-      output: Fluid.of(H('molten_brass'), 18000),
-      input: [
-        Fluid.of(H('molten_zinc'), 9000),
-        Fluid.of(H('molten_copper'), 9000),
-      ],
-      heated: true,
-    },
-    {
-      output: Fluid.of(H('molten_rose_gold'), 18000),
-      input: [
-        Fluid.of(H('molten_gold'), 9000),
-        Fluid.of(H('molten_copper'), 9000),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_obsidian'), 8100),
-      input: [Fluid.of(MC('lava'), 8100), Fluid.of(MC('water'), 4050)],
-    },
-    {
-      output: Fluid.of(H('molten_obsidian'), 20250),
-      input: [Fluid.of(MC('lava'), 20250), Fluid.of(H('mushroom_stew'), 20250)],
-    },
-    {
-      output: Fluid.of(H('molten_amethyst_bronze'), 9000),
-      input: [
-        Fluid.of(H('molten_amethyst'), 8100),
-        Fluid.of(H('molten_copper'), 9000),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_pig_iron'), 18000),
-      input: [
-        Fluid.of(CON('honey'), 27000),
-        Fluid.of(H('molten_iron'), 9000),
-        Fluid.of(H('blood'), 40500),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_slimesteel'), 18000),
-      input: [
-        Fluid.of(H('seared_stone'), 20250),
-        Fluid.of(H('sky_slime'), 20250),
-        Fluid.of(H('molten_iron'), 9000),
-      ],
-    },
-    {
-      output: Fluid.of(H('molten_netherite'), 972),
-      input: [
-        Fluid.of(H('molten_debris'), 1944),
-        Fluid.of(H('molten_gold'), 3969),
-      ],
-      superheated: true,
-    },
-    {
-      output: Fluid.of(H('molten_manyullyn'), 972),
-      input: [
-        Fluid.of(H('molten_debris'), 9000),
-        Fluid.of(H('molten_cobalt'), 27000),
-      ],
-      superheated: true,
-    },
-    {
-      output: Fluid.of(H('molten_hepatizon'), 972),
-      input: [
-        Fluid.of(H('molten_cobalt'), 9000),
-        Fluid.of(H('molten_copper'), 18000),
-        Fluid.of(H('molten_quartz'), 32400),
-      ],
-      superheated: true,
-    },
-    {
-      output: Fluid.of(H('molten_queens_slime'), 18000),
-      input: [
-        Fluid.of(H('magma'), 20250),
-        Fluid.of(H('molten_gold'), 9000),
-        Fluid.of(H('molten_cobalt'), 9000),
-      ],
-      superheated: true,
     },
     {
       output: Fluid.of(KJ('molten_andesite_compound'), 9000),
@@ -361,10 +342,6 @@ ServerEvents.recipes((event) => {
   // SMELTING
   [
     {
-      output: KJ('rubber'),
-      input: KJ('sap'),
-    },
-    {
       output: C('andesite_alloy'),
       input: KJ('andesite_compound'),
     },
@@ -397,7 +374,7 @@ ServerEvents.recipes((event) => {
     .createSequencedAssembly([C('copper_casing')], C('andesite_casing'), [
       event.recipes.createDeploying(KJ('incomplete_copper_casing'), [
         KJ('incomplete_copper_casing'),
-        KJ('rubber'),
+        DD('rubber'),
       ]),
       event.recipes.createDeploying(KJ('incomplete_copper_casing'), [
         KJ('incomplete_copper_casing'),
@@ -415,7 +392,7 @@ ServerEvents.recipes((event) => {
       ]),
       event.recipes.createFilling(KJ('incomplete_brass_casing'), [
         KJ('incomplete_brass_casing'),
-        Fluid.of(H('molten_brass'), 9000),
+        Fluid.of(MM('molten_brass'), 9000),
       ]),
     ])
     .transitionalItem(KJ('incomplete_brass_casing'))
@@ -435,19 +412,304 @@ ServerEvents.recipes((event) => {
     .transitionalItem(C('unprocessed_obsidian_sheet'))
     .loops(2);
 
+  event.recipes.createFilling(C('electron_tube'), [
+    C('polished_rose_quartz'),
+    Fluid.of(MM('molten_gold'), 9000),
+  ]);
+
+  event.recipes.createPressing(
+    Fluid.of(DD('flowing_sap'), 20250),
+    DD('crystalized_sap')
+  );
+
+  // CUTTING
+  const addStripped = (str) => str.replace(/:/, ':stripped_');
+
+  const strippedToPlanks = (str) =>
+    str.replace(/stripped_(.+)_(log|wood)|hyphae/, '$1_planks');
+
+  Ingredient.of(KJ('#logs'))
+    .itemIds.concat(Ingredient.of(KJ('#wood')).itemIds)
+    .forEach((log) => {
+      event.recipes.createCutting(addStripped(log), log);
+      event.recipes.createCutting(
+        '6x ' + strippedToPlanks(addStripped(log)),
+        addStripped(log)
+      );
+    });
+
   // CUSTOM
   event
     .custom({
       type: CA('rolling'),
       input: {
-        tag: NS('maple_logs'),
+        tag: KJ('rubber_logs'),
       },
       result: {
-        item: KJ('sap'),
+        item: DD('crystallized_sap'),
         count: 1,
       },
     })
     .id(CA('rolling/sap'));
+
+  // PLANKS
+  const blacklist = [
+    SPA('cracked_rotten_planks'),
+    MC('crimson_planks'),
+    MC('warped_planks'),
+  ];
+
+  const getLogTag = (plankId) =>
+    plankId.endsWith('_planks')
+      ? `#${plankId.split(':')[0]}:${plankId
+          .split(':')[1]
+          .replace('_planks', '_logs')}`
+      : null;
+
+  Ingredient.of(MC('#planks')).itemIds.forEach((plank) => {
+    if (!blacklist.includes(plank)) {
+      event.shapeless('2x ' + plank, [getLogTag(plank)]);
+    }
+  });
+
+  // MELTING
+  const meltableOres = [
+    { metal: 'iron', heatRequirement: 'heated', tag: MC },
+    { metal: 'copper', heatRequirement: 'heated', tag: MC },
+    { metal: 'gold', heatRequirement: 'heated', tag: MC },
+    { metal: 'zinc', heatRequirement: 'heated', tag: C },
+    { metal: 'tin', heatRequirement: 'heated', tag: DD },
+  ];
+
+  meltableOres.forEach((e) => {
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item: e.tag(`raw_${e.metal}_block`),
+        },
+      ],
+      processingTime: 1620,
+      results: [
+        {
+          amount: 121500,
+          fluid: MM(`molten_${e.metal}`),
+        },
+        {
+          item: MM('slag_block'),
+        },
+      ],
+    });
+
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item: e.tag(`raw_${e.metal}`),
+        },
+      ],
+      processingTime: 180,
+      results: [
+        {
+          amount: 13500,
+          fluid: MM(`molten_${e.metal}`),
+        },
+        {
+          item: MM('slag'),
+        },
+      ],
+    });
+
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item:
+            e.metal == 'tin'
+              ? DD(`crushed_raw_${e.metal}`)
+              : C(`crushed_raw_${e.metal}`),
+        },
+      ],
+      processingTime: 180,
+      results: [
+        {
+          amount: 13500,
+          fluid: MM(`molten_${e.metal}`),
+        },
+        {
+          item: MM('slag'),
+        },
+      ],
+    });
+
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item:
+            e.metal == 'tin'
+              ? DD(`raw_${e.metal}_nugget`)
+              : S(`raw_${e.metal}_nugget`),
+        },
+      ],
+      processingTime: 20,
+      results: [
+        {
+          amount: 1215,
+          fluid: MM(`molten_${e.metal}`),
+        },
+        {
+          item: MM('slag_nugget'),
+        },
+      ],
+    });
+  });
+
+  const meltableBars = [
+    { metal: 'iron', heatRequirement: 'heated', tag: MC },
+    { metal: 'copper', heatRequirement: 'heated', tag: MC },
+    { metal: 'gold', heatRequirement: 'heated', tag: MC },
+    { metal: 'zinc', heatRequirement: 'heated', tag: C },
+    { metal: 'tin', heatRequirement: 'heated', tag: DD },
+    { metal: 'brass', heatRequirement: 'heated', tag: C },
+    { metal: 'electrum', heatRequirement: 'heated', tag: CA },
+    { metal: 'bronze', heatRequirement: 'heated', tag: DD },
+    { metal: 'steel', heatRequirement: 'heated', tag: DD },
+  ];
+
+  meltableBars.forEach((e) => {
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item: e.tag(`${e.metal}_block`),
+        },
+      ],
+      processingTime: 1620,
+      results: [
+        {
+          amount: 81000,
+          fluid: MM(`molten_${e.metal}`),
+        },
+      ],
+    });
+
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item: e.tag(`${e.metal}_ingot`),
+        },
+      ],
+      processingTime: 180,
+      results: [
+        {
+          amount: 9000,
+          fluid: MM(`molten_${e.metal}`),
+        },
+      ],
+    });
+
+    event.custom({
+      type: CBC('melting'),
+      heatRequirement: e.heatRequirement,
+      ingredients: [
+        {
+          item:
+            e.metal == 'copper'
+              ? C(`${e.metal}_nugget`)
+              : e.tag(`${e.metal}_nugget`),
+        },
+      ],
+      processingTime: 20,
+      results: [
+        {
+          amount: 810,
+          fluid: MM(`molten_${e.metal}`),
+        },
+      ],
+    });
+  });
+
+  const tools = [
+    { tool: 'sword', liquid: 18000 },
+    { tool: 'axe', liquid: 27000 },
+    { tool: 'hoe', liquid: 18000 },
+    { tool: 'shovel', liquid: 9000 },
+    { tool: 'pickaxe', liquid: 27000 },
+  ];
+
+  const viableMetals = ['bronze', 'steel'];
+
+  const firedMolds = ['ceramic', ''];
+
+  tools.forEach((toolData) => {
+    viableMetals.forEach((metal) => {
+      firedMolds.forEach((mold) => {
+        const moldItem = KJ(
+          `${mold === 'ceramic' ? 'ceramic_' : ''}${toolData.tool}_mold`
+        );
+        const outputItem = KJ(`${metal}_${toolData.tool}_head`);
+
+        event.recipes.createFilling(
+          KJ(
+            `molten_${metal}_${mold === 'ceramic' ? 'ceramic_' : ''}${
+              toolData.tool
+            }_mold`
+          ),
+          [moldItem, Fluid.of(MM(`molten_${metal}`), toolData.liquid)]
+        );
+
+        event.recipes.createEmptying(
+          [moldItem, Fluid.of(MM(`molten_${metal}`), toolData.liquid)],
+          KJ(
+            `molten_${metal}_${mold === 'ceramic' ? 'ceramic_' : ''}${
+              toolData.tool
+            }_mold`
+          )
+        );
+
+        if (mold === '') {
+          event.custom({
+            type: C('splashing'),
+            ingredients: [
+              Ingredient.of(
+                KJ(`molten_${metal}_${toolData.tool}_mold`)
+              ).toJson(),
+            ],
+            results: [
+              { item: outputItem },
+              {
+                item: moldItem,
+              },
+            ],
+          });
+        } else {
+          event.custom({
+            type: C('splashing'),
+            ingredients: [
+              Ingredient.of(
+                KJ(`molten_${metal}_ceramic_${toolData.tool}_mold`)
+              ).toJson(),
+            ],
+            results: [
+              { item: outputItem },
+              {
+                item: moldItem,
+                chance: 0.8,
+              },
+            ],
+          });
+        }
+      });
+    });
+  });
 
   event.recipes.create.finalize();
 });
