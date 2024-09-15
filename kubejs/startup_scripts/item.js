@@ -2,6 +2,7 @@ StartupEvents.registry('item', (event) => {
   event.create('incomplete_copper_casing');
   event.create('incomplete_brass_casing');
   event.create('andesite_compound');
+  event.create('crushed_limestone');
 
   event.create('copper_helmet', 'helmet').tier('copper');
   event.create('copper_chestplate', 'chestplate').tier('copper');

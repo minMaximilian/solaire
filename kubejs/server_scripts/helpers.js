@@ -29,6 +29,7 @@ const CA = (id, x) => MOD(`createaddition`, id, x);
 const CC = (id, x) => MOD(`computercraft`, id, x);
 const NS = (id, x) => MOD('natures_spirit', id, x);
 const DOOR = (id, x) => MOD('dramaticdoors', id, x);
+const SH = (id, x) => MOD('shutter', id, x);
 
 // Steam n' Rails
 // const R = (id, x) => MOD(`railways`, id, x)

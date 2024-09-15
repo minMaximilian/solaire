@@ -224,6 +224,62 @@ ServerEvents.recipes((event) => {
       type: C('cutting'),
       output: MC('bamboo_planks'),
     },
+    {
+      type: C('mixing'),
+      output: DD('condense_milk'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('cream'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('vanilla'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('vanilla_milkshake'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('strawberry'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('strawberry_milkshake'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('glowberry'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('glowberry_milkshake'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('hot_chocolate'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('chocolate_milkshake'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('chromatic_waste'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('caramel'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('caramel_milkshake'),
+    },
+    {
+      type: C('mixing'),
+      output: DD('bronze_ingot'),
+    },
   ]
     .concat(strippedLogs)
     .concat(strippedWood)

@@ -1,13 +1,13 @@
 name = "Brush-Up!"
-filename = "Brush-Up-1.7.2.zip"
+filename = "Brush-Up-1.8.6.1.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/LGejxQI3/versions/ZkiyQGN1/Brush-Up-1.7.2.zip"
+url = "https://cdn.modrinth.com/data/LGejxQI3/versions/oKMqDrYr/Brush-Up-1.8.6.1.zip"
 hash-format = "sha1"
-hash = "03bc261d2aee35f0167a0b56563bece9665b24ed"
+hash = "4f4319d01e359e4e311624eff1abe5c0bfa67854"
 
 [update]
 [update.modrinth]
 mod-id = "LGejxQI3"
-version = "ZkiyQGN1"
+version = "oKMqDrYr"

@@ -2,6 +2,9 @@ console.info('Block Modification');
 
 BlockEvents.modification((e) => {
   let planks = BlockStatePredicate.of(/.*_planks/).blockIds;
+
+  let shutters = BlockStatePredicate.of(/.*shutter/).blockIds;
+
   const woodTypes = planks
     .filter((e) => e != SPA('cracked_rotten_planks'))
     .map((id) => {
@@ -68,7 +71,8 @@ BlockEvents.modification((e) => {
       .concat(blockIds)
       .concat(
         blockPredicates.map((predicate) => BlockStatePredicate.of(predicate))
-      );
+      )
+      .concat(shutters);
 
     finalModificationList.forEach((id) => {
       console.log(id);

@@ -308,6 +308,31 @@ ServerEvents.recipes((event) => {
       input: [KJ('sap')],
     },
     {
+      superheated: true,
+      output: Fluid.of(MM('molten_brass', 18000)),
+      input: [
+        Fluid.of(MM('molten_zinc'), 9000),
+        Fluid.of(MM('molten_copper'), 9000),
+      ],
+    },
+    {
+      heated: true,
+      output: Fluid.of(MM('molten_bronze', 36000)),
+      input: [
+        Fluid.of(MM('molten_tin'), 9000),
+        Fluid.of(MM('molten_copper'), 27000),
+      ],
+    },
+    {
+      superheated: true,
+      output: Fluid.of(MM('molten_steel', 9000)),
+      input: [
+        KJ('crushed_limestone'),
+        MC('charcoal'),
+        Fluid.of(MM('molten_iron'), 9000),
+      ],
+    },
+    {
       output: Fluid.of(KJ('molten_andesite_compound'), 9000),
       input: [MC('iron_nugget'), MC('andesite'), MC('clay_ball')],
     },
@@ -657,6 +682,12 @@ ServerEvents.recipes((event) => {
         );
         const outputItem = KJ(`${metal}_${toolData.tool}_head`);
 
+        event.shaped(KJ(`${metal}_${toolData.tool}`), ['H', 'S', 'P'], {
+          H: KJ(`${metal}_${toolData.tool}_head`),
+          S: MC('stick'),
+          P: DD(`${metal}_nugget`),
+        });
+
         event.recipes.createFilling(
           KJ(
             `molten_${metal}_${mold === 'ceramic' ? 'ceramic_' : ''}${
@@ -709,6 +740,60 @@ ServerEvents.recipes((event) => {
         }
       });
     });
+  });
+
+  firedMolds.forEach((mold) => {
+    const moldItem = MM(`${mold === 'ceramic' ? 'ceramic_' : ''}ingot_mold`);
+    const outputItem = C('andesite_alloy');
+
+    event.recipes.createFilling(
+      KJ(
+        `molten_andesite_compound_${
+          mold === 'ceramic' ? 'ceramic_' : ''
+        }ingot_mold`
+      ),
+      [moldItem, Fluid.of(KJ(`molten_andesite_compound`), 9000)]
+    );
+
+    event.recipes.createEmptying(
+      [moldItem, Fluid.of(KJ(`molten_andesite_compound`), 9000)],
+      KJ(
+        `molten_andesite_compound_${
+          mold === 'ceramic' ? 'ceramic_' : ''
+        }ingot_mold`
+      )
+    );
+
+    if (mold === '') {
+      event.custom({
+        type: C('splashing'),
+        ingredients: [
+          Ingredient.of(KJ(`molten_andesite_compound_ingot_mold`)).toJson(),
+        ],
+        results: [
+          { item: outputItem },
+          {
+            item: moldItem,
+          },
+        ],
+      });
+    } else {
+      event.custom({
+        type: C('splashing'),
+        ingredients: [
+          Ingredient.of(
+            KJ(`molten_andesite_compound_ceramic_ingot_mold`)
+          ).toJson(),
+        ],
+        results: [
+          { item: outputItem },
+          {
+            item: moldItem,
+            chance: 0.8,
+          },
+        ],
+      });
+    }
   });
 
   event.recipes.create.finalize();

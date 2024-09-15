@@ -7,6 +7,7 @@ B:force_fullscreen = 'false';
 
 ##[customization]
 
+B:modpack_mode = 'true';
 B:show_customization_overlay = 'false';
 B:advanced_customization_mode = 'true';
 
@@ -14,7 +15,7 @@ B:advanced_customization_mode = 'true';
 ##[loading]
 
 B:preload_animations = 'true';
-S:preload_resources = '[source:local]config/fancymenu/assets/minecraft_title.png%!source_end!%[source:local]config/fancymenu/assets/solaire.png%!source_end!%[source:local]config/fancymenu/assets/solaire_small.png%!source_end!%';
+S:preload_resources = '[source:local]config/fancymenu/assets/minecraft_title.png%!source_end!%[source:local]config/fancymenu/assets/icon.png%!source_end!%[source:local]config/fancymenu/assets/icon_small.png%!source_end!%';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
@@ -24,10 +25,10 @@ B:game_intro_fade_out = 'true';
 ##[window]
 
 B:show_custom_window_icon = 'true';
-S:custom_window_icon_macos = '/config/fancymenu/assets/solaire.icns';
-S:custom_window_icon_32 = '/config/fancymenu/assets/solaire.png';
-S:custom_window_title = 'Solaire: A Create Modpack';
-S:custom_window_icon_16 = '/config/fancymenu/assets/solaire_small.png';
+S:custom_window_icon_macos = '/config/fancymenu/assets/icon.icns';
+S:custom_window_icon_32 = '/config/fancymenu/assets/icon.png';
+S:custom_window_title = 'CTS: Solaire';
+S:custom_window_icon_16 = '/config/fancymenu/assets/icon_small.png';
 
 
 ##[multiplayer_screen]
